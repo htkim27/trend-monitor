@@ -155,33 +155,6 @@ sources:
     verified_at: "2026-11-25"
     selected: "[M][S] 국내 탑티어 기술 블로그 (AI·로봇 인프라)"
 
-  - id: pytorch_kr
-    name: 파이토치 한국 사용자 모임
-    type: rss
-    url: "https://discuss.pytorch.kr/latest.rss"
-    channel: community
-    status: active
-    verified_at: "2026-11-26"
-    selected: "[M][H][C] 국내 AI·월드모델·로보틱스 오픈소스 커뮤니티 최신 글 (0.4 상한)"
-
-  - id: aitimes_kr
-    name: 인공지능신문
-    type: rss
-    url: "https://www.aitimes.kr/rss/allArticle.xml"
-    channel: press_kr
-    status: active
-    verified_at: "2026-11-26"
-    selected: "[M][S] 국내 피지컬 AI·로보틱스·프론티어 모델 전문 매체"
-
-  - id: aitimes_com
-    name: AI타임스
-    type: rss
-    url: "https://www.aitimes.com/rss/allArticle.xml"
-    channel: press_kr
-    status: active
-    verified_at: "2026-11-26"
-    selected: "[M][F] 국내 주요 AI·로보틱스 뉴스 매체"
-
   # ══════════════════════════════════════════════════════════════
   # 4. 유튜브 (공식 Atom RSS) [M][S]
   # ══════════════════════════════════════════════════════════════
@@ -443,3 +416,6 @@ rejected:
   - {id: anthropic_rss, url: "https://www.anthropic.com/rss.xml", reason: "404, 공식 RSS 없음. sitemap 사용. 2026-11-25"}
   - {id: physical_intelligence, url: "https://www.physicalintelligence.company/sitemap.xml", reason: "429 Too Many Requests (pi.website 포함 봇 차단). 2026-11-25"}
   - {id: hn_robotics_ai, url: "https://hnrss.org/newest?q=robot+OR+robotics+OR+embodied+OR+VLA+OR+MCP&points=80", reason: "502 Bad Gateway. Algolia JSON API(hn_algolia_robotics)로 대체. 2026-11-25"}
+  - {id: pytorch_kr, url: "https://discuss.pytorch.kr/latest.rss", reason: "일반 AI 커뮤니티 글 비중 과다로 로보틱스 하네스 중심 밸런스 저해(사용자 제외 요청). 2026-11-26"}
+  - {id: aitimes_kr, url: "https://www.aitimes.kr/rss/allArticle.xml", reason: "일반 국내 AI 뉴스량 과다로 편향 발생(사용자 제외 요청). 2026-11-26"}
+  - {id: aitimes_com, url: "https://www.aitimes.com/rss/allArticle.xml", reason: "일반 국내 AI 뉴스량 과다로 편향 발생(사용자 제외 요청). 2026-11-26"}
