@@ -40,6 +40,18 @@ sources:
     verified_at: "2026-11-25"
     selected: "[M][D] Gemini Robotics·Gemini 모델 1차 출처"
 
+  - id: dream_labs
+    name: Dream Labs (Dream-1)
+    type: sitemap
+    url: "https://dreamlabs.ai/sitemap.xml"
+    channel: newsroom
+    lab: dream_labs
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    extract: {include_paths: ["/research/", "/blog/", "/news/"], title_from: page}
+    selected: "[M][H] Dream Labs (Dream-1 / WAM) 공식 연구·발표 1차 출처 (sitemap diff)"
+
   - id: nvidia_dev_blog
     name: NVIDIA Technical Blog
     type: atom

@@ -13,6 +13,7 @@ keywords:
   - {term: "Unitree", aliases: ["unitree g1", "unitree_sdk2", "unitree_il_lerobot", "unitree_robotskills", "유니트리"], note: "유니트리 오픈소스·하드웨어", promote: true, added_at: "2026-11-25"}
   - {term: "YAM", aliases: ["i2rt", "i2rt_yam", "yam arm"], require_any: ["robot", "arm", "i2rt", "lerobot", "mujoco", "bimanual", "gripper", "teleop"], note: "I2RT YAM 양팔 로봇 플랫폼", promote: true, added_at: "2026-11-25"}
   - {term: "Physical Intelligence", aliases: ["pi0", "pi0.5", "openpi", "피지컬 인텔리전스"], note: "Physical Intelligence 파운데이션 모델", promote: true, added_at: "2026-11-26"}
+  - {term: "Dream-1", aliases: ["dream-1", "dream-1-flash", "dream labs", "dreamlabs", "dreamzero", "드림랩스"], note: "Dream Labs 월드 액션 모델(WAM) · API", promote: true, added_at: "2026-11-26"}
   - {term: "Boston Dynamics", aliases: ["boston dynamics", "보스턴 다이내믹스", "보스턴 다이나믹스", "atlas robot"], note: "Boston Dynamics · Atlas · mjlab", promote: false, added_at: "2026-11-26"}
   - {term: "Skild AI", aliases: ["skild ai", "skild", "스킬드"], note: "Skild AI 범용 로봇 브레인", promote: false, added_at: "2026-11-26"}
   - {term: "Figure AI", aliases: ["figure ai", "figure helix", "피규어 AI"], note: "Figure AI · Helix", promote: false, added_at: "2026-11-26"}

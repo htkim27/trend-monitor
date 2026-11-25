@@ -54,6 +54,7 @@ labs:
   openai:          {title: OpenAI, aliases: [openai, 오픈ai]}
   anthropic:       {title: Anthropic, aliases: [anthropic, 앤트로픽, 앤스로픽]}
   physical_intel:  {title: Physical Intelligence, aliases: [physical intelligence, pi0, pi-0, pi0.5, openpi, "π0", sergey levine, chelsea finn, karol hausman]}
+  dream_labs:      {title: Dream Labs (Dream-1), aliases: [dream labs, dreamlabs, dream-1, dream-1-flash, dreamzero, 드림랩스]}
   boston_dynamics: {title: Boston Dynamics, aliases: [boston dynamics, boston-dynamics, 보스턴 다이내믹스, 보스턴 다이나믹스, atlas robot, bdai]}
   figure:          {title: Figure AI, aliases: [figure ai, figure 02, figure 03, helix, brett adcock]}
   skild:           {title: Skild AI, aliases: [skild ai, skild, deepak pathak, abhinav gupta]}
@@ -104,6 +105,7 @@ entities:
   gemini-robotics:  {domain: embodied_models, title: Gemini Robotics, lab: google_deepmind, aliases: [gemini robotics, gemini-robotics, deepmind robotics, rt-2, sara-rt]}
   nvidia-groot:     {domain: embodied_models, title: NVIDIA GR00T / Cosmos, lab: nvidia, aliases: [gr00t, nvidia groot, nvidia cosmos, isaac groot, nvidia srl, newton physics]}
   pi-zero:          {domain: embodied_models, title: Physical Intelligence (π0), lab: physical_intel, aliases: [physical intelligence, pi0, pi0.5, pi-0, openpi]}
+  dream-1:          {domain: embodied_models, title: Dream Labs (Dream-1 / WAM), lab: dream_labs, aliases: [dream-1, dream-1-flash, dream labs, dreamlabs, dreamzero]}
   skild-ai:         {domain: embodied_models, title: Skild AI, lab: skild, aliases: [skild ai, skild brain, 스킬드]}
   figure-helix:     {domain: embodied_models, title: Figure Helix, lab: figure, aliases: [figure helix, figure ai, figure 02, figure 03]}
   ai2-robotics:     {domain: embodied_models, title: Ai2 Robotics (MolmoAct / RoboTrack), lab: allenai, aliases: [molmoact, robotrack, 로보트랙, allenai robotics]}
