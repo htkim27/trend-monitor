@@ -6,8 +6,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "VLM 도구 호출 조작을 멀티턴 RL로 학습하는 RoboHarness-RL과 제어 그룹별 비동기 코딩 에이전트 팀 아키텍처 ACAP이 동시에 공개되며 에이전트 하네스 설계가 빠르게 고도화되고 있어요. 시연 없이 양손 기민 조작 코드를 작성하는 PyRUA-Dex, 실행 여유치 기반 코드 수선 MARGIN, 보정 확률 기반 3방향 안전 게이트 CATWAY까지 더해져 실행·검증·동시성 전 축의 오픈 연구가 집중되고 있어요."
   },
   "roboprobe": {
     "slug": "roboprobe",
@@ -16,8 +16,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "물리적 위험 대응 6모드를 평가하는 EmbodiSafety(스냅샷 1,092·궤적 540), 시간 제약·지연을 평가하는 RoboClock(60태스크), 실행 도중 변화 영향을 분해 측정하는 CALVIN-MAX(7,828케이스) 등 차세대 로봇 하네스 벤치마크가 연이어 등장했어요. 단순 성공률을 넘어 안전·시간·동적 강건성을 정량 평가하는 기준선이 빠르게 촘촘해지고 있어요."
   },
   "long-horizon-manip": {
     "slug": "long-horizon-manip",
@@ -26,8 +26,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "장시간 조작 온라인 RL에서 진행도 기반으로 전역·국소 RL을 교차해 병목 구간을 집중 연습하는 ReFocus가 공개됐어요. VLM 스킬 조합 및 절차 진행 추적 연구와 맞물려 장시간 조작의 병목 해소 기법이 구체화되고 있어요."
   },
   "robot-memory": {
     "slug": "robot-memory",
@@ -36,8 +36,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "단일 실제 시연에서 장면 기하·성공 기준·물리 검증 참조를 추출해 LLM 코딩 에이전트가 이종 로봇 스킬을 자가 개선하는 RESET이 공개됐어요. 앞서 나온 자가 검색 메모리(MXI-MemICL·KeyMemVLA)와 함께 최소 시연 기반 스킬 축적 연구가 확장되고 있어요."
   },
   "vla-as-tool": {
     "slug": "vla-as-tool",
@@ -46,8 +46,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "상위 멀티모달 에이전트와 하위 시각-운동 정책 사이의 인계 경계(handoff boundary) 실패를 다루는 Boundary-Aware Policy Learning과, LLM 에이전트가 추가 학습 없이 VLA 파라미터를 직접 편집해 교착 실패를 교정하는 Weight-Space Programming이 발표됐어요. 동결 VLA와 코드 복구를 결합하는 계층형 하네스 흐름이 본격화되고 있어요."
   },
   "perception-tools": {
     "slug": "perception-tools",
@@ -76,8 +76,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "NVIDIA가 공식 개발자 블로그를 통해 단 두 개의 프롬프트로 NVIDIA Cosmos에서 희귀 결함·야간 사고 등 학습용 Physical AI 데이터셋을 구축하는 워크플로를 공개했어요. Cosmos 3 Nano 로컬 구동 및 DiffGR00T와 맞물려 합성 데이터·월드 모델 파이프라인이 실무화되고 있어요."
   },
   "pi-zero": {
     "slug": "pi-zero",
@@ -86,8 +86,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "사전학습 VLA 모델 π0를 경험 리플레이로 연속 학습할 때 도메인 내 망각은 0에 가까워도 분포 외(OOD) 강건성이 급격히 붕괴한다는 LIBERO/LIBERO-Plus 검증 결과가 발표됐어요. π0.5의 지시 단축 현상과 함께 VLA 미세조정의 구조적 한계가 정밀 진단되고 있어요."
   },
   "figure-helix": {
     "slug": "figure-helix",
@@ -106,8 +106,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "Google DeepMind가 차세대 인터랙티브 월드 모델 'Genie 4'와 Project Genie를 공식 출시했고, 학계에서는 6종 VLA의 지시·장면 단축 실패를 규명한 Seeing Is Not Reaching과 함께 DexWAC·LeanWAM·FoveaWAM·TauPrune-VLA 등 월드-액션 모델(WAM) 경량화·동적 예측 연구가 쏟아졌어요."
   },
   "naver-physical-ai": {
     "slug": "naver-physical-ai",
@@ -126,8 +126,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "Unitree 공식 GitHub에서 휴머노이드 XR 텔레오퍼레이션 'xr_teleoperate'(★1,741)와 C++ 제어 SDK 'unitree_sdk2'(★1,460)가 잇따라 업데이트됐어요. 최근 공개된 프론티어 모델 스킬 하네스 'unitree_robotskills' 및 MuJoCo RL 저장소와 함께 풀스택 오픈소스 생태계가 활발히 유지되고 있어요."
   },
   "yam-i2rt": {
     "slug": "yam-i2rt",
@@ -156,8 +156,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "중국 AgiBot(지위안)이 C++·Python·ROS2를 지원하는 공식 핸드 SDK 'agilink_omnihand_sdk'(★41)를 업데이트했어요. 시뮬레이터 genie_sim과 IsaacCapture에 이어 기민 손 하드웨어 제어 인터페이스까지 공개 범위를 넓히고 있어요."
   },
   "galaxea": {
     "slug": "galaxea",
@@ -176,8 +176,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "중국 LimX Dynamics가 Linux·Windows 크로스플랫폼 및 ROS/Gazebo·RL Sim2Real 배포를 지원하는 무의존성 C++11/Python 저수준 SDK 'limxsdk-lowlevel'(★20)을 업데이트했어요. TRON2 16종 시뮬 에셋 공개에 이어 저수준 제어 스택을 보강하고 있어요."
   },
   "booster": {
     "slug": "booster",
@@ -196,8 +196,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "NVIDIA 공식 오픈소스 시뮬레이터 'IsaacSim'(★4,535)이 IsaacLab(★8,724)·IsaacLab-Arena에 이어 새롭게 업데이트됐어요. 대규모 모듈형 정책 평가와 Sim-to-Real 워크플로의 핵심 시뮬레이션 기반이 빠르게 정비되고 있어요."
   },
   "gemini": {
     "slug": "gemini",
@@ -206,8 +206,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "Google DeepMind가 'Gemini 4 Neon'을 공식 블로그로 발표했으며, Latent Space 요약 기준 Intelligence Index 61점을 기록하며 Opus·Sol 경쟁 모델로 자리 잡았어요. LiveBench 선두 및 코드 실행 시간 48.6% 단축 소식과 맞물려 고효율 추론 백본으로 주목받고 있어요."
   },
   "claude": {
     "slug": "claude",
@@ -226,8 +226,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "OpenAI가 코딩·컴퓨터 사용(computer use) 성능과 비용 효율을 끌어올린 'GPT-6.2 Astra'와 'Sol'을 ChatGPT Work·Codex·API 전반에 공식 출시했어요. 프론티어 추론기 및 컴퓨터 사용 능력의 기준선이 한 단계 올라갔어요."
   },
   "qwen": {
     "slug": "qwen",
@@ -256,8 +256,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "커뮤니티에서 지난 12개월간 Claude Opus 4.5 이후 코딩 에이전트 역량의 3대 변곡점을 되짚는 회고가 공유됐어요."
   },
   "codex": {
     "slug": "codex",
@@ -266,8 +266,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "OpenAI가 코딩 에이전트의 AI 연구 가속 효과와 성능 불균일 구간을 실측한 보고서 'Research acceleration: The jagged frontier'를 공개했어요. 코딩 에이전트 하네스의 자동화 한계를 가늠하는 1차 지표예요."
   },
   "gemini-cli": {
     "slug": "gemini-cli",
@@ -556,8 +556,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-26T00:22:27+09:00",
-    "last_update_at": "2026-11-26T00:22:27+09:00",
-    "status_ko": ""
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "Allen Institute for AI(Ai2)가 실제 로봇 조작 포인트 추적기 'RoboTrack' 공식 기술 블로그를 Hugging Face에 공개하고, 종단간 오픈 로봇 학습 생태계 'molmospaces'(★533)도 지속 업데이트하고 있어요. 인지 도구와 오픈 시뮬레이션 인프라를 함께 넓혀가는 흐름이에요."
   },
   "boston-dynamics": {
     "slug": "boston-dynamics",
@@ -718,5 +718,15 @@
     "created_at": "2026-11-26T00:22:27+09:00",
     "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": "Dream Labs 월드 액션 모델(WAM) · API"
+  },
+  "kw:frontier-robot-use": {
+    "slug": "kw:frontier-robot-use",
+    "title": "Frontier Robot-Use",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-26T07:05:42+09:00",
+    "last_update_at": "2026-11-26T07:05:42+09:00",
+    "status_ko": "Astra·Argon·Neon·Fable·Opus·Anthropic·OpenAI의 로봇 제어/하네스 활용"
   }
 }

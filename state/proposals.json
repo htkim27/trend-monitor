@@ -94,5 +94,53 @@
     "days": [
       "2026-11-26"
     ]
+  },
+  "roboharness-rl": {
+    "key": "roboharness-rl",
+    "title": "RoboHarness-RL",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "pyrua-dex": {
+    "key": "pyrua-dex",
+    "title": "PyRUA-Dex",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "margin-agent": {
+    "key": "margin-agent",
+    "title": "MARGIN",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "acap": {
+    "key": "acap",
+    "title": "ACAP (Async Coding Agents)",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "embodisafety": {
+    "key": "embodisafety",
+    "title": "EmbodiSafety",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "genie-4": {
+    "key": "genie-4",
+    "title": "Google DeepMind Genie 4",
+    "domain": "embodied_models",
+    "days": [
+      "2026-11-26"
+    ]
   }
 }

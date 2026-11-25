@@ -1,176 +1,176 @@
 {
   "arxiv_cs_ro": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
-    "last_status": 304,
-    "etag": "9c92b0063f88bf6edb1c71d864d98f01a759e6471d42c475c8f49659c6a602c5"
+    "last_success_at": "2026-11-26T07:00:30+09:00",
+    "last_status": 200,
+    "etag": "61a284dbabf10c9e72b3ca7276884cb236bd02b1f262abe9042d208a8c480f29"
   },
   "arxiv_robot_harness": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "deepmind_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200,
-    "etag": "\"ZWD3mQ\""
+    "etag": "\"L_KK3w\""
   },
   "nvidia_dev_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
-    "last_status": 304,
-    "etag": "\"85dfa6a1a7635dac5fdbcf51bf2444a6\"",
-    "last_modified": "Tue, 24 Nov 2026 22:26:24 GMT"
+    "last_success_at": "2026-11-26T07:00:30+09:00",
+    "last_status": 200,
+    "etag": "\"c969317e2f6d79bc171f4c5967e4487c\"",
+    "last_modified": "Wed, 25 Nov 2026 19:55:58 GMT"
   },
   "bair_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200,
     "etag": "\"572e3-65fdb8cdc7a80-gzip\"",
     "last_modified": "Mon, 09 Nov 2026 17:47:06 GMT"
   },
   "huggingface_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
-    "last_status": 304,
-    "etag": "W/\"42270-nBN9iWdlDnwd4w3GFi9PEhpuLOE\""
+    "last_success_at": "2026-11-26T07:00:30+09:00",
+    "last_status": 200,
+    "etag": "W/\"423e7-FgEpTr0GADOjZC0u+WdnKI0aJ0U\""
   },
   "therobotreport": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
-    "last_status": 304,
-    "etag": "\"a64aff812c42110a8547426591103602\"",
-    "last_modified": "Tue, 24 Nov 2026 18:03:37 GMT"
+    "last_success_at": "2026-11-26T07:00:30+09:00",
+    "last_status": 200,
+    "etag": "\"c09dce5f239c3c5d391fccfb166e5478\"",
+    "last_modified": "Wed, 25 Nov 2026 18:24:42 GMT"
   },
   "robohub": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200,
-    "etag": "\"35b23-6611a59efcd6c\"",
-    "last_modified": "Wed, 25 Nov 2026 14:07:46 GMT"
+    "etag": "\"35ea6-6612005f36538\"",
+    "last_modified": "Wed, 25 Nov 2026 20:53:46 GMT"
   },
   "ieee_spectrum_robotics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200,
-    "etag": "\"884be3a907bdd197930e5fd256fa7045\"",
-    "last_modified": "Tue, 24 Nov 2026 03:45:40 GMT"
+    "etag": "\"23ace22929876b7697a485cf649b73a9\"",
+    "last_modified": "Wed, 25 Nov 2026 15:01:26 GMT"
   },
   "irobotnews_all": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
-    "last_status": 304,
-    "etag": "\"c597-66115ee701c11-gzip\"",
-    "last_modified": "Wed, 25 Nov 2026 08:51:22 GMT"
+    "last_success_at": "2026-11-26T07:00:30+09:00",
+    "last_status": 200,
+    "etag": "\"c5b7-6611d9864b272-gzip\"",
+    "last_modified": "Wed, 25 Nov 2026 17:59:58 GMT"
   },
   "naver_d2": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "yt_unitree": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "yt_deepmind": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "yt_nvidia": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_roboprobe": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_unitree": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_i2rt": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_agibot": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_galaxea": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_limx": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_booster": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "openai_news": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "anthropic_news": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "qwen_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 304,
     "etag": "W/\"6970c244-98ff\"",
     "last_modified": "Wed, 21 Jan 2026 12:10:44 GMT"
   },
   "latent_space": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200,
-    "last_modified": "Wed, 25 Nov 2026 15:18:17 GMT"
+    "last_modified": "Wed, 25 Nov 2026 21:56:31 GMT"
   },
   "simon_willison": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 304,
     "last_modified": "Tue, 24 Nov 2026 23:02:07 GMT"
   },
   "hn_algolia_robotics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "dream_labs": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "stanford_sail": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
-    "last_status": 200,
+    "last_success_at": "2026-11-26T07:00:30+09:00",
+    "last_status": 304,
     "etag": "\"55e73-639d3ec345800\"",
     "last_modified": "Sun, 13 Jul 2025 18:43:44 GMT"
   },
   "mit_csail": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200,
-    "etag": "\"1795611784-gzip\"",
-    "last_modified": "Wed, 25 Nov 2026 13:03:04 GMT"
+    "etag": "\"1795627807-gzip\"",
+    "last_modified": "Wed, 25 Nov 2026 17:30:07 GMT"
   },
   "pytorch_kr": {
     "consecutive_failures": 0,
@@ -193,32 +193,32 @@
   },
   "yt_bostondynamics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_openpi": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_bostondynamics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_isaac_sim": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_allenai": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   },
   "gh_fourier": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-26T00:20:28+09:00",
+    "last_success_at": "2026-11-26T07:00:30+09:00",
     "last_status": 200
   }
 }
