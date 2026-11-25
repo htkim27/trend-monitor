@@ -1518,55 +1518,160 @@ def md_to_simple_html(md_text: str) -> str:
     return "\n".join(out)
 
 
-def cmd_render_page(_args: argparse.Namespace) -> int:
-    latest_md = (TRENDS_DIR / "latest.md").read_text(encoding="utf-8") if (TRENDS_DIR / "latest.md").exists() else "# 아직 아카이브가 없습니다."
-    dir_md = (TRENDS_DIR / "direction.md").read_text(encoding="utf-8") if (TRENDS_DIR / "direction.md").exists() else ""
-    archives = sorted(ARCHIVE_DIR.rglob("*.md"), reverse=True)[:14]
-    arch_links = "".join(
-        f'<li><a href="../{p.relative_to(ROOT).as_posix()}">{p.stem} ({p.parent.parent.name}-{p.parent.name})</a></li>'
-        for p in archives
+DOMAIN_META = [
+    ("harnesses", "로봇 하네스 · 아키텍처", "#2563eb", "#eff6ff"),
+    ("embodied_models", "빅테크 · 연구 모델 실험", "#7c3aed", "#f5f3ff"),
+    ("hardware_sdk", "로봇 플랫폼 · 중국/글로벌 깃헙 & SDK", "#059669", "#ecfdf5"),
+    ("ai_frontier", "프론티어 모델 · 에이전트 (20% 슬라이스)", "#d97706", "#fffbeb"),
+]
+
+
+def _sig_color(sig: float) -> Tuple[str, str]:
+    if sig >= 0.85:
+        return "#dc2626", "#fef2f2"
+    if sig >= 0.75:
+        return "#2563eb", "#eff6ff"
+    if sig >= 0.60:
+        return "#059669", "#ecfdf5"
+    return "#6b7280", "#f3f4f6"
+
+
+def render_newsletter_html(run_id: Optional[str] = None) -> str:
+    events_all = load_jsonl(STATE_DIR / "events.jsonl")
+    runs = load_jsonl(STATE_DIR / "runs.jsonl")
+    if not run_id:
+        run_id = runs[-1]["run_id"] if runs else (events_all[-1]["run_id"] if events_all else now_kst().strftime("%Y-%m-%d-pm"))
+    run_events = [e for e in events_all if e.get("run_id") == run_id]
+    if not run_events and events_all:
+        run_events = events_all[-20:]
+    run_events.sort(key=lambda e: (float(e.get("significance", 0)), bool(e.get("official", False)), int(e.get("sources", 1))), reverse=True)
+
+    run_rec = next((r for r in reversed(runs) if r.get("run_id") == run_id), None)
+    processed = run_rec.get("processed", len(run_events)) if run_rec else len(run_events)
+    discarded = run_rec.get("discarded", 0) if run_rec else 0
+
+    # Top 3 highlights
+    top3_html = ""
+    for ev in run_events[:3]:
+        sig = float(ev.get("significance", 0))
+        fg, bg = _sig_color(sig)
+        url = (ev.get("urls") or ["#"])[0]
+        off_badge = '<span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#e0f2fe;color:#0369a1;margin-left:6px;">공식</span>' if ev.get("official") else ""
+        top3_html += f"""
+        <div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid {fg};border-radius:8px;padding:12px 14px;margin-bottom:10px;">
+          <div style="margin-bottom:4px;">
+            <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:{bg};color:{fg};">{sig:.2f}</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:#f1f5f9;color:#475569;margin-left:6px;">{html.escape(str(ev.get('topic', '')))}</span>
+            {off_badge}
+          </div>
+          <div style="font-size:15px;font-weight:700;line-height:1.4;margin-bottom:5px;">
+            <a href="{html.escape(url)}" style="color:#0f172a;text-decoration:none;" target="_blank">{html.escape(ev.get('headline_ko', ''))}</a>
+          </div>
+          <div style="font-size:13.5px;color:#334155;line-height:1.55;">{html.escape(ev.get('detail_ko', ''))}</div>
+        </div>"""
+
+    # Domain sections
+    sections_html = ""
+    for dom_id, dom_name, dom_fg, dom_bg in DOMAIN_META:
+        dom_evs = [e for e in run_events if e.get("domain") == dom_id]
+        if not dom_evs:
+            continue
+        cards = ""
+        for ev in dom_evs:
+            sig = float(ev.get("significance", 0))
+            fg, bg = _sig_color(sig)
+            urls = ev.get("urls") or []
+            primary_url = urls[0] if urls else "#"
+            srcs = ", ".join(ev.get("source_ids") or [])
+            off_txt = "공식" if ev.get("official") else "비공식"
+            kws = "".join(
+                f'<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#{html.escape(k)}</span>'
+                for k in (ev.get("keywords_hit") or [])
+            )
+            extra_links = ""
+            if len(urls) > 1:
+                extra_links = " · " + " ".join(
+                    f'<a href="{html.escape(u)}" style="color:#2563eb;text-decoration:none;" target="_blank">출처{idx+2}</a>'
+                    for idx, u in enumerate(urls[1:])
+                )
+            cards += f"""
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:{bg};color:{fg};">{sig:.2f}</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">{html.escape(str(ev.get('topic', '')))}</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">{off_txt} · {html.escape(srcs)}</span>
+                {kws}
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="{html.escape(primary_url)}" style="color:#0f172a;text-decoration:none;" target="_blank">{html.escape(ev.get('headline_ko', ''))}</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">{html.escape(ev.get('detail_ko', ''))}</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="{html.escape(primary_url)}" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>{extra_links}
+              </div>
+            </div>"""
+        sections_html += f"""
+        <div style="margin-top:24px;">
+          <div style="background:{dom_bg};border-left:4px solid {dom_fg};padding:8px 12px;border-radius:6px;margin-bottom:6px;">
+            <span style="font-size:15px;font-weight:700;color:{dom_fg};">{html.escape(dom_name)}</span>
+            <span style="font-size:12px;color:#64748b;margin-left:8px;">{len(dom_evs)}건</span>
+          </div>
+          {cards}
+        </div>"""
+
+    # Domain share summary
+    tot = len(run_events) or 1
+    share_pills = " ".join(
+        f'<span style="display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;background:{bg};color:{fg};margin:2px 4px 2px 0;font-weight:600;">{name.split(" · ")[0]} {round(sum(1 for e in run_events if e.get("domain")==did)/tot*100)}%</span>'
+        for did, name, fg, bg in DOMAIN_META
+        if any(e.get("domain") == did for e in run_events)
     )
 
-    page = f"""<!doctype html>
+    return f"""<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RoboSpine Trend Monitor</title>
-<style>
-:root {{ --bg:#0d1117; --card:#161b22; --fg:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --border:#30363d; }}
-@media (prefers-color-scheme: light) {{
-  :root {{ --bg:#f6f8fa; --card:#ffffff; --fg:#1f2328; --muted:#656d76; --accent:#0969da; --border:#d0d7de; }}
-}}
-* {{ box-sizing:border-box; }}
-body {{ margin:0; padding:16px; background:var(--bg); color:var(--fg); font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }}
-main {{ max-width:860px; margin:0 auto; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }}
-h1 {{ font-size:1.35rem; margin-top:0; border-bottom:1px solid var(--border); padding-bottom:8px; }}
-h2 {{ font-size:1.1rem; margin-top:22px; color:var(--accent); }}
-h3 {{ font-size:0.98rem; margin-top:14px; }}
-a {{ color:var(--accent); text-decoration:none; }}
-a:hover {{ text-decoration:underline; }}
-ul {{ padding-left:20px; }}
-li {{ margin:6px 0; }}
-code {{ background:rgba(127,127,127,0.18); padding:2px 5px; border-radius:4px; font-size:0.88em; }}
-.tbl-wrap {{ overflow-x:auto; }}
-table {{ width:100%; border-collapse:collapse; margin:10px 0; font-size:0.9rem; }}
-th, td {{ border:1px solid var(--border); padding:6px 8px; text-align:left; vertical-align:top; }}
-details {{ border:1px solid var(--border); border-radius:8px; padding:8px 12px; margin-top:14px; }}
-.meta {{ color:var(--muted); font-size:0.82rem; margin-top:24px; border-top:1px solid var(--border); padding-top:10px; }}
-</style>
+<title>RoboSpine Trend Newsletter · {html.escape(run_id)}</title>
 </head>
-<body>
-<main>
-{md_to_simple_html(latest_md)}
-{"<hr>" + md_to_simple_html(dir_md) if dir_md else ""}
-<h2>최근 회차 아카이브</h2>
-<ul>{arch_links}</ul>
-<div class="meta">Generated at {iso_kst(now_kst())} · RoboSpine Trend Monitor (Gemini / Antigravity)</div>
-</main>
+<body style="margin:0;padding:16px;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Segoe UI',Roboto,sans-serif;color:#0f172a;">
+  <div style="max-width:680px;margin:0 auto;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(15,23,42,0.05);">
+    <!-- Header -->
+    <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:22px 24px;color:#ffffff;">
+      <div style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#93c5fd;font-weight:700;margin-bottom:6px;">ROBOSPINE TREND NEWSLETTER</div>
+      <div style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:8px;">로봇 하네스 &amp; 프론티어 AI 브리핑</div>
+      <div style="font-size:13px;color:#cbd5e1;">회차: <strong>{html.escape(run_id)}</strong> · 핵심 사건 <strong>{len(run_events)}건</strong> (판정 {processed} · 제외 {discarded})</div>
+    </div>
+
+    <!-- Body -->
+    <div style="padding:20px 24px;">
+      <!-- Share bar -->
+      <div style="margin-bottom:18px;">{share_pills}</div>
+
+      <!-- Top 3 -->
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;margin-bottom:20px;">
+        <div style="font-size:14px;font-weight:800;color:#0f172a;margin-bottom:10px;">🔥 한눈에 보는 오늘의 핵심 TOP 3</div>
+        {top3_html}
+      </div>
+
+      <!-- Domain Sections -->
+      {sections_html}
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:14px 24px;font-size:12px;color:#64748b;text-align:center;">
+      RoboSpine Trend Monitor · Generated {iso_kst(now_kst())} ·
+      <a href="https://github.com/htkim27/trend-monitor/blob/main/trends/latest.md" style="color:#2563eb;text-decoration:none;">GitHub 아카이브 보기</a>
+    </div>
+  </div>
 </body>
 </html>
 """
+
+
+def cmd_render_page(args: argparse.Namespace) -> int:
+    run_id = getattr(args, "run_id", None)
+    page = render_newsletter_html(run_id=run_id)
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     (SITE_DIR / "index.html").write_text(page, encoding="utf-8")
     print(f"Rendered {SITE_DIR / 'index.html'}")
@@ -1607,6 +1712,7 @@ def cmd_publish_gws(args: argparse.Namespace) -> int:
         return 0
 
     latest_md = (TRENDS_DIR / "latest.md").read_text(encoding="utf-8") if (TRENDS_DIR / "latest.md").exists() else ""
+    html_email = render_newsletter_html(run_id=args.run_id)
     events = [e for e in load_jsonl(STATE_DIR / "events.jsonl") if e.get("run_id") == args.run_id]
     payload = {
         "secret": secret,
@@ -1616,6 +1722,7 @@ def cmd_publish_gws(args: argparse.Namespace) -> int:
         "notify_email": notify_email or None,
         "send_email": send_email,
         "markdown": latest_md,
+        "html_email": html_email,
         "events": events,
     }
     try:

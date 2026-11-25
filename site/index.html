@@ -3,130 +3,353 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RoboSpine Trend Monitor</title>
-<style>
-:root { --bg:#0d1117; --card:#161b22; --fg:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --border:#30363d; }
-@media (prefers-color-scheme: light) {
-  :root { --bg:#f6f8fa; --card:#ffffff; --fg:#1f2328; --muted:#656d76; --accent:#0969da; --border:#d0d7de; }
-}
-* { box-sizing:border-box; }
-body { margin:0; padding:16px; background:var(--bg); color:var(--fg); font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
-main { max-width:860px; margin:0 auto; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }
-h1 { font-size:1.35rem; margin-top:0; border-bottom:1px solid var(--border); padding-bottom:8px; }
-h2 { font-size:1.1rem; margin-top:22px; color:var(--accent); }
-h3 { font-size:0.98rem; margin-top:14px; }
-a { color:var(--accent); text-decoration:none; }
-a:hover { text-decoration:underline; }
-ul { padding-left:20px; }
-li { margin:6px 0; }
-code { background:rgba(127,127,127,0.18); padding:2px 5px; border-radius:4px; font-size:0.88em; }
-.tbl-wrap { overflow-x:auto; }
-table { width:100%; border-collapse:collapse; margin:10px 0; font-size:0.9rem; }
-th, td { border:1px solid var(--border); padding:6px 8px; text-align:left; vertical-align:top; }
-details { border:1px solid var(--border); border-radius:8px; padding:8px 12px; margin-top:14px; }
-.meta { color:var(--muted); font-size:0.82rem; margin-top:24px; border-top:1px solid var(--border); padding-top:10px; }
-</style>
+<title>RoboSpine Trend Newsletter · 2026-11-25-pm</title>
 </head>
-<body>
-<main>
-<h1>RoboSpine 트렌드 모니터 · 2026-11-25 오후 (22:55 KST)</h1>
-<p>수집 262 · 판정 27 (핵심 샘플 1차) · 사건 17 · 버림 7 (off_topic 7) · 대기 235</p>
-<h2>한눈에</h2>
-<ul>
-<li><strong>[0.94] Unitree, 프론티어 모델(GPT-6 Astra 등) 직접 연결용 공식 로봇 스킬 하네스 <code>unitree_robotskills</code> 공개</strong> (<a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
-<li><strong>[0.88] VLAs Execute, Code Recovers</strong> — 에이전트 플래너가 동결된 VLA 원자 스킬을 조합하고 코드로 복구하는 3D 스킬 엔벨로프 하네스 (<a href="https://arxiv.org/abs/2611.32245v1" target="_blank" rel="noopener">arXiv:2611.32245</a>) · 공식</li>
-<li><strong>[0.85] ICLWorld</strong> — 디지털 컴퓨터 사용에서 물리 로봇 세계까지 동일 프론티어 에이전트의 인컨텍스트 학습(ICL) 통합 벤치마크 (<a href="https://arxiv.org/abs/2611.32649v1" target="_blank" rel="noopener">arXiv:2611.32649</a>) · 공식</li>
-</ul>
-<h2>로봇 하네스·아키텍처 (arXiv · 오픈소스)</h2>
-<div class="tbl-wrap"><table><thead><tr><th>중요도</th><th>토픽</th><th>무엇이 달라졌나</th><th>출처</th></tr></thead><tbody>
-<tr><td>0.94</td><td>Unitree RobotSkills</td><td>GPT-6 Astra 등 프론티어 모델을 유니트리 로봇에 연결·스킬 작성하는 공식 프레임워크</td><td><a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a></td></tr>
-<tr><td>0.88</td><td>VLA-as-Tool</td><td>동결 VLA 스킬 조합 격차를 3D 스킬 엔벨로프 + 코드 복구로 메우는 에이전트 하네스</td><td><a href="https://arxiv.org/abs/2611.32245v1" target="_blank" rel="noopener">arXiv</a></td></tr>
-<tr><td>0.85</td><td>Robot Harness</td><td>디지털~물리 세계 프론티어 에이전트 인컨텍스트 학습(ICL) 통합 벤치마크 <code>ICLWorld</code></td><td><a href="https://arxiv.org/abs/2611.32649v1" target="_blank" rel="noopener">arXiv</a></td></tr>
-<tr><td>0.84</td><td>Long-Horizon</td><td>VLM 에이전트 추론 기반 원자 스킬 조합(<code>Atomic Policy</code>) &amp; 전역 절차 사전(<code>RoboDemo</code>)</td><td><a href="https://arxiv.org/abs/2611.32813v1" target="_blank" rel="noopener">arXiv</a> 외 1곳</td></tr>
-<tr><td>0.82</td><td>Embodied Memory</td><td>파라미터 업데이트 없는 자가 검색 메모리(<code>MXI-MemICL</code>) &amp; 서브태스크 키 메모리(<code>KeyMemVLA</code>)</td><td><a href="https://arxiv.org/abs/2611.32564v1" target="_blank" rel="noopener">arXiv</a> 외 1곳</td></tr>
-<tr><td>0.80</td><td>Robot Harness</td><td>플러그앤플레이 스킬 실행 인지 조율(<code>SkillHarness</code>) &amp; 뉴로-심볼릭 안전·감사 계층</td><td><a href="https://arxiv.org/abs/2611.32186" target="_blank" rel="noopener">arXiv</a> 외 1곳</td></tr>
-<tr><td>0.72</td><td>RoboProbe</td><td>거울 하나로 현재 로봇 조작 정책이 붕괴하는 시각적 취약점 진단(<code>Mirror Test</code>)</td><td><a href="https://arxiv.org/abs/2611.33010v1" target="_blank" rel="noopener">arXiv</a></td></tr>
-</tbody></table></div>
-<h2>빅테크·연구 로보틱스 모델 실험</h2>
-<ul>
-<li>[0.78] <strong>NVIDIA Cosmos 3 Nano</strong> · Hugging Face Diffusers를 활용해 GPU 메모리 제약이 있는 로컬 AI 디바이스에서 월드 모델 Cosmos 3 Nano를 구동하는 공식 가이드 공개 (<a href="https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers" target="_blank" rel="noopener">NVIDIA Blog</a>) · 공식</li>
-<li>[0.76] <strong>DiffGR00T</strong> · 휴머노이드 전신 제어(WBC)를 위한 실행 인지 미분 가능 VLA 학습 프레임워크 (<a href="https://arxiv.org/abs/2611.32665v1" target="_blank" rel="noopener">arXiv:2611.32665</a>) · 공식</li>
-<li>[0.58] <strong>Figure AI</strong> · 작업 현장에서 사람 팔 동작을 실시간 수집해 휴머노이드 학습·원격 제어에 활용하는 웨어러블 시스템 특허 출원 (<a href="https://www.irobotnews.com/news/articleView.html?idxno=49793" target="_blank" rel="noopener">로봇신문</a>) · 비공식</li>
-</ul>
-<h2>로봇 플랫폼 · 중국/글로벌 깃헙 &amp; SDK</h2>
-<ul>
-<li>[0.76] <strong>Unitree</strong> · MuJoCo 기반 공식 강화학습 프레임워크 <code>unitree_rl_mjlab</code> 활발한 업데이트 (★740, C++) (<a href="https://github.com/unitreerobotics/unitree_rl_mjlab" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
-<li>[0.74] <strong>I2RT · YAM</strong> · YAM 로봇 암 공식 Python 제어 SDK <code>i2rt-robotics/i2rt</code> 최신 푸시 (★184) (<a href="https://github.com/i2rt-robotics/i2rt" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
-<li>[0.72] <strong>AgiBot (智元)</strong> · 공식 시뮬레이션 플랫폼 <code>genie_sim</code>(★1,765) 및 텔레오퍼레이션·1인칭 캡처 인프라 <code>IsaacCapture</code> 업데이트 (<a href="https://github.com/AgibotTech/genie_sim" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
-<li>[0.72] <strong>Hugging Face × NVIDIA</strong> · Isaac Lab + 차세대 물리 엔진 Newton 기반 Microduck 장애물 회피 Sim2Real 워크플로 공개 (<a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" target="_blank" rel="noopener">HF Blog</a>) · 공식</li>
-<li>[0.70] <strong>LimX Dynamics</strong> · 휴머노이드 Python RL 배포(<code>humanoid-rl-deploy-python</code>, ONNX/MuJoCo) 및 TRON2 16종 시뮬 에셋 업데이트 (<a href="https://github.com/limxdynamics/humanoid-rl-deploy-python" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
-<li>[0.68] <strong>Booster Robotics</strong> · 공식 C++ 제어 SDK <code>booster_robotics_sdk</code> 업데이트 (★123) (<a href="https://github.com/BoosterRobotics/booster_robotics_sdk" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
-</ul>
-<h2>프론티어 모델·에이전트 트렌드 (20% 슬라이스)</h2>
-<ul>
-<li>[0.74] <strong>Gemini 4 Neon</strong> · LiveBench에서 GPT-6 Astra·Claude Fable을 상회하고 TS/Rust 코드 벤치마크 실행 시간을 48.6% 단축 (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab" target="_blank" rel="noopener">Latent Space</a>) · 비공식</li>
-</ul>
-<h2>트렌드 · 평소 대비</h2>
-<ul>
-<li>새로 등장: <code>robot-harness</code> (2건), <code>nvidia-groot</code> (2건)</li>
-<li>분야 비중(7일): 로봇 하네스 41.2% · 플랫폼/SDK 35.3% · 빅테크 모델 실험 17.6% · 프론티어 AI(20% 슬라이스) 5.9%</li>
-</ul>
-<h2>내 키워드</h2>
-<h3>Unitree</h3>
-<ul>
-<li>[0.94] <code>unitree_robotskills</code> — 프론티어 모델(GPT-6 Astra 등) 연결용 공식 로봇 스킬 프레임워크 (<a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a>)</li>
-<li>[0.76] <code>unitree_rl_mjlab</code> 업데이트 (★740) (<a href="https://github.com/unitreerobotics/unitree_rl_mjlab" target="_blank" rel="noopener">GitHub</a>)</li>
-</ul>
-<h3>YAM</h3>
-<ul>
-<li>[0.74] <code>i2rt-robotics/i2rt</code> 공식 Python SDK 최신 푸시 (★184) (<a href="https://github.com/i2rt-robotics/i2rt" target="_blank" rel="noopener">GitHub</a>)</li>
-</ul>
-<h3>training-free · long-horizon · VLA</h3>
-<ul>
-<li>[0.88] <code>VLAs Execute, Code Recovers</code> (<a href="https://arxiv.org/abs/2611.32245v1" target="_blank" rel="noopener">arXiv</a>)</li>
-<li>[0.82] <code>MXI-MemICL</code> 자가 검색 상호작용 메모리 (<a href="https://arxiv.org/abs/2611.32564v1" target="_blank" rel="noopener">arXiv</a>)</li>
-</ul>
-<h2>소스 점검</h2>
-<ul>
-<li>전체 27개 활성 소스 수집 성공 (실패 0건)</li>
-<li>제외(rejected) 이관: <code>physical_intelligence</code> (429 봇 차단), <code>hn_robotics_ai</code> (hnrss 502 → Algolia API <code>hn_algolia_robotics</code>로 대체)</li>
-<li>Google Workspace 발행: <code>config/settings.yaml</code>에 Apps Script Webhook URL 설정 시 자동 활성화</li>
-</ul>
-<hr><h1>리딩 그룹 방향성 레이더 (Robotics &amp; Frontier AI)</h1>
-<p>기준일: 2026-11-25 (매주 월요일 오전 자동 갱신)</p>
-<h2>그룹 간 공통 흐름</h2>
-<ul>
-<li><strong>프론티어 모델 + 스킬 하네스 수렴</strong>: 하드웨어 제조사(Unitree <code>unitree_robotskills</code>)와 학계(<code>VLAs Execute, Code Recovers</code>, <code>Atomic Policy</code>, <code>SkillHarness</code>)가 공통적으로 프론티어 VLM/LLM을 최상위 에이전트 플래너로 두고 원자 스킬·VLA·코드 복구를 결합하는 하네스 패턴으로 수렴 중 (2026-11-23~25).</li>
-<li><strong>오픈 시뮬레이션·배포 스택 표준화</strong>: 중국 휴머노이드·양팔 진영(Unitree, I2RT YAM, AgiBot, LimX, Booster)이 MuJoCo·Isaac Lab·ONNX·LeRobot 호환 오픈소스 스택을 빠르게 공개 중 (2026-11-24~25).</li>
-</ul>
-<h2>주요 그룹별 현황</h2>
-<h3>Unitree Robotics (<code>lab:unitree</code>)</h3>
-<ul>
-<li><strong>최근 공식 발표</strong>: <code>unitree_robotskills</code> 공개(2026-11-23, <a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a>), <code>unitree_rl_mjlab</code> 업데이트(2026-11-25, <a href="https://github.com/unitreerobotics/unitree_rl_mjlab" target="_blank" rel="noopener">GitHub</a>).</li>
-<li><strong>읽히는 방향</strong>: 단순 저수준 SDK 제공을 넘어 GPT-6 Astra 등 외부 프론티어 AI 모델을 자사 로봇에 바로 연결하는 공식 스킬 하네스 레이어를 직접 제공하기 시작함 (2026-11-23).</li>
-</ul>
-<h3>NVIDIA Robotics (<code>lab:nvidia</code>)</h3>
-<ul>
-<li><strong>최근 공식 발표</strong>: Cosmos 3 Nano 로컬 Diffusers 구동 가이드(2026-11-25, <a href="https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers" target="_blank" rel="noopener">Blog</a>), Hugging Face × Isaac Lab + Newton Sim2Real 워크플로(2026-11-25, <a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" target="_blank" rel="noopener">HF Blog</a>).</li>
-<li><strong>읽히는 방향</strong>: 월드 모델(Cosmos 3)의 온디바이스 경량 실행과 Newton 물리 엔진·Isaac Lab·Hugging Face 생태계 결합을 밀고 있음 (2026-11-25).</li>
-</ul>
-<h3>I2RT · YAM (<code>lab:i2rt</code>)</h3>
-<ul>
-<li><strong>최근 공식 발표</strong>: <code>i2rt-robotics/i2rt</code> 공식 Python SDK 지속 업데이트(2026-11-25, <a href="https://github.com/i2rt-robotics/i2rt" target="_blank" rel="noopener">GitHub</a>).</li>
-<li><strong>읽히는 방향</strong>: YAM 양팔 플랫폼의 Python 제어·MuJoCo·LeRobot 호환성 유지 (2026-11-25).</li>
-</ul>
-<h3>AgiBot · LimX · Booster (<code>lab:agibot</code>, <code>lab:limx</code>, <code>lab:booster</code>)</h3>
-<ul>
-<li><strong>최근 공식 발표</strong>: AgiBot <code>genie_sim</code>/<code>IsaacCapture</code>(2026-11-24~25), LimX <code>humanoid-rl-deploy-python</code>/<code>tron2-robot-description</code>(2026-11-25), Booster <code>booster_robotics_sdk</code>(2026-11-25).</li>
-<li><strong>읽히는 방향</strong>: 중국 휴머노이드 기업들이 시뮬레이션(Isaac/MuJoCo/USD), 원격 데이터 수집, ONNX 기반 경량 배포 스택을 오픈소스로 적극 공개 중 (2026-11-25).</li>
-</ul>
-<h3>Google DeepMind / OpenAI / Anthropic</h3>
-<ul>
-<li><strong>최근 발표</strong>: Gemini 4 Neon 벤치마크 성능 도약 보도(2026-11-25, 비공식 해설 <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab" target="_blank" rel="noopener">Latent Space</a>). 지난 30일 로보틱스 전용 공식 방향성 발표는 추가 수집 대기 중.</li>
-</ul>
-<h2>최근 회차 아카이브</h2>
-<ul><li><a href="../archive/2026/11/25-pm.md">25-pm (2026-11)</a></li></ul>
-<div class="meta">Generated at 2026-11-25T22:58:38+09:00 · RoboSpine Trend Monitor (Gemini / Antigravity)</div>
-</main>
+<body style="margin:0;padding:16px;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Segoe UI',Roboto,sans-serif;color:#0f172a;">
+  <div style="max-width:680px;margin:0 auto;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(15,23,42,0.05);">
+    <!-- Header -->
+    <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:22px 24px;color:#ffffff;">
+      <div style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#93c5fd;font-weight:700;margin-bottom:6px;">ROBOSPINE TREND NEWSLETTER</div>
+      <div style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:8px;">로봇 하네스 &amp; 프론티어 AI 브리핑</div>
+      <div style="font-size:13px;color:#cbd5e1;">회차: <strong>2026-11-25-pm</strong> · 핵심 사건 <strong>17건</strong> (판정 27 · 제외 7)</div>
+    </div>
+
+    <!-- Body -->
+    <div style="padding:20px 24px;">
+      <!-- Share bar -->
+      <div style="margin-bottom:18px;"><span style="display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;background:#eff6ff;color:#2563eb;margin:2px 4px 2px 0;font-weight:600;">로봇 하네스 41%</span> <span style="display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;background:#f5f3ff;color:#7c3aed;margin:2px 4px 2px 0;font-weight:600;">빅테크 18%</span> <span style="display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;background:#ecfdf5;color:#059669;margin:2px 4px 2px 0;font-weight:600;">로봇 플랫폼 35%</span> <span style="display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;background:#fffbeb;color:#d97706;margin:2px 4px 2px 0;font-weight:600;">프론티어 모델 6%</span></div>
+
+      <!-- Top 3 -->
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;margin-bottom:20px;">
+        <div style="font-size:14px;font-weight:800;color:#0f172a;margin-bottom:10px;">🔥 한눈에 보는 오늘의 핵심 TOP 3</div>
+        
+        <div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid #dc2626;border-radius:8px;padding:12px 14px;margin-bottom:10px;">
+          <div style="margin-bottom:4px;">
+            <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#fef2f2;color:#dc2626;">0.94</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:#f1f5f9;color:#475569;margin-left:6px;">unitree</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#e0f2fe;color:#0369a1;margin-left:6px;">공식</span>
+          </div>
+          <div style="font-size:15px;font-weight:700;line-height:1.4;margin-bottom:5px;">
+            <a href="https://github.com/unitreerobotics/unitree_robotskills" style="color:#0f172a;text-decoration:none;" target="_blank">Unitree, GPT-6 Astra 등 프론티어 모델 연결용 공식 로봇 스킬 하네스 &#x27;unitree_robotskills&#x27; 공개</a>
+          </div>
+          <div style="font-size:13.5px;color:#334155;line-height:1.55;">유니트리가 공식 GitHub(unitreerobotics/unitree_robotskills)에 프론티어 AI 모델(예: GPT-6 Astra)을 유니트리 로봇에 빠르게 연결하고 다양한 스킬을 작성할 수 있는 공식 스킬 프레임워크를 공개했다.</div>
+        </div>
+        <div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid #dc2626;border-radius:8px;padding:12px 14px;margin-bottom:10px;">
+          <div style="margin-bottom:4px;">
+            <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#fef2f2;color:#dc2626;">0.88</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:#f1f5f9;color:#475569;margin-left:6px;">vla-as-tool</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#e0f2fe;color:#0369a1;margin-left:6px;">공식</span>
+          </div>
+          <div style="font-size:15px;font-weight:700;line-height:1.4;margin-bottom:5px;">
+            <a href="https://arxiv.org/abs/2611.32245v1" style="color:#0f172a;text-decoration:none;" target="_blank">VLAs Execute, Code Recovers: 에이전트 플래너가 동결된 VLA 스킬을 조합하고 코드로 복구하는 3D 스킬 엔벨로프 하네스</a>
+          </div>
+          <div style="font-size:13.5px;color:#334155;line-height:1.55;">동결된 VLA 원자 스킬을 에이전트 플래너 아래 조합할 때 발생하는 조합 격차를 3D 스킬 엔벨로프와 코드 기반 복구(Code Recovers)로 메워 장시간 조작을 달성하는 아키텍처 논문.</div>
+        </div>
+        <div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid #dc2626;border-radius:8px;padding:12px 14px;margin-bottom:10px;">
+          <div style="margin-bottom:4px;">
+            <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#fef2f2;color:#dc2626;">0.85</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:#f1f5f9;color:#475569;margin-left:6px;">robot-harness</span>
+            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#e0f2fe;color:#0369a1;margin-left:6px;">공식</span>
+          </div>
+          <div style="font-size:15px;font-weight:700;line-height:1.4;margin-bottom:5px;">
+            <a href="https://arxiv.org/abs/2611.32649v1" style="color:#0f172a;text-decoration:none;" target="_blank">ICLWorld: 디지털 컴퓨터 사용에서 물리 로봇 세계까지 프론티어 에이전트의 인컨텍스트 학습(ICL) 통합 벤치마크</a>
+          </div>
+          <div style="font-size:13.5px;color:#334155;line-height:1.55;">동일한 프론티어 에이전트가 추론 시점 컨텍스트에서 새 규칙을 습득해 디지털 환경과 물리 세계를 모두 제어하는 능력을 평가하는 ICL 벤치마크.</div>
+        </div>
+      </div>
+
+      <!-- Domain Sections -->
+      
+        <div style="margin-top:24px;">
+          <div style="background:#eff6ff;border-left:4px solid #2563eb;padding:8px 12px;border-radius:6px;margin-bottom:6px;">
+            <span style="font-size:15px;font-weight:700;color:#2563eb;">로봇 하네스 · 아키텍처</span>
+            <span style="font-size:12px;color:#64748b;margin-left:8px;">7건</span>
+          </div>
+          
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#fef2f2;color:#dc2626;">0.94</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">unitree</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · gh_unitree</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#Unitree</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://github.com/unitreerobotics/unitree_robotskills" style="color:#0f172a;text-decoration:none;" target="_blank">Unitree, GPT-6 Astra 등 프론티어 모델 연결용 공식 로봇 스킬 하네스 &#x27;unitree_robotskills&#x27; 공개</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">유니트리가 공식 GitHub(unitreerobotics/unitree_robotskills)에 프론티어 AI 모델(예: GPT-6 Astra)을 유니트리 로봇에 빠르게 연결하고 다양한 스킬을 작성할 수 있는 공식 스킬 프레임워크를 공개했다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://github.com/unitreerobotics/unitree_robotskills" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#fef2f2;color:#dc2626;">0.88</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">vla-as-tool</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_robot_harness</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#VLA</span><span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#long-horizon</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.32245v1" style="color:#0f172a;text-decoration:none;" target="_blank">VLAs Execute, Code Recovers: 에이전트 플래너가 동결된 VLA 스킬을 조합하고 코드로 복구하는 3D 스킬 엔벨로프 하네스</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">동결된 VLA 원자 스킬을 에이전트 플래너 아래 조합할 때 발생하는 조합 격차를 3D 스킬 엔벨로프와 코드 기반 복구(Code Recovers)로 메워 장시간 조작을 달성하는 아키텍처 논문.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.32245v1" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#fef2f2;color:#dc2626;">0.85</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">robot-harness</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_robot_harness</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.32649v1" style="color:#0f172a;text-decoration:none;" target="_blank">ICLWorld: 디지털 컴퓨터 사용에서 물리 로봇 세계까지 프론티어 에이전트의 인컨텍스트 학습(ICL) 통합 벤치마크</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">동일한 프론티어 에이전트가 추론 시점 컨텍스트에서 새 규칙을 습득해 디지털 환경과 물리 세계를 모두 제어하는 능력을 평가하는 ICL 벤치마크.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.32649v1" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#eff6ff;color:#2563eb;">0.84</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">long-horizon-manip</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_robot_harness</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#long-horizon</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.32813v1" style="color:#0f172a;text-decoration:none;" target="_blank">Atomic Policy: 에이전트 추론(VLM)으로 원자 조작 스킬을 조합하는 장시간 매니퓰레이션 하네스</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">변화하는 장면에서 VLM의 의미·공간 추론을 활용해 원자 조작 스킬을 동적으로 조합함으로써 장시간 작업 의도를 물리 상호작용으로 변환하는 논문.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.32813v1" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a> · <a href="https://arxiv.org/abs/2611.32256v1" style="color:#2563eb;text-decoration:none;" target="_blank">출처2</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#eff6ff;color:#2563eb;">0.82</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">robot-memory</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_cs_ro, arxiv_robot_harness</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#VLA</span><span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#long-horizon</span><span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#training-free</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.32564v1" style="color:#0f172a;text-decoration:none;" target="_blank">MXI-MemICL: 파라미터 업데이트 없이 자가 검색 상호작용 메모리로 단일 시연 로봇 조작 수행</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">자가 검색(self-retrieved) 상호작용 메모리를 활용해 파인튜닝 없이 단일 시연만으로 새로운 로봇 조작 스킬을 인컨텍스트 학습(ICL)하는 training-free 메모리 기법.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.32564v1" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a> · <a href="https://arxiv.org/abs/2611.32081" style="color:#2563eb;text-decoration:none;" target="_blank">출처2</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#eff6ff;color:#2563eb;">0.80</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">robot-harness</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_cs_ro</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#VLA</span><span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#long-horizon</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.32186" style="color:#0f172a;text-decoration:none;" target="_blank">SkillHarness: 플러그앤플레이 스킬의 실행 인지 조율(Execution-Aware Coordination) 하네스</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">미지의 장애물과 변화하는 환경에서 다양한 이동 스킬을 플러그앤플레이 방식으로 실행 상태에 맞춰 조율하는 장시간 주행 하네스(arXiv:2611.32186).</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.32186" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a> · <a href="https://arxiv.org/abs/2611.31488" style="color:#2563eb;text-decoration:none;" target="_blank">출처2</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.72</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">roboprobe</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_robot_harness</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#VLA</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.33010v1" style="color:#0f172a;text-decoration:none;" target="_blank">Embodied AI Fails the Mirror Test: 단순 거울 하나로 현재 로봇 조작 정책이 붕괴하는 현상 분석</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">동물 인지 거울 테스트에서 착안해 단순 거울이 현재 로봇 조작/VLA 정책의 시각적 취약점을 어떻게 무너뜨리는지 규명한 진단 논문.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.33010v1" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+        </div>
+        <div style="margin-top:24px;">
+          <div style="background:#f5f3ff;border-left:4px solid #7c3aed;padding:8px 12px;border-radius:6px;margin-bottom:6px;">
+            <span style="font-size:15px;font-weight:700;color:#7c3aed;">빅테크 · 연구 모델 실험</span>
+            <span style="font-size:12px;color:#64748b;margin-left:8px;">3건</span>
+          </div>
+          
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#eff6ff;color:#2563eb;">0.78</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">nvidia-groot</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · nvidia_dev_blog</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers" style="color:#0f172a;text-decoration:none;" target="_blank">NVIDIA, 로컬 AI 디바이스에서 Hugging Face Diffusers로 Cosmos 3 Nano 월드 모델 구동 가이드 공개</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">NVIDIA 공식 기술 블로그에서 GPU 메모리 제약을 극복해 로컬 장비에서 월드 모델 NVIDIA Cosmos 3 Nano를 Diffusers로 실행하는 워크플로를 공개했다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#eff6ff;color:#2563eb;">0.76</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">nvidia-groot</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · arxiv_robot_harness</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#VLA</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://arxiv.org/abs/2611.32665v1" style="color:#0f172a;text-decoration:none;" target="_blank">DiffGR00T: 휴머노이드 전신 제어(WBC)를 위한 실행 인지 미분 가능 VLA 학습</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">팔 중심 조작을 넘어 동적 균형과 전신 결합 제어가 필요한 휴머노이드용 실행 인지 미분 가능 VLA 학습 프레임워크.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://arxiv.org/abs/2611.32665v1" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#f3f4f6;color:#6b7280;">0.58</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">figure-helix</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">비공식 · irobotnews_all</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://www.irobotnews.com/news/articleView.html?idxno=49793" style="color:#0f172a;text-decoration:none;" target="_blank">Figure AI, 사람 팔 동작 실시간 수집·원격 제어용 웨어러블 로봇 특허 출원</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">로봇신문 보도: Figure AI가 작업 현장에서 사람의 팔 움직임을 포착해 휴머노이드 학습 데이터 수집 및 원격 제어에 쓰는 웨어러블 시스템 특허를 출원했다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://www.irobotnews.com/news/articleView.html?idxno=49793" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+        </div>
+        <div style="margin-top:24px;">
+          <div style="background:#ecfdf5;border-left:4px solid #059669;padding:8px 12px;border-radius:6px;margin-bottom:6px;">
+            <span style="font-size:15px;font-weight:700;color:#059669;">로봇 플랫폼 · 중국/글로벌 깃헙 &amp; SDK</span>
+            <span style="font-size:12px;color:#64748b;margin-left:8px;">6건</span>
+          </div>
+          
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#eff6ff;color:#2563eb;">0.76</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">unitree</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · gh_unitree</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#Unitree</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://github.com/unitreerobotics/unitree_rl_mjlab" style="color:#0f172a;text-decoration:none;" target="_blank">Unitree 공식 MuJoCo 기반 강화학습 리포 &#x27;unitree_rl_mjlab&#x27; 활발한 업데이트 (★740)</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">유니트리 공식 GitHub의 MuJoCo 기반 강화학습 프레임워크 unitree_rl_mjlab이 11월 25일 기준 최신 커밋으로 갱신되었다(C++, ★740).</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://github.com/unitreerobotics/unitree_rl_mjlab" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.74</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">yam-i2rt</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · gh_i2rt</span>
+                <span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#YAM</span>
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://github.com/i2rt-robotics/i2rt" style="color:#0f172a;text-decoration:none;" target="_blank">I2RT YAM 로봇 암 공식 Python SDK &#x27;i2rt-robotics/i2rt&#x27; 최신 푸시 (★184)</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">I2RT YAM 양팔/단팔 로봇 제어 공식 리포지토리(i2rt-robotics/i2rt, Python, ★184)가 11월 25일 업데이트되었다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://github.com/i2rt-robotics/i2rt" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.72</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">agibot</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · gh_agibot</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://github.com/AgibotTech/genie_sim" style="color:#0f172a;text-decoration:none;" target="_blank">중국 지위안(AgiBot) 공식 시뮬레이션 플랫폼 &#x27;genie_sim&#x27; (★1,765) 및 &#x27;IsaacCapture&#x27; 업데이트</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">AgibotTech 공식 시뮬레이션 플랫폼 genie_sim(Python, ★1,765)과 텔레오퍼레이션·1인칭 데이터 수집 인프라 IsaacCapture가 연이어 갱신되었다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://github.com/AgibotTech/genie_sim" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.72</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">mujoco-isaac</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · huggingface_blog</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" style="color:#0f172a;text-decoration:none;" target="_blank">Hugging Face × NVIDIA: Isaac Lab과 Newton 물리 엔진 기반 Sim2Real 장애물 회피 워크플로 공개</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">Hugging Face 공식 블로그에 Isaac Lab과 차세대 물리 엔진 Newton을 결합한 Microduck 로봇 Sim2Real 워크플로가 게시되었다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.70</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">limx</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · gh_limx</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://github.com/limxdynamics/humanoid-rl-deploy-python" style="color:#0f172a;text-decoration:none;" target="_blank">중국 LimX Dynamics, 휴머노이드 Python RL 배포(ONNX/MuJoCo) 및 TRON2 16종 시뮬 에셋 공개</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">LimX Dynamics가 ONNX 런타임·MuJoCo·실로봇 배포용 humanoid-rl-deploy-python과 양팔/이족/바퀴형 16종 변형을 포함한 tron2-robot-description을 업데이트했다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://github.com/limxdynamics/humanoid-rl-deploy-python" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.68</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">booster</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">공식 · gh_booster</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://github.com/BoosterRobotics/booster_robotics_sdk" style="color:#0f172a;text-decoration:none;" target="_blank">중국 Booster Robotics 공식 C++ SDK &#x27;booster_robotics_sdk&#x27; 업데이트 (★123)</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">Booster Robotics 제품 제어를 위한 공식 개발자 인터페이스 booster_robotics_sdk(C++, ★123)가 11월 25일 업데이트되었다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://github.com/BoosterRobotics/booster_robotics_sdk" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+        </div>
+        <div style="margin-top:24px;">
+          <div style="background:#fffbeb;border-left:4px solid #d97706;padding:8px 12px;border-radius:6px;margin-bottom:6px;">
+            <span style="font-size:15px;font-weight:700;color:#d97706;">프론티어 모델 · 에이전트 (20% 슬라이스)</span>
+            <span style="font-size:12px;color:#64748b;margin-left:8px;">1건</span>
+          </div>
+          
+            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+              <div style="margin-bottom:5px;">
+                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:#ecfdf5;color:#059669;">0.74</span>
+                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">gemini</span>
+                <span style="font-size:11px;color:#64748b;margin-left:6px;">비공식 · latent_space</span>
+                
+              </div>
+              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
+                <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab" style="color:#0f172a;text-decoration:none;" target="_blank">[20% AI 트렌드] Gemini 4 Neon, LiveBench에서 Astra·Fable 상회 및 코드 벤치마크 실행 시간 48.6% 단축</a>
+              </div>
+              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">Latent Space AINews 요약: Google DeepMind의 Gemini 4 Neon이 LiveBench에서 GPT-6 Astra와 Claude Fable을 앞섰으며 TypeScript/Rust 벤치마크 런타임을 48.6% 줄였다.</div>
+              <div style="font-size:12px;color:#64748b;">
+                <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:14px 24px;font-size:12px;color:#64748b;text-align:center;">
+      RoboSpine Trend Monitor · Generated 2026-11-25T23:43:02+09:00 ·
+      <a href="https://github.com/htkim27/trend-monitor/blob/main/trends/latest.md" style="color:#2563eb;text-decoration:none;">GitHub 아카이브 보기</a>
+    </div>
+  </div>
 </body>
 </html>
