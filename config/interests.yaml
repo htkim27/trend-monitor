@@ -126,9 +126,9 @@ entities:
   mujoco-isaac:     {domain: hardware_sdk, title: MuJoCo / IsaacLab Sim, aliases: [mujoco, mujoco_menagerie, isaac lab, isaaclab, isaac sim, isaaclab-arena, genesis sim, maniSkill]}
 
   # ── 4. ai_frontier (프론티어 모델·에이전트 트렌드 20%) ──
-  gemini:           {domain: ai_frontier, title: Gemini, lab: google_deepmind, aliases: [gemini, 제미나이, 제미니], variants: {pro: [gemini pro], flash: [gemini flash]}}
-  claude:           {domain: ai_frontier, title: Claude, lab: anthropic, aliases: [claude, 클로드], variants: {opus: [claude opus, opus 5, opus 4], sonnet: [claude sonnet, sonnet 5, sonnet 4], haiku: [claude haiku]}}
-  gpt:              {domain: ai_frontier, title: GPT, lab: openai, aliases: [gpt-5, gpt-6, chatgpt, openai api]}
+  gemini:           {domain: ai_frontier, title: Gemini, lab: google_deepmind, aliases: [gemini, 제미나이, 제미니, gemini 4, neon, argon], variants: {neon: [gemini 4 neon, neon], argon: [gemini 4 argon, argon], pro: [gemini pro], flash: [gemini flash]}}
+  claude:           {domain: ai_frontier, title: Claude, lab: anthropic, aliases: [claude, 클로드, anthropic], variants: {opus: [claude opus, opus 5, opus 4, opus], fable: [claude fable, fable 5, fable], sonnet: [claude sonnet, sonnet 5, sonnet 4], haiku: [claude haiku]}}
+  gpt:              {domain: ai_frontier, title: GPT, lab: openai, aliases: [gpt-5, gpt-6, chatgpt, openai api, openai, astra], variants: {astra: [gpt-6 astra, gpt-6.2 astra, astra], sol: [gpt-6.1 sol, sol]}}
   qwen:             {domain: ai_frontier, title: Qwen, lab: qwen, aliases: [qwen, qwen2.5-vl, qwen3, 큐원]}
   deepseek-model:   {domain: ai_frontier, title: DeepSeek, lab: deepseek, aliases: [deepseek-v3, deepseek-r1, deepseek-v4, deepseek]}
   claude-code:      {domain: ai_frontier, title: Claude Code, lab: anthropic, aliases: [claude code, claude-code, 클로드 코드, claude agent sdk]}

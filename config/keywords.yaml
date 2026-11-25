@@ -20,5 +20,9 @@ keywords:
   - {term: "1X / Optimus / Agility", aliases: ["1x technologies", "1x neo", "tesla optimus", "agility robotics", "apptronik", "sanctuary ai"], note: "글로벌 휴머노이드 리딩 기업", promote: false, added_at: "2026-11-26"}
   - {term: "Fourier / AgiBot / Galaxea", aliases: ["fourier intelligence", "fftai", "agibot", "galaxea", "limx", "booster robotics"], note: "중국 휴머노이드·오픈소스 진영", promote: false, added_at: "2026-11-26"}
 
+  # ── 프론티어 모델 × Robot-Use 조합 타겟 ──
+  - {term: "Frontier Robot-Use", aliases: ["astra", "argon", "neon", "fable", "opus", "gpt-6", "gemini 4", "claude", "anthropic", "openai"], require_any: ["robot", "robotics", "embodied", "manipulation", "harness", "robodojo", "robocurve", "vla", "humanoid", "gripper", "bimanual", "로봇"], note: "Astra·Argon·Neon·Fable·Opus·Anthropic·OpenAI의 로봇 제어/하네스 활용", promote: true, added_at: "2026-11-26"}
+  - {term: "Anthropic / OpenAI", aliases: ["anthropic", "openai", "claude opus", "claude fable", "gpt-6 astra"], note: "Anthropic·OpenAI 프론티어 모델 및 에이전트 동향", promote: false, added_at: "2026-11-26"}
+
   # ── 로보틱스 핵심 연구자 (Embodied AI 리더) ──
   - {term: "Robotics Leaders", aliases: ["jim fan", "sergey levine", "chelsea finn", "pieter abbeel", "fei-fei li", "shuran song", "deepak pathak", "russ tedrake", "lerrel pinto", "dieter fox", "yuke zhu", "remi cadene", "ken goldberg", "pulkit agrawal"], note: "Embodied AI·로봇 러닝 핵심 연구자 발언·논문·프로젝트", promote: false, added_at: "2026-11-26"}
