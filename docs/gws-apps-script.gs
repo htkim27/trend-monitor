@@ -12,7 +12,7 @@ const SHARED_SECRET = ""; // 선택: .env의 GWS_WEBHOOK_SECRET과 동일하게
 const DOMAIN_LABELS = {
   harnesses: "로봇 하네스 · 아키텍처",
   embodied_models: "빅테크 · 연구 모델 실험",
-  hardware_sdk: "로봇 플랫폼 · 중국/글로벌 깃헙 & SDK",
+  hardware_sdk: "로봇 플랫폼 · 미국/중국/한국/글로벌 깃헙 & SDK",
   ai_frontier: "프론티어 모델 · 에이전트 (20% 슬라이스)"
 };
 

@@ -1521,7 +1521,7 @@ def md_to_simple_html(md_text: str) -> str:
 DOMAIN_META = [
     ("harnesses", "로봇 하네스 · 아키텍처", "#2563eb", "#eff6ff"),
     ("embodied_models", "빅테크 · 연구 모델 실험", "#7c3aed", "#f5f3ff"),
-    ("hardware_sdk", "로봇 플랫폼 · 중국/글로벌 깃헙 & SDK", "#059669", "#ecfdf5"),
+    ("hardware_sdk", "로봇 플랫폼 · 미국/중국/한국/글로벌 깃헙 & SDK", "#059669", "#ecfdf5"),
     ("ai_frontier", "프론티어 모델 · 에이전트 (20% 슬라이스)", "#d97706", "#fffbeb"),
 ]
 
