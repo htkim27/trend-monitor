@@ -9,6 +9,7 @@
    - 관련성(`relevant`)은 4개 도메인 주제만 본다.
    - 커뮤니티 0.4 상한, 비공식 방향성 0.5 상한, 0.2 미만 버림(`low_significance`), `ai_frontier` 브리핑 기준 0.65.
    - 원문에 없는 수치·버전·사실을 추가하지 않는다.
+   - 문체: `headline_ko`는 축약적인 명사형·구 스타일, `detail_ko`는 핵심만 명확히 짚는 해요체 1~2문장으로 쓴다.
 5. 구조적 병합: `python3 scripts/vt.py merge-structural --run-id <run_id>`
 6. **의미 병합(Gemini)**: `semantic_review_needed > 0`이면 후보를 검토해 같은 사건 매핑을 `state/merges/<run_id>_semantic.json` (`{"cluster_id": "existing_event_id"}`)에 쓴다.
 7. 누적: `python3 scripts/vt.py accumulate --run-id <run_id>`

@@ -1536,9 +1536,26 @@ def _sig_color(sig: float) -> Tuple[str, str]:
     return "#6b7280", "#f3f4f6"
 
 
+def _human_source_name(sid: str, sources_map: Dict[str, str]) -> str:
+    if sid in sources_map:
+        name = sources_map[sid]
+        # Compact long arXiv/HN names for mobile chips
+        if sid.startswith("arxiv"):
+            return "arXiv"
+        if sid == "hn_algolia_robotics":
+            return "Hacker News"
+        return name
+    return sid
+
+
 def render_newsletter_html(run_id: Optional[str] = None) -> str:
     events_all = load_jsonl(STATE_DIR / "events.jsonl")
     runs = load_jsonl(STATE_DIR / "runs.jsonl")
+    src_cfg = load_yaml(CONFIG_DIR / "sources.yaml")
+    interests = load_yaml(CONFIG_DIR / "interests.yaml")
+    sources_map = {s["id"]: s.get("name", s["id"]) for s in (src_cfg.get("sources") or [])}
+    topics_map = {k: v.get("title", k) for k, v in (interests.get("entities") or {}).items()}
+
     if not run_id:
         run_id = runs[-1]["run_id"] if runs else (events_all[-1]["run_id"] if events_all else now_kst().strftime("%Y-%m-%d-pm"))
     run_events = [e for e in events_all if e.get("run_id") == run_id]
@@ -1550,79 +1567,65 @@ def render_newsletter_html(run_id: Optional[str] = None) -> str:
     processed = run_rec.get("processed", len(run_events)) if run_rec else len(run_events)
     discarded = run_rec.get("discarded", 0) if run_rec else 0
 
-    # Top 3 highlights
-    top3_html = ""
-    for ev in run_events[:3]:
+    top3_ids = {e["event_id"] for e in run_events[:3]}
+
+    def _render_card(ev: Dict[str, Any], featured: bool = False) -> str:
         sig = float(ev.get("significance", 0))
         fg, bg = _sig_color(sig)
-        url = (ev.get("urls") or ["#"])[0]
-        off_badge = '<span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#e0f2fe;color:#0369a1;margin-left:6px;">공식</span>' if ev.get("official") else ""
-        top3_html += f"""
-        <div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid {fg};border-radius:8px;padding:12px 14px;margin-bottom:10px;">
-          <div style="margin-bottom:4px;">
-            <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:{bg};color:{fg};">{sig:.2f}</span>
-            <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:#f1f5f9;color:#475569;margin-left:6px;">{html.escape(str(ev.get('topic', '')))}</span>
-            {off_badge}
+        urls = ev.get("urls") or []
+        primary_url = urls[0] if urls else "#"
+        src_names = ", ".join(_human_source_name(s, sources_map) for s in (ev.get("source_ids") or []))
+        off_txt = "공식" if ev.get("official") else "보도·해설"
+        topic_label = topics_map.get(ev.get("topic", ""), ev.get("topic", ""))
+        kws = "".join(
+            f'<span style="display:inline-block;padding:2px 7px;border-radius:5px;font-size:11.5px;background:#fef3c7;color:#92400e;margin-right:5px;margin-top:4px;">#{html.escape(k)}</span>'
+            for k in (ev.get("keywords_hit") or [])
+        )
+        kw_block = f'<div style="margin-top:6px;">{kws}</div>' if kws else ""
+        extra_links = ""
+        if len(urls) > 1:
+            extra_links = "".join(
+                f' <a href="{html.escape(u)}" style="display:inline-block;padding:6px 10px;border-radius:7px;background:#f1f5f9;color:#334155;font-size:12.5px;font-weight:600;text-decoration:none;margin-left:6px;" target="_blank">출처 {idx+2}</a>'
+                for idx, u in enumerate(urls[1:])
+            )
+        border_style = f"background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid {fg};border-radius:10px;padding:14px;margin-bottom:10px;" if featured else "border-bottom:1px solid #e2e8f0;padding:16px 0;"
+        return f"""
+        <div style="{border_style}">
+          <div style="margin-bottom:6px;font-size:12px;color:#64748b;line-height:1.4;">
+            <span style="display:inline-block;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:700;background:{bg};color:{fg};margin-right:6px;">{sig:.2f}</span><strong style="color:#334155;">{html.escape(src_names)}</strong> · {off_txt} · {html.escape(str(topic_label))}
           </div>
-          <div style="font-size:15px;font-weight:700;line-height:1.4;margin-bottom:5px;">
-            <a href="{html.escape(url)}" style="color:#0f172a;text-decoration:none;" target="_blank">{html.escape(ev.get('headline_ko', ''))}</a>
+          <div style="font-size:16px;font-weight:700;line-height:1.45;margin-bottom:7px;word-break:keep-all;">
+            <a href="{html.escape(primary_url)}" style="color:#0f172a;text-decoration:none;" target="_blank">{html.escape(ev.get('headline_ko', ''))}</a>
           </div>
-          <div style="font-size:13.5px;color:#334155;line-height:1.55;">{html.escape(ev.get('detail_ko', ''))}</div>
+          <div style="font-size:14.5px;color:#334155;line-height:1.65;word-break:keep-all;">{html.escape(ev.get('detail_ko', ''))}</div>
+          {kw_block}
+          <div style="margin-top:10px;">
+            <a href="{html.escape(primary_url)}" style="display:inline-block;padding:6px 12px;border-radius:7px;background:#eff6ff;color:#1d4ed8;font-size:12.5px;font-weight:700;text-decoration:none;" target="_blank">원문 보기 →</a>{extra_links}
+          </div>
         </div>"""
 
-    # Domain sections
+    top3_html = "".join(_render_card(ev, featured=True) for ev in run_events[:3])
+
+    # Domain sections (TOP 3 제외해 중복 스크롤 제거)
     sections_html = ""
     for dom_id, dom_name, dom_fg, dom_bg in DOMAIN_META:
-        dom_evs = [e for e in run_events if e.get("domain") == dom_id]
+        dom_evs = [e for e in run_events if e.get("domain") == dom_id and e["event_id"] not in top3_ids]
         if not dom_evs:
             continue
-        cards = ""
-        for ev in dom_evs:
-            sig = float(ev.get("significance", 0))
-            fg, bg = _sig_color(sig)
-            urls = ev.get("urls") or []
-            primary_url = urls[0] if urls else "#"
-            srcs = ", ".join(ev.get("source_ids") or [])
-            off_txt = "공식" if ev.get("official") else "비공식"
-            kws = "".join(
-                f'<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:11px;background:#fef3c7;color:#92400e;margin-left:4px;">#{html.escape(k)}</span>'
-                for k in (ev.get("keywords_hit") or [])
-            )
-            extra_links = ""
-            if len(urls) > 1:
-                extra_links = " · " + " ".join(
-                    f'<a href="{html.escape(u)}" style="color:#2563eb;text-decoration:none;" target="_blank">출처{idx+2}</a>'
-                    for idx, u in enumerate(urls[1:])
-                )
-            cards += f"""
-            <div style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-              <div style="margin-bottom:5px;">
-                <span style="display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:700;background:{bg};color:{fg};">{sig:.2f}</span>
-                <span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600;background:#f1f5f9;color:#334155;margin-left:5px;">{html.escape(str(ev.get('topic', '')))}</span>
-                <span style="font-size:11px;color:#64748b;margin-left:6px;">{off_txt} · {html.escape(srcs)}</span>
-                {kws}
-              </div>
-              <div style="font-size:15px;font-weight:700;line-height:1.45;margin-bottom:5px;">
-                <a href="{html.escape(primary_url)}" style="color:#0f172a;text-decoration:none;" target="_blank">{html.escape(ev.get('headline_ko', ''))}</a>
-              </div>
-              <div style="font-size:13.5px;color:#334155;line-height:1.6;margin-bottom:6px;">{html.escape(ev.get('detail_ko', ''))}</div>
-              <div style="font-size:12px;color:#64748b;">
-                <a href="{html.escape(primary_url)}" style="color:#2563eb;font-weight:600;text-decoration:none;" target="_blank">원문 보기 →</a>{extra_links}
-              </div>
-            </div>"""
+        cards = "".join(_render_card(ev, featured=False) for ev in dom_evs)
         sections_html += f"""
-        <div style="margin-top:24px;">
-          <div style="background:{dom_bg};border-left:4px solid {dom_fg};padding:8px 12px;border-radius:6px;margin-bottom:6px;">
-            <span style="font-size:15px;font-weight:700;color:{dom_fg};">{html.escape(dom_name)}</span>
-            <span style="font-size:12px;color:#64748b;margin-left:8px;">{len(dom_evs)}건</span>
+        <div id="{dom_id}" style="margin-top:26px;">
+          <div style="background:{dom_bg};border-left:4px solid {dom_fg};padding:9px 12px;border-radius:8px;margin-bottom:4px;">
+            <span style="font-size:15px;font-weight:800;color:{dom_fg};word-break:keep-all;">{html.escape(dom_name)}</span>
+            <span style="font-size:12px;color:#64748b;margin-left:6px;font-weight:600;">{len(dom_evs)}건</span>
           </div>
           {cards}
         </div>"""
 
-    # Domain share summary
+    # Clickable jump pills
     tot = len(run_events) or 1
     share_pills = " ".join(
-        f'<span style="display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;background:{bg};color:{fg};margin:2px 4px 2px 0;font-weight:600;">{name.split(" · ")[0]} {round(sum(1 for e in run_events if e.get("domain")==did)/tot*100)}%</span>'
+        f'<a href="#{did}" style="display:inline-block;padding:5px 10px;border-radius:8px;font-size:12.5px;background:{bg};color:{fg};margin:3px 4px 3px 0;font-weight:700;text-decoration:none;">{name.split(" · ")[0]} {round(sum(1 for e in run_events if e.get("domain")==did)/tot*100)}% ↓</a>'
         for did, name, fg, bg in DOMAIN_META
         if any(e.get("domain") == did for e in run_events)
     )
@@ -1633,35 +1636,43 @@ def render_newsletter_html(run_id: Optional[str] = None) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RoboSpine Trend Newsletter · {html.escape(run_id)}</title>
+<style>
+  body {{ -webkit-text-size-adjust: 100%; }}
+  @media (max-width: 520px) {{
+    .outer-pad {{ padding: 6px !important; }}
+    .inner-pad {{ padding: 14px 14px !important; }}
+    .hdr-pad {{ padding: 18px 16px !important; }}
+  }}
+</style>
 </head>
-<body style="margin:0;padding:16px;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Segoe UI',Roboto,sans-serif;color:#0f172a;">
-  <div style="max-width:680px;margin:0 auto;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(15,23,42,0.05);">
+<body class="outer-pad" style="margin:0;padding:12px;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Segoe UI',Roboto,sans-serif;color:#0f172a;word-break:keep-all;">
+  <div style="max-width:640px;margin:0 auto;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e2e8f0;">
     <!-- Header -->
-    <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:22px 24px;color:#ffffff;">
-      <div style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#93c5fd;font-weight:700;margin-bottom:6px;">ROBOSPINE TREND NEWSLETTER</div>
-      <div style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:8px;">로봇 하네스 &amp; 프론티어 AI 브리핑</div>
-      <div style="font-size:13px;color:#cbd5e1;">회차: <strong>{html.escape(run_id)}</strong> · 핵심 사건 <strong>{len(run_events)}건</strong> (판정 {processed} · 제외 {discarded})</div>
+    <div class="hdr-pad" style="background:#0f172a;background-image:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:20px 20px;color:#ffffff;">
+      <div style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#93c5fd;font-weight:700;margin-bottom:5px;">ROBOSPINE TREND NEWSLETTER</div>
+      <div style="font-size:20px;font-weight:800;line-height:1.35;margin-bottom:6px;">로봇 하네스 &amp; 프론티어 AI 브리핑</div>
+      <div style="font-size:13px;color:#cbd5e1;">{html.escape(run_id)} · 핵심 <strong>{len(run_events)}건</strong> (판정 {processed} · 제외 {discarded})</div>
     </div>
 
     <!-- Body -->
-    <div style="padding:20px 24px;">
-      <!-- Share bar -->
-      <div style="margin-bottom:18px;">{share_pills}</div>
+    <div class="inner-pad" style="padding:18px 18px;">
+      <!-- Jump Pills -->
+      <div style="margin-bottom:16px;">{share_pills}</div>
 
       <!-- Top 3 -->
-      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;margin-bottom:20px;">
-        <div style="font-size:14px;font-weight:800;color:#0f172a;margin-bottom:10px;">🔥 한눈에 보는 오늘의 핵심 TOP 3</div>
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:8px;">
+        <div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:10px;padding-left:2px;">🔥 오늘의 핵심 TOP 3</div>
         {top3_html}
       </div>
 
-      <!-- Domain Sections -->
+      <!-- Domain Sections (deduplicated from TOP 3) -->
       {sections_html}
     </div>
 
     <!-- Footer -->
-    <div style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:14px 24px;font-size:12px;color:#64748b;text-align:center;">
-      RoboSpine Trend Monitor · Generated {iso_kst(now_kst())} ·
-      <a href="https://github.com/htkim27/trend-monitor/blob/main/trends/latest.md" style="color:#2563eb;text-decoration:none;">GitHub 아카이브 보기</a>
+    <div style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:14px 16px;font-size:12px;color:#64748b;text-align:center;">
+      RoboSpine Trend Monitor · {iso_kst(now_kst())[:16].replace("T", " ")} KST ·
+      <a href="https://github.com/htkim27/trend-monitor/blob/main/trends/latest.md" style="color:#2563eb;font-weight:600;text-decoration:none;">GitHub 전체 아카이브 →</a>
     </div>
   </div>
 </body>
