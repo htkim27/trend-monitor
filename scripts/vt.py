@@ -1575,11 +1575,32 @@ details {{ border:1px solid var(--border); border-radius:8px; padding:8px 12px; 
 
 # ── Command: publish-gws ─────────────────────────────────────────────────────
 
+def load_dotenv() -> None:
+    env_path = ROOT / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        k = k.strip()
+        v = v.strip().strip('"').strip("'")
+        if k and k not in os.environ:
+            os.environ[k] = v
+
+
 def cmd_publish_gws(args: argparse.Namespace) -> int:
+    load_dotenv()
     settings = load_yaml(CONFIG_DIR / "settings.yaml")
     gws = settings.get("google_workspace") or {}
     webhook = os.environ.get("GWS_WEBHOOK_URL") or gws.get("apps_script_webhook_url")
     secret = os.environ.get("GWS_WEBHOOK_SECRET") or gws.get("webhook_secret") or ""
+    doc_id = os.environ.get("GWS_DOC_ID") or gws.get("doc_id")
+    sheet_id = os.environ.get("GWS_SHEET_ID") or gws.get("sheet_id")
+    notify_email = os.environ.get("GWS_NOTIFY_EMAIL") or gws.get("notify_email")
+    send_email_env = os.environ.get("GWS_SEND_EMAIL")
+    send_email = (send_email_env.lower() == "true") if send_email_env is not None else bool(gws.get("send_email_on_run", False))
 
     if not webhook:
         print(json.dumps({"status": "skipped", "reason": "google_workspace.apps_script_webhook_url not configured"}, ensure_ascii=False))
@@ -1590,10 +1611,10 @@ def cmd_publish_gws(args: argparse.Namespace) -> int:
     payload = {
         "secret": secret,
         "run_id": args.run_id,
-        "doc_id": gws.get("doc_id"),
-        "sheet_id": gws.get("sheet_id"),
-        "notify_email": gws.get("notify_email"),
-        "send_email": bool(gws.get("send_email_on_run", False)),
+        "doc_id": doc_id or None,
+        "sheet_id": sheet_id or None,
+        "notify_email": notify_email or None,
+        "send_email": send_email,
         "markdown": latest_md,
         "events": events,
     }
