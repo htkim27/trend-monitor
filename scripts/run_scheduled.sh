@@ -21,7 +21,7 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S %z')] Starting scheduled RoboSpine Trend Monit
 
 PROMPT="너는 RoboSpine Trend Monitor의 정기 회차 실행자다. 저장소 루트(${REPO_DIR})의 GEMINI.md와 RUN.md를 먼저 읽고 RUN.md 절차를 처음부터 끝까지 그대로 실행한다. run_id는 현재 KST 시각으로 정한다(12시 이전 YYYY-MM-DD-am, 이후 YYYY-MM-DD-pm). 관심 비중은 로봇 하네스·Embodied AI·중국/글로벌 로봇 SDK 80%, 프론티어 모델·에이전트 20%다. 판정 규칙(주제 중심, 커뮤니티 0.4 상한, 비공식 방향성 0.5 상한, 0.2 미만 버림, ai_frontier 브리핑 0.65 이상, 원문에 없는 사실 금지)을 지킨다. 끝나면 archive, trends, site/index.html, state를 커밋하고 origin main으로 push하며, publish-gws를 실행한다. 마지막 응답에는 이번 회차의 '한눈에' 3줄, 급상승/신규 토픽, 실패한 소스를 간결하게 보고한다."
 
-/Users/htkim/.local/bin/agy \
+/usr/bin/caffeinate -i /Users/htkim/.local/bin/agy \
   --print "${PROMPT}" \
   --mode auto \
   --dangerously-skip-permissions \
