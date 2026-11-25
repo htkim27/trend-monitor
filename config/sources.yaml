@@ -1,0 +1,315 @@
+defaults:
+  timeout_sec: 15
+  max_items_per_fetch: 40
+
+sources:
+  # ══════════════════════════════════════════════════════════════
+  # 1. 학술 arXiv [H][M] — 로봇 하네스·Embodied AI 1차 논문 출처
+  # ══════════════════════════════════════════════════════════════
+  - id: arxiv_cs_ro
+    name: arXiv cs.RO (Robotics)
+    type: rss
+    url: "https://rss.arxiv.org/rss/cs.RO"
+    channel: academic
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[H][M] 로보틱스 전체 신착 논문 1차 출처 (cs.RO)"
+
+  - id: arxiv_robot_harness
+    name: arXiv Robot Harness & Frontier VLM Query
+    type: atom
+    url: "https://export.arxiv.org/api/query?search_query=cat:cs.RO+AND+(abs:harness+OR+abs:%22long-horizon%22+OR+abs:%22vision-language-action%22+OR+abs:%22coding+agent%22+OR+abs:%22training-free%22)&sortBy=submittedDate&sortOrder=descending&max_results=30"
+    channel: academic
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[H][M] 로봇 하네스·장시간 조작·VLA·training-free 정밀 검색 API"
+
+  # ══════════════════════════════════════════════════════════════
+  # 2. 빅테크 로보틱스 & 해외 탑티어 블로그 [M][H][D]
+  # ══════════════════════════════════════════════════════════════
+  - id: deepmind_blog
+    name: Google DeepMind Blog
+    type: rss
+    url: "https://deepmind.google/blog/rss.xml"
+    channel: newsroom
+    lab: google_deepmind
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M][D] Gemini Robotics·Gemini 모델 1차 출처"
+
+  - id: nvidia_dev_blog
+    name: NVIDIA Technical Blog
+    type: atom
+    url: "https://developer.nvidia.com/blog/feed"
+    channel: newsroom
+    lab: nvidia
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M][H] NVIDIA GR00T·IsaacLab·Cosmos·SRL 로보틱스 1차 출처"
+
+  - id: bair_blog
+    name: UC Berkeley BAIR Blog
+    type: rss
+    url: "https://bair.berkeley.edu/blog/feed.xml"
+    channel: blog_global
+    lab: bair
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[H][M] 해외 탑티어 로보틱스/AI 연구 블로그 (UC Berkeley)"
+
+  - id: huggingface_blog
+    name: Hugging Face Blog
+    type: rss
+    url: "https://huggingface.co/blog/feed.xml"
+    channel: newsroom
+    lab: huggingface
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M][S] LeRobot·오픈 VLA·오픈 모델 허브 1차 출처"
+
+  - id: therobotreport
+    name: The Robot Report
+    type: rss
+    url: "https://www.therobotreport.com/feed/"
+    channel: press
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[S][D] 해외 로보틱스 산업·하드웨어 전문 매체"
+
+  - id: robohub
+    name: Robohub
+    type: rss
+    url: "https://robohub.org/feed/"
+    channel: blog_global
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[H][M] 글로벌 로보틱스 연구 커뮤니티 블로그"
+
+  - id: ieee_spectrum_robotics
+    name: IEEE Spectrum Robotics
+    type: rss
+    url: "https://spectrum.ieee.org/feeds/topic/robotics.rss"
+    channel: press
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M][S] IEEE Spectrum 로보틱스 전문 기사"
+
+  # ══════════════════════════════════════════════════════════════
+  # 3. 국내 로보틱스 & 테크 탑티어 블로그/매체 [S][M]
+  # ══════════════════════════════════════════════════════════════
+  - id: irobotnews_all
+    name: 로봇신문 (전체)
+    type: rss
+    url: "https://www.irobotnews.com/rss/allArticle.xml"
+    channel: press_kr
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[S][D] 국내 대표 로보틱스 전문 매체"
+
+  - id: naver_d2
+    name: NAVER D2
+    type: atom
+    url: "https://d2.naver.com/d2.atom"
+    channel: blog_kr
+    lab: naver_labs
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M][S] 국내 탑티어 기술 블로그 (AI·로봇 인프라)"
+
+  # ══════════════════════════════════════════════════════════════
+  # 4. 유튜브 (공식 Atom RSS) [M][S]
+  # ══════════════════════════════════════════════════════════════
+  - id: yt_unitree
+    name: YouTube · Unitree Robotics
+    type: atom
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCsMbp4V8oxzHCMdOUP-3oWw"
+    channel: youtube
+    lab: unitree
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[S] 유니트리 공식 유튜브 (G1/H1/H2/Go2 데모·신제품 발표)"
+
+  - id: yt_deepmind
+    name: YouTube · Google DeepMind
+    type: atom
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A"
+    channel: youtube
+    lab: google_deepmind
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M] DeepMind 공식 유튜브 (Gemini Robotics·모델 데모)"
+
+  - id: yt_nvidia
+    name: YouTube · NVIDIA
+    type: atom
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCHuiy8bXnmK5nisYHUd1J5g"
+    channel: youtube
+    lab: nvidia
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[M][S] NVIDIA 공식 유튜브 (Isaac/GR00T/키노트)"
+
+  # ══════════════════════════════════════════════════════════════
+  # 5. 중국 & 오픈소스 로보틱스 깃헙 (신규 리포/최근 푸시) [S][H]
+  # ══════════════════════════════════════════════════════════════
+  - id: gh_roboprobe
+    name: GitHub · RoboProbe
+    type: json_list
+    url: "https://api.github.com/orgs/RoboProbe/repos?sort=pushed&per_page=10"
+    channel: github
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[H] RoboProbe / RoboDojo 프론티어 로봇 하네스 벤치마크 공식 깃헙"
+
+  - id: gh_unitree
+    name: GitHub · unitreerobotics
+    type: json_list
+    url: "https://api.github.com/orgs/unitreerobotics/repos?sort=pushed&per_page=15"
+    channel: github
+    lab: unitree
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] 유니트리 공식 깃헙 (SDK2, RL Lab, IL LeRobot 신규/업데이트)"
+
+  - id: gh_i2rt
+    name: GitHub · i2rt-robotics (YAM)
+    type: json_list
+    url: "https://api.github.com/orgs/i2rt-robotics/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: i2rt
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] I2RT YAM 로봇 암 공식 깃헙"
+
+  - id: gh_agibot
+    name: GitHub · AgibotTech
+    type: json_list
+    url: "https://api.github.com/orgs/AgibotTech/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: agibot
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] 중국 지위안(AgiBot) 공식 깃헙 (데이터셋·VLA·RL)"
+
+  - id: gh_galaxea
+    name: GitHub · OpenGalaxea
+    type: json_list
+    url: "https://api.github.com/orgs/OpenGalaxea/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: galaxea
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] 중국 Galaxea AI 공식 깃헙 (GalaxeaVLA, ManipSim)"
+
+  - id: gh_limx
+    name: GitHub · limxdynamics
+    type: json_list
+    url: "https://api.github.com/users/limxdynamics/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: limx
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] 중국 LimX Dynamics 공식 깃헙 (TRON/Oli RL·시뮬)"
+
+  - id: gh_booster
+    name: GitHub · BoosterRobotics
+    type: json_list
+    url: "https://api.github.com/users/BoosterRobotics/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: booster
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] 중국 Booster Robotics 공식 깃헙 (booster_gym/train)"
+
+  # ══════════════════════════════════════════════════════════════
+  # 6. 프론티어 모델 & 에이전트 트렌드 (20% 비중) [F][C]
+  # ══════════════════════════════════════════════════════════════
+  - id: openai_news
+    name: OpenAI News
+    type: rss
+    url: "https://openai.com/news/rss.xml"
+    channel: newsroom
+    lab: openai
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[F] GPT·Codex·OpenAI 로보틱스/API 1차 출처"
+
+  - id: anthropic_news
+    name: Anthropic News (sitemap)
+    type: sitemap
+    url: "https://www.anthropic.com/sitemap.xml"
+    channel: newsroom
+    lab: anthropic
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    extract: {include_paths: ["/news/", "/engineering/"], title_from: page}
+    selected: "[F] Claude·Claude Code·하네스 엔지니어링 1차 출처"
+
+  - id: qwen_blog
+    name: Qwen Blog
+    type: atom
+    url: "https://qwenlm.github.io/blog/index.xml"
+    channel: newsroom
+    lab: qwen
+    primary: true
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[F][M] Qwen·Qwen-VL 오픈 모델 1차 출처"
+
+  - id: latent_space
+    name: Latent Space
+    type: rss
+    url: "https://www.latent.space/feed"
+    channel: press
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[F] AI 엔지니어링·에이전트 최속 큐레이션"
+
+  - id: simon_willison
+    name: Simon Willison
+    type: atom
+    url: "https://simonwillison.net/atom/everything/"
+    channel: community
+    status: active
+    verified_at: "2026-11-25"
+    selected: "[F] 프론티어 모델·에이전트 도구 실사용 기록"
+
+  - id: hn_algolia_robotics
+    name: HN Robotics & AI (Algolia 80pt+)
+    type: json_list
+    url: "https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points%3E80&query=robotics&hitsPerPage=30"
+    channel: community
+    status: active
+    verified_at: "2026-11-25"
+    extract: {items_path: hits, id_field: objectID, title_field: title, url_field: url, published_field: created_at, url_template: "https://news.ycombinator.com/item?id={objectID}"}
+    selected: "[C] HN 80점 이상 로보틱스 조기 탐지 (0.4 상한)"
+
+rejected:
+  - {id: github_patch_releases, reason: "일반 패키지/도구 패치 릴리스 피드는 패치 노이즈 과다. 중국 로보틱스 깃헙은 org/user repos(신규/주요 푸시)로만 추적. 2026-11-25"}
+  - {id: anthropic_rss, url: "https://www.anthropic.com/rss.xml", reason: "404, 공식 RSS 없음. sitemap 사용. 2026-11-25"}
+  - {id: physical_intelligence, url: "https://www.physicalintelligence.company/sitemap.xml", reason: "429 Too Many Requests (pi.website 포함 봇 차단). 2026-11-25"}
+  - {id: hn_robotics_ai, url: "https://hnrss.org/newest?q=robot+OR+robotics+OR+embodied+OR+VLA+OR+MCP&points=80", reason: "502 Bad Gateway. Algolia JSON API(hn_algolia_robotics)로 대체. 2026-11-25"}

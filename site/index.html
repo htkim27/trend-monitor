@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RoboSpine Trend Monitor</title>
+<style>
+:root { --bg:#0d1117; --card:#161b22; --fg:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --border:#30363d; }
+@media (prefers-color-scheme: light) {
+  :root { --bg:#f6f8fa; --card:#ffffff; --fg:#1f2328; --muted:#656d76; --accent:#0969da; --border:#d0d7de; }
+}
+* { box-sizing:border-box; }
+body { margin:0; padding:16px; background:var(--bg); color:var(--fg); font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+main { max-width:860px; margin:0 auto; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }
+h1 { font-size:1.35rem; margin-top:0; border-bottom:1px solid var(--border); padding-bottom:8px; }
+h2 { font-size:1.1rem; margin-top:22px; color:var(--accent); }
+h3 { font-size:0.98rem; margin-top:14px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+ul { padding-left:20px; }
+li { margin:6px 0; }
+code { background:rgba(127,127,127,0.18); padding:2px 5px; border-radius:4px; font-size:0.88em; }
+.tbl-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; margin:10px 0; font-size:0.9rem; }
+th, td { border:1px solid var(--border); padding:6px 8px; text-align:left; vertical-align:top; }
+details { border:1px solid var(--border); border-radius:8px; padding:8px 12px; margin-top:14px; }
+.meta { color:var(--muted); font-size:0.82rem; margin-top:24px; border-top:1px solid var(--border); padding-top:10px; }
+</style>
+</head>
+<body>
+<main>
+<h1>RoboSpine 트렌드 모니터 · 2026-11-25 오후 (22:55 KST)</h1>
+<p>수집 262 · 판정 27 (핵심 샘플 1차) · 사건 17 · 버림 7 (off_topic 7) · 대기 235</p>
+<h2>한눈에</h2>
+<ul>
+<li><strong>[0.94] Unitree, 프론티어 모델(GPT-6 Astra 등) 직접 연결용 공식 로봇 스킬 하네스 <code>unitree_robotskills</code> 공개</strong> (<a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
+<li><strong>[0.88] VLAs Execute, Code Recovers</strong> — 에이전트 플래너가 동결된 VLA 원자 스킬을 조합하고 코드로 복구하는 3D 스킬 엔벨로프 하네스 (<a href="https://arxiv.org/abs/2611.32245v1" target="_blank" rel="noopener">arXiv:2611.32245</a>) · 공식</li>
+<li><strong>[0.85] ICLWorld</strong> — 디지털 컴퓨터 사용에서 물리 로봇 세계까지 동일 프론티어 에이전트의 인컨텍스트 학습(ICL) 통합 벤치마크 (<a href="https://arxiv.org/abs/2611.32649v1" target="_blank" rel="noopener">arXiv:2611.32649</a>) · 공식</li>
+</ul>
+<h2>로봇 하네스·아키텍처 (arXiv · 오픈소스)</h2>
+<div class="tbl-wrap"><table><thead><tr><th>중요도</th><th>토픽</th><th>무엇이 달라졌나</th><th>출처</th></tr></thead><tbody>
+<tr><td>0.94</td><td>Unitree RobotSkills</td><td>GPT-6 Astra 등 프론티어 모델을 유니트리 로봇에 연결·스킬 작성하는 공식 프레임워크</td><td><a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a></td></tr>
+<tr><td>0.88</td><td>VLA-as-Tool</td><td>동결 VLA 스킬 조합 격차를 3D 스킬 엔벨로프 + 코드 복구로 메우는 에이전트 하네스</td><td><a href="https://arxiv.org/abs/2611.32245v1" target="_blank" rel="noopener">arXiv</a></td></tr>
+<tr><td>0.85</td><td>Robot Harness</td><td>디지털~물리 세계 프론티어 에이전트 인컨텍스트 학습(ICL) 통합 벤치마크 <code>ICLWorld</code></td><td><a href="https://arxiv.org/abs/2611.32649v1" target="_blank" rel="noopener">arXiv</a></td></tr>
+<tr><td>0.84</td><td>Long-Horizon</td><td>VLM 에이전트 추론 기반 원자 스킬 조합(<code>Atomic Policy</code>) &amp; 전역 절차 사전(<code>RoboDemo</code>)</td><td><a href="https://arxiv.org/abs/2611.32813v1" target="_blank" rel="noopener">arXiv</a> 외 1곳</td></tr>
+<tr><td>0.82</td><td>Embodied Memory</td><td>파라미터 업데이트 없는 자가 검색 메모리(<code>MXI-MemICL</code>) &amp; 서브태스크 키 메모리(<code>KeyMemVLA</code>)</td><td><a href="https://arxiv.org/abs/2611.32564v1" target="_blank" rel="noopener">arXiv</a> 외 1곳</td></tr>
+<tr><td>0.80</td><td>Robot Harness</td><td>플러그앤플레이 스킬 실행 인지 조율(<code>SkillHarness</code>) &amp; 뉴로-심볼릭 안전·감사 계층</td><td><a href="https://arxiv.org/abs/2611.32186" target="_blank" rel="noopener">arXiv</a> 외 1곳</td></tr>
+<tr><td>0.72</td><td>RoboProbe</td><td>거울 하나로 현재 로봇 조작 정책이 붕괴하는 시각적 취약점 진단(<code>Mirror Test</code>)</td><td><a href="https://arxiv.org/abs/2611.33010v1" target="_blank" rel="noopener">arXiv</a></td></tr>
+</tbody></table></div>
+<h2>빅테크·연구 로보틱스 모델 실험</h2>
+<ul>
+<li>[0.78] <strong>NVIDIA Cosmos 3 Nano</strong> · Hugging Face Diffusers를 활용해 GPU 메모리 제약이 있는 로컬 AI 디바이스에서 월드 모델 Cosmos 3 Nano를 구동하는 공식 가이드 공개 (<a href="https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers" target="_blank" rel="noopener">NVIDIA Blog</a>) · 공식</li>
+<li>[0.76] <strong>DiffGR00T</strong> · 휴머노이드 전신 제어(WBC)를 위한 실행 인지 미분 가능 VLA 학습 프레임워크 (<a href="https://arxiv.org/abs/2611.32665v1" target="_blank" rel="noopener">arXiv:2611.32665</a>) · 공식</li>
+<li>[0.58] <strong>Figure AI</strong> · 작업 현장에서 사람 팔 동작을 실시간 수집해 휴머노이드 학습·원격 제어에 활용하는 웨어러블 시스템 특허 출원 (<a href="https://www.irobotnews.com/news/articleView.html?idxno=49793" target="_blank" rel="noopener">로봇신문</a>) · 비공식</li>
+</ul>
+<h2>로봇 플랫폼 · 중국/글로벌 깃헙 &amp; SDK</h2>
+<ul>
+<li>[0.76] <strong>Unitree</strong> · MuJoCo 기반 공식 강화학습 프레임워크 <code>unitree_rl_mjlab</code> 활발한 업데이트 (★740, C++) (<a href="https://github.com/unitreerobotics/unitree_rl_mjlab" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
+<li>[0.74] <strong>I2RT · YAM</strong> · YAM 로봇 암 공식 Python 제어 SDK <code>i2rt-robotics/i2rt</code> 최신 푸시 (★184) (<a href="https://github.com/i2rt-robotics/i2rt" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
+<li>[0.72] <strong>AgiBot (智元)</strong> · 공식 시뮬레이션 플랫폼 <code>genie_sim</code>(★1,765) 및 텔레오퍼레이션·1인칭 캡처 인프라 <code>IsaacCapture</code> 업데이트 (<a href="https://github.com/AgibotTech/genie_sim" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
+<li>[0.72] <strong>Hugging Face × NVIDIA</strong> · Isaac Lab + 차세대 물리 엔진 Newton 기반 Microduck 장애물 회피 Sim2Real 워크플로 공개 (<a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" target="_blank" rel="noopener">HF Blog</a>) · 공식</li>
+<li>[0.70] <strong>LimX Dynamics</strong> · 휴머노이드 Python RL 배포(<code>humanoid-rl-deploy-python</code>, ONNX/MuJoCo) 및 TRON2 16종 시뮬 에셋 업데이트 (<a href="https://github.com/limxdynamics/humanoid-rl-deploy-python" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
+<li>[0.68] <strong>Booster Robotics</strong> · 공식 C++ 제어 SDK <code>booster_robotics_sdk</code> 업데이트 (★123) (<a href="https://github.com/BoosterRobotics/booster_robotics_sdk" target="_blank" rel="noopener">GitHub</a>) · 공식</li>
+</ul>
+<h2>프론티어 모델·에이전트 트렌드 (20% 슬라이스)</h2>
+<ul>
+<li>[0.74] <strong>Gemini 4 Neon</strong> · LiveBench에서 GPT-6 Astra·Claude Fable을 상회하고 TS/Rust 코드 벤치마크 실행 시간을 48.6% 단축 (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab" target="_blank" rel="noopener">Latent Space</a>) · 비공식</li>
+</ul>
+<h2>트렌드 · 평소 대비</h2>
+<ul>
+<li>새로 등장: <code>robot-harness</code> (2건), <code>nvidia-groot</code> (2건)</li>
+<li>분야 비중(7일): 로봇 하네스 41.2% · 플랫폼/SDK 35.3% · 빅테크 모델 실험 17.6% · 프론티어 AI(20% 슬라이스) 5.9%</li>
+</ul>
+<h2>내 키워드</h2>
+<h3>Unitree</h3>
+<ul>
+<li>[0.94] <code>unitree_robotskills</code> — 프론티어 모델(GPT-6 Astra 등) 연결용 공식 로봇 스킬 프레임워크 (<a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a>)</li>
+<li>[0.76] <code>unitree_rl_mjlab</code> 업데이트 (★740) (<a href="https://github.com/unitreerobotics/unitree_rl_mjlab" target="_blank" rel="noopener">GitHub</a>)</li>
+</ul>
+<h3>YAM</h3>
+<ul>
+<li>[0.74] <code>i2rt-robotics/i2rt</code> 공식 Python SDK 최신 푸시 (★184) (<a href="https://github.com/i2rt-robotics/i2rt" target="_blank" rel="noopener">GitHub</a>)</li>
+</ul>
+<h3>training-free · long-horizon · VLA</h3>
+<ul>
+<li>[0.88] <code>VLAs Execute, Code Recovers</code> (<a href="https://arxiv.org/abs/2611.32245v1" target="_blank" rel="noopener">arXiv</a>)</li>
+<li>[0.82] <code>MXI-MemICL</code> 자가 검색 상호작용 메모리 (<a href="https://arxiv.org/abs/2611.32564v1" target="_blank" rel="noopener">arXiv</a>)</li>
+</ul>
+<h2>소스 점검</h2>
+<ul>
+<li>전체 27개 활성 소스 수집 성공 (실패 0건)</li>
+<li>제외(rejected) 이관: <code>physical_intelligence</code> (429 봇 차단), <code>hn_robotics_ai</code> (hnrss 502 → Algolia API <code>hn_algolia_robotics</code>로 대체)</li>
+<li>Google Workspace 발행: <code>config/settings.yaml</code>에 Apps Script Webhook URL 설정 시 자동 활성화</li>
+</ul>
+<hr><h1>리딩 그룹 방향성 레이더 (Robotics &amp; Frontier AI)</h1>
+<p>기준일: 2026-11-25 (매주 월요일 오전 자동 갱신)</p>
+<h2>그룹 간 공통 흐름</h2>
+<ul>
+<li><strong>프론티어 모델 + 스킬 하네스 수렴</strong>: 하드웨어 제조사(Unitree <code>unitree_robotskills</code>)와 학계(<code>VLAs Execute, Code Recovers</code>, <code>Atomic Policy</code>, <code>SkillHarness</code>)가 공통적으로 프론티어 VLM/LLM을 최상위 에이전트 플래너로 두고 원자 스킬·VLA·코드 복구를 결합하는 하네스 패턴으로 수렴 중 (2026-11-23~25).</li>
+<li><strong>오픈 시뮬레이션·배포 스택 표준화</strong>: 중국 휴머노이드·양팔 진영(Unitree, I2RT YAM, AgiBot, LimX, Booster)이 MuJoCo·Isaac Lab·ONNX·LeRobot 호환 오픈소스 스택을 빠르게 공개 중 (2026-11-24~25).</li>
+</ul>
+<h2>주요 그룹별 현황</h2>
+<h3>Unitree Robotics (<code>lab:unitree</code>)</h3>
+<ul>
+<li><strong>최근 공식 발표</strong>: <code>unitree_robotskills</code> 공개(2026-11-23, <a href="https://github.com/unitreerobotics/unitree_robotskills" target="_blank" rel="noopener">GitHub</a>), <code>unitree_rl_mjlab</code> 업데이트(2026-11-25, <a href="https://github.com/unitreerobotics/unitree_rl_mjlab" target="_blank" rel="noopener">GitHub</a>).</li>
+<li><strong>읽히는 방향</strong>: 단순 저수준 SDK 제공을 넘어 GPT-6 Astra 등 외부 프론티어 AI 모델을 자사 로봇에 바로 연결하는 공식 스킬 하네스 레이어를 직접 제공하기 시작함 (2026-11-23).</li>
+</ul>
+<h3>NVIDIA Robotics (<code>lab:nvidia</code>)</h3>
+<ul>
+<li><strong>최근 공식 발표</strong>: Cosmos 3 Nano 로컬 Diffusers 구동 가이드(2026-11-25, <a href="https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers" target="_blank" rel="noopener">Blog</a>), Hugging Face × Isaac Lab + Newton Sim2Real 워크플로(2026-11-25, <a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance" target="_blank" rel="noopener">HF Blog</a>).</li>
+<li><strong>읽히는 방향</strong>: 월드 모델(Cosmos 3)의 온디바이스 경량 실행과 Newton 물리 엔진·Isaac Lab·Hugging Face 생태계 결합을 밀고 있음 (2026-11-25).</li>
+</ul>
+<h3>I2RT · YAM (<code>lab:i2rt</code>)</h3>
+<ul>
+<li><strong>최근 공식 발표</strong>: <code>i2rt-robotics/i2rt</code> 공식 Python SDK 지속 업데이트(2026-11-25, <a href="https://github.com/i2rt-robotics/i2rt" target="_blank" rel="noopener">GitHub</a>).</li>
+<li><strong>읽히는 방향</strong>: YAM 양팔 플랫폼의 Python 제어·MuJoCo·LeRobot 호환성 유지 (2026-11-25).</li>
+</ul>
+<h3>AgiBot · LimX · Booster (<code>lab:agibot</code>, <code>lab:limx</code>, <code>lab:booster</code>)</h3>
+<ul>
+<li><strong>최근 공식 발표</strong>: AgiBot <code>genie_sim</code>/<code>IsaacCapture</code>(2026-11-24~25), LimX <code>humanoid-rl-deploy-python</code>/<code>tron2-robot-description</code>(2026-11-25), Booster <code>booster_robotics_sdk</code>(2026-11-25).</li>
+<li><strong>읽히는 방향</strong>: 중국 휴머노이드 기업들이 시뮬레이션(Isaac/MuJoCo/USD), 원격 데이터 수집, ONNX 기반 경량 배포 스택을 오픈소스로 적극 공개 중 (2026-11-25).</li>
+</ul>
+<h3>Google DeepMind / OpenAI / Anthropic</h3>
+<ul>
+<li><strong>최근 발표</strong>: Gemini 4 Neon 벤치마크 성능 도약 보도(2026-11-25, 비공식 해설 <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab" target="_blank" rel="noopener">Latent Space</a>). 지난 30일 로보틱스 전용 공식 방향성 발표는 추가 수집 대기 중.</li>
+</ul>
+<h2>최근 회차 아카이브</h2>
+<ul><li><a href="../archive/2026/11/25-pm.md">25-pm (2026-11)</a></li></ul>
+<div class="meta">Generated at 2026-11-25T22:58:38+09:00 · RoboSpine Trend Monitor (Gemini / Antigravity)</div>
+</main>
+</body>
+</html>

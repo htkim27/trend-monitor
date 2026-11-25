@@ -1,0 +1,9 @@
+# 사용자 관심 키워드 (로봇 하네스 핵심 축 중심).
+# promote: true 면 토픽(origin: keyword)으로 등록해 트렌드 집계에 포함한다.
+keywords:
+  - {term: "robot harness", aliases: ["robot-use harness", "robotic harness", "agentic robot"], note: "RoboSpine 핵심 타겟: 프론티어 모델 로봇 하네스", promote: true, added_at: "2026-11-25"}
+  - {term: "training-free", aliases: ["zero-shot manipulation", "in-context robot"], note: "학습 없이 프론티어 모델로 제어", promote: true, added_at: "2026-11-25"}
+  - {term: "long-horizon", aliases: ["long-horizon manipulation", "long-horizon task"], note: "장시간 복합 작업", promote: true, added_at: "2026-11-25"}
+  - {term: "YAM", aliases: ["i2rt", "i2rt_yam", "yam arm"], require_any: ["robot", "arm", "i2rt", "lerobot", "mujoco", "bimanual", "gripper", "teleop"], note: "I2RT YAM 양팔 로봇 플랫폼", promote: true, added_at: "2026-11-25"}
+  - {term: "Unitree", aliases: ["unitree g1", "unitree_sdk2", "unitree_il_lerobot", "유니트리"], note: "유니트리 오픈소스·하드웨어", promote: true, added_at: "2026-11-25"}
+  - {term: "VLA", aliases: ["vision-language-action", "world action model", "openpi", "pi0"], note: "VLA / WAM 및 sub-policy 활용", promote: false, added_at: "2026-11-25"}

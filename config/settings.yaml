@@ -1,0 +1,43 @@
+timezone: Asia/Seoul
+discard_below_significance: 0.2
+brief_min_significance: 0.5
+weekly_min_significance: 0.6
+unofficial_direction_cap: 0.5
+community_cap: 0.4
+ai_frontier_min_brief_significance: 0.65   # 80/20 비중 유지: 일반 에이전트/AI 트렌드는 높은 중요도만 브리핑
+expire_after_days: 7
+simhash_hamming: 3
+structural_window_h: 24
+same_event_window_h: 72
+same_event_max_candidates: 8
+proposal_consecutive_days: 2
+proposal_lookback_days: 7
+new_topics_per_week: 5
+archive_after_days: 3
+auto_topic_remove_after_days: 60
+trend_recompute_days: 35
+momentum:
+  baseline_days: 7
+  min_excess: 2
+  lift: 0.10
+  min_count: 3
+  new_min: 2
+profile:
+  sample_n: 40
+  active_min: 0.25
+  standby_min: 0.10
+max_items_per_run: 150
+pending_alert: 300
+retry_on_block_sec: 90
+retry_max_sec: 300
+max_consecutive_failures: 10
+user_agent: "RoboSpineTrendMonitor/0.1 (personal robotics harness archive)"
+
+# Google Workspace 연동 설정 (docs/gws-apps-script.gs 배포 후 URL 입력)
+google_workspace:
+  apps_script_webhook_url: null   # 배포된 Apps Script Web App URL (환경변수 GWS_WEBHOOK_URL 우선)
+  webhook_secret: null            # 선택: 보안 토큰 (환경변수 GWS_WEBHOOK_SECRET 우선)
+  doc_id: null                    # 자동 갱신할 Google Docs 문서 ID
+  sheet_id: null                  # 사건/토픽 원장 동기화할 Google Sheets ID
+  notify_email: null              # 일간/주간 브리핑 수신 Gmail 주소
+  send_email_on_run: false        # true면 매 회차 Gmail 요약 발송

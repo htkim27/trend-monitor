@@ -1,0 +1,26 @@
+{
+  "unitree-robotskills": {
+    "key": "unitree-robotskills",
+    "title": "Unitree RobotSkills",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-25"
+    ]
+  },
+  "iclworld": {
+    "key": "iclworld",
+    "title": "ICLWorld",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-25"
+    ]
+  },
+  "skillharness": {
+    "key": "skillharness",
+    "title": "SkillHarness",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-25"
+    ]
+  }
+}

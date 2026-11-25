@@ -1,0 +1,121 @@
+domains:
+  - id: harnesses
+    name: 로봇 하네스·아키텍처
+    weight_target: 0.40
+    question: 프론티어 모델이 로봇을 장시간(long-horizon)·학습 없이(training-free) 제어하기 위한 하네스·도구·메모리·검증 구조가 어떻게 진화하고 있나
+    definition: >
+      프론티어 VLM/LLM을 최상위 제어기로 쓰는 로봇 하네스 논문·오픈소스·벤치마크.
+      핵심 축: action interface(EEF/waypoint/SDK/code-cell), execution chaining, perception-as-tools(3D/depth/SAM/grasp),
+      memory(에피소드/스킬/레슨/컨텍스트 정책), verification(transition check/audit/fail-stop),
+      concurrency(비동기 실행·내레이터), safety boundaries, VLA/WAM-as-subpolicy, 비용·지연 최적화,
+      로봇 하네스 벤치마크(RoboDojo, RoboMME, EBench, RoboProbe 등).
+    drop:
+      - 단순 산업용 PLC/하드웨어 기구학 논문(파운데이션 모델·에이전트와 무관)
+      - 모델·하네스 기여 없는 단순 데모 홍보
+      - 드론/자율주행 전용 제어(매니퓰레이션·범용 Embodied 하네스와 무관한 경우)
+
+  - id: embodied_models
+    name: 빅테크·연구 로보틱스 모델 실험
+    weight_target: 0.25
+    question: 빅테크와 탑티어 연구실이 로보틱스 파운데이션 모델(VLM/VLA/WAM/World Model)과 실세계 실험에서 무엇을 공개했나
+    definition: >
+      Google DeepMind(Gemini Robotics), NVIDIA(GR00T, Cosmos, SRL, Isaac), Physical Intelligence(pi0/pi0.5),
+      OpenAI Robotics, Anthropic(computer-use/embodied 전이), Meta FAIR, Skild AI, Figure(Helix),
+      UC Berkeley BAIR, Stanford, MIT, CMU, NAVER LABS 등의 로보틱스 모델 릴리스, 스케일링 실험, 월드 모델, 벤치마크, 공식 기술 블로그.
+    drop:
+      - 투자·밸류에이션·주가·인사 이동·단순 언론 인터뷰
+      - 검증 수치 없는 단순 PR 영상
+
+  - id: hardware_sdk
+    name: 로봇 플랫폼·중국/글로벌 SDK·깃헙
+    weight_target: 0.15
+    question: Unitree, I2RT(YAM), AgiBot, Galaxea, LimX, Booster, LeRobot 등 로봇 플랫폼의 SDK·오픈소스·데이터셋·하드웨어 공지가 어떻게 바뀌었나
+    definition: >
+      중국 및 글로벌 로보틱스 기업·오픈소스 진영의 신규 리포지토리, SDK 업데이트, 텔레오퍼레이션,
+      시뮬레이션 에셋(MuJoCo/IsaacLab/URDF), 오픈 데이터셋, LeRobot 통합, 신규 로봇(휴머노이드·양팔 매니퓰레이터) 공식 어나운스.
+    drop:
+      - 의미 없는 사소 패치 커밋이나 단순 오타 수정
+      - 단순 전시회/마케팅 행사 보도
+
+  - id: ai_frontier
+    name: 프론티어 모델·에이전트 트렌드 (20%)
+    weight_target: 0.20
+    question: 로봇 하네스의 상한을 끌어올리는 프론티어 모델(비전·추론·지연·비용)과 코딩/도구 에이전트 하네스·프로토콜에 어떤 대형 변화가 있었나
+    definition: >
+      상용·오픈 프론티어 모델(Gemini, Claude, GPT, Qwen, DeepSeek)의 신규 세대·주요 버전·멀티모달/비전·가격·컨텍스트 변화,
+      및 코딩 에이전트·에이전트 SDK·프로토콜(MCP, A2A, Claude Code, Codex, Gemini CLI, Google ADK, tool-use/computer-use API)의 메이저 릴리스.
+    drop:
+      - 소규모 패치, 파인튜닝 파생 모델, 개인 리뷰, 단순 튜토리얼, "N가지 도구" 목록 글
+      - 투자·인수·소송·규제·일반 IT 뉴스
+
+labs:
+  google_deepmind: {title: Google DeepMind, aliases: [deepmind, google deepmind, gemini robotics, 딥마인드]}
+  nvidia:          {title: NVIDIA Robotics, aliases: [nvidia, nvidia research, nvidia srl, isaac lab, isaac sim, gr00t, cosmos, 엔비디아]}
+  openai:          {title: OpenAI, aliases: [openai, 오픈ai]}
+  anthropic:       {title: Anthropic, aliases: [anthropic, 앤트로픽, 앤스로픽]}
+  physical_intel:  {title: Physical Intelligence, aliases: [physical intelligence, pi0, pi-0, pi0.5, "π0"]}
+  figure:          {title: Figure AI, aliases: [figure ai, figure 02, figure 03, helix]}
+  skild:           {title: Skild AI, aliases: [skild ai, skild]}
+  huggingface:     {title: Hugging Face · LeRobot, aliases: [hugging face, huggingface, lerobot]}
+  unitree:         {title: Unitree Robotics, aliases: [unitree, 유니트리, unitreerobotics, unitree g1, unitree go2, unitree h1]}
+  i2rt:            {title: I2RT · YAM, aliases: [i2rt, i2rt-robotics, yam arm, yam robot, i2rt_yam]}
+  agibot:          {title: AgiBot (智元), aliases: [agibot, agibottech, agibot-world, 지위안]}
+  galaxea:         {title: Galaxea AI, aliases: [galaxea, opengalaxea, galaxeavla]}
+  limx:            {title: LimX Dynamics, aliases: [limx, limxdynamics, limx dynamics, tron 1, tron 2]}
+  booster:         {title: Booster Robotics, aliases: [booster robotics, boosterrobotics, booster t1, booster k1]}
+  naver_labs:      {title: NAVER LABS, aliases: [naver labs, 네이버랩스, 네이버 랩스]}
+  bair:            {title: UC Berkeley BAIR, aliases: [berkeley ai research, bair blog, berkeleyautomation]}
+  qwen:            {title: Alibaba · Qwen, aliases: [qwen, alibaba cloud, tongyi, 큐원]}
+  deepseek:        {title: DeepSeek, aliases: [deepseek, 딥시크]}
+
+direction_signals:
+  en: [roadmap, strategy, vision, keynote, open-source, open weights, releasing, announcing, introduces, introducing, benchmark, framework, sdk, dataset, policy, platform, next generation, gtc, google i/o, devday]
+  ko: [로드맵, 전략, 공개, 오픈소스, 출시, 발표, 프레임워크, 벤치마크, 데이터셋, 플랫폼, 차세대, 피지컬 AI]
+
+matching:
+  min_alias_len: 3
+  word_boundary: true
+
+disambiguation:
+  - {entity: claude, alt: claude-code, alt_if_any: [code, 코드, terminal, agent, harness]}
+  - {entity: gemini, alt: gemini-robotics, alt_if_any: [robot, robotics, embodied, manipulation, trajectory, grasp, vla]}
+  - {entity: gemini, alt: gemini-cli, alt_if_any: [cli, 터미널, npm]}
+  - {entity: yam-i2rt, require_any: [robot, arm, i2rt, lerobot, mujoco, bimanual, gripper, teleop, actuator, manipulation]}
+
+entities:
+  # ── 1. harnesses (로봇 하네스·아키텍처) ──
+  robot-harness:    {domain: harnesses, title: Robot-Use Harness, aliases: [robot harness, robot-use harness, robotic harness, agentic robot, frontier model robot, training-free robot, coding agent robot]}
+  roboprobe:        {domain: harnesses, title: RoboProbe / RoboDojo, aliases: [roboprobe, robodojo, robomme, ebench]}
+  long-horizon-manip: {domain: harnesses, title: Long-Horizon Manipulation, aliases: [long-horizon manipulation, long-horizon task, guarded action, transition check, action chain, skill library]}
+  robot-memory:     {domain: harnesses, title: Embodied Memory & Skills, aliases: [episodic memory robot, skill library robot, embodiedevo, simplevo, memoreval, lesson file]}
+  vla-as-tool:      {domain: harnesses, title: VLA/WAM as Sub-Policy Tool, aliases: [vla as tool, frozen vla, world action model, sub-policy, hierarchical vla, astranomy]}
+  perception-tools: {domain: harnesses, title: Robot Perception-as-Tools, aliases: [perception as tools, 3d anchor, grasp candidate, camera geometry, sam 3, visual waypoint, target-gripper]}
+
+  # ── 2. embodied_models (빅테크·연구 모델 실험) ──
+  gemini-robotics:  {domain: embodied_models, title: Gemini Robotics, lab: google_deepmind, aliases: [gemini robotics, gemini-robotics, deepmind robotics, rt-2, sara-rt]}
+  nvidia-groot:     {domain: embodied_models, title: NVIDIA GR00T / Cosmos, lab: nvidia, aliases: [gr00t, nvidia groot, nvidia cosmos, isaac groot, nvidia srl, newton physics]}
+  pi-zero:          {domain: embodied_models, title: Physical Intelligence (π0), lab: physical_intel, aliases: [physical intelligence, pi0, pi0.5, pi-0, openpi]}
+  figure-helix:     {domain: embodied_models, title: Figure Helix, lab: figure, aliases: [figure helix, figure ai, figure 02, figure 03]}
+  vla-models:       {domain: embodied_models, title: Open VLA / World Models, aliases: [vision-language-action, openvla, octo, rdt-1b, world model robot, embodied vlm]}
+  naver-physical-ai: {domain: embodied_models, title: NAVER LABS Physical AI, lab: naver_labs, aliases: [naver labs, 네이버랩스, arc mind, rookie robot, spatial intelligence]}
+
+  # ── 3. hardware_sdk (로봇 플랫폼·중국/글로벌 깃헙·SDK) ──
+  unitree:          {domain: hardware_sdk, title: Unitree Robotics, lab: unitree, aliases: [unitree, 유니트리, unitree_sdk2, unitree_rl_lab, unitree_rl_gym, unitree_il_lerobot, unitree g1, unitree go2, unitree h1]}
+  yam-i2rt:         {domain: hardware_sdk, title: I2RT · YAM Arm, lab: i2rt, aliases: [i2rt, i2rt-robotics, i2rt_yam, yam arm, yam robot, yam]}
+  lerobot:          {domain: hardware_sdk, title: Hugging Face LeRobot, lab: huggingface, aliases: [lerobot, so-100, so-101, aloha, smolvla]}
+  agibot:           {domain: hardware_sdk, title: AgiBot (智元), lab: agibot, aliases: [agibot, agibot-world, agibottech, genie-1]}
+  galaxea:          {domain: hardware_sdk, title: Galaxea AI, lab: galaxea, aliases: [galaxea, opengalaxea, galaxeavla, galaxeadp]}
+  limx:             {domain: hardware_sdk, title: LimX Dynamics, lab: limx, aliases: [limx, limxdynamics, limx dynamics, tron 1, tron 2]}
+  booster:          {domain: hardware_sdk, title: Booster Robotics, lab: booster, aliases: [booster robotics, booster_gym, booster t1, booster k1]}
+  mujoco-isaac:     {domain: hardware_sdk, title: MuJoCo / IsaacLab Sim, aliases: [mujoco, mujoco_menagerie, isaac lab, isaaclab, isaac sim, genesis sim, maniSkill]}
+
+  # ── 4. ai_frontier (프론티어 모델·에이전트 트렌드 20%) ──
+  gemini:           {domain: ai_frontier, title: Gemini, lab: google_deepmind, aliases: [gemini, 제미나이, 제미니], variants: {pro: [gemini pro], flash: [gemini flash]}}
+  claude:           {domain: ai_frontier, title: Claude, lab: anthropic, aliases: [claude, 클로드], variants: {opus: [claude opus, opus 5, opus 4], sonnet: [claude sonnet, sonnet 5, sonnet 4], haiku: [claude haiku]}}
+  gpt:              {domain: ai_frontier, title: GPT, lab: openai, aliases: [gpt-5, gpt-6, chatgpt, openai api]}
+  qwen:             {domain: ai_frontier, title: Qwen, lab: qwen, aliases: [qwen, qwen2.5-vl, qwen3, 큐원]}
+  deepseek-model:   {domain: ai_frontier, title: DeepSeek, lab: deepseek, aliases: [deepseek-v3, deepseek-r1, deepseek-v4, deepseek]}
+  claude-code:      {domain: ai_frontier, title: Claude Code, lab: anthropic, aliases: [claude code, claude-code, 클로드 코드, claude agent sdk]}
+  codex:            {domain: ai_frontier, title: OpenAI Codex / Agents, lab: openai, aliases: [codex cli, openai codex, openai agents sdk]}
+  gemini-cli:       {domain: ai_frontier, title: Gemini CLI / ADK, lab: google_deepmind, aliases: [gemini cli, gemini-cli, google adk, agent development kit]}
+  mcp-a2a:          {domain: ai_frontier, title: MCP / A2A Protocols, aliases: [model context protocol, mcp server, agent2agent, a2a protocol, computer use]}

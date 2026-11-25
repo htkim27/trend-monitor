@@ -1,0 +1,522 @@
+{
+  "robot-harness": {
+    "slug": "robot-harness",
+    "title": "Robot-Use Harness",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "roboprobe": {
+    "slug": "roboprobe",
+    "title": "RoboProbe / RoboDojo",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "long-horizon-manip": {
+    "slug": "long-horizon-manip",
+    "title": "Long-Horizon Manipulation",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "robot-memory": {
+    "slug": "robot-memory",
+    "title": "Embodied Memory & Skills",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "vla-as-tool": {
+    "slug": "vla-as-tool",
+    "title": "VLA/WAM as Sub-Policy Tool",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "perception-tools": {
+    "slug": "perception-tools",
+    "title": "Robot Perception-as-Tools",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "gemini-robotics": {
+    "slug": "gemini-robotics",
+    "title": "Gemini Robotics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "nvidia-groot": {
+    "slug": "nvidia-groot",
+    "title": "NVIDIA GR00T / Cosmos",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "pi-zero": {
+    "slug": "pi-zero",
+    "title": "Physical Intelligence (π0)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "figure-helix": {
+    "slug": "figure-helix",
+    "title": "Figure Helix",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "vla-models": {
+    "slug": "vla-models",
+    "title": "Open VLA / World Models",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "naver-physical-ai": {
+    "slug": "naver-physical-ai",
+    "title": "NAVER LABS Physical AI",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "unitree": {
+    "slug": "unitree",
+    "title": "Unitree Robotics",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "yam-i2rt": {
+    "slug": "yam-i2rt",
+    "title": "I2RT · YAM Arm",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lerobot": {
+    "slug": "lerobot",
+    "title": "Hugging Face LeRobot",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "agibot": {
+    "slug": "agibot",
+    "title": "AgiBot (智元)",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "galaxea": {
+    "slug": "galaxea",
+    "title": "Galaxea AI",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "limx": {
+    "slug": "limx",
+    "title": "LimX Dynamics",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "booster": {
+    "slug": "booster",
+    "title": "Booster Robotics",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "mujoco-isaac": {
+    "slug": "mujoco-isaac",
+    "title": "MuJoCo / IsaacLab Sim",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "gemini": {
+    "slug": "gemini",
+    "title": "Gemini",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "claude": {
+    "slug": "claude",
+    "title": "Claude",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "gpt": {
+    "slug": "gpt",
+    "title": "GPT",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "qwen": {
+    "slug": "qwen",
+    "title": "Qwen",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "deepseek-model": {
+    "slug": "deepseek-model",
+    "title": "DeepSeek",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "claude-code": {
+    "slug": "claude-code",
+    "title": "Claude Code",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "codex": {
+    "slug": "codex",
+    "title": "OpenAI Codex / Agents",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "gemini-cli": {
+    "slug": "gemini-cli",
+    "title": "Gemini CLI / ADK",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "mcp-a2a": {
+    "slug": "mcp-a2a",
+    "title": "MCP / A2A Protocols",
+    "domain": "ai_frontier",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:google_deepmind": {
+    "slug": "lab:google_deepmind",
+    "title": "Google DeepMind",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:nvidia": {
+    "slug": "lab:nvidia",
+    "title": "NVIDIA Robotics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:openai": {
+    "slug": "lab:openai",
+    "title": "OpenAI",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:anthropic": {
+    "slug": "lab:anthropic",
+    "title": "Anthropic",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:physical_intel": {
+    "slug": "lab:physical_intel",
+    "title": "Physical Intelligence",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:figure": {
+    "slug": "lab:figure",
+    "title": "Figure AI",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:skild": {
+    "slug": "lab:skild",
+    "title": "Skild AI",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:huggingface": {
+    "slug": "lab:huggingface",
+    "title": "Hugging Face · LeRobot",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:unitree": {
+    "slug": "lab:unitree",
+    "title": "Unitree Robotics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:i2rt": {
+    "slug": "lab:i2rt",
+    "title": "I2RT · YAM",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:agibot": {
+    "slug": "lab:agibot",
+    "title": "AgiBot (智元)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:galaxea": {
+    "slug": "lab:galaxea",
+    "title": "Galaxea AI",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:limx": {
+    "slug": "lab:limx",
+    "title": "LimX Dynamics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:booster": {
+    "slug": "lab:booster",
+    "title": "Booster Robotics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:naver_labs": {
+    "slug": "lab:naver_labs",
+    "title": "NAVER LABS",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:bair": {
+    "slug": "lab:bair",
+    "title": "UC Berkeley BAIR",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:qwen": {
+    "slug": "lab:qwen",
+    "title": "Alibaba · Qwen",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "lab:deepseek": {
+    "slug": "lab:deepseek",
+    "title": "DeepSeek",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": ""
+  },
+  "kw:robot-harness": {
+    "slug": "kw:robot-harness",
+    "title": "robot harness",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": "RoboSpine 핵심 타겟: 프론티어 모델 로봇 하네스"
+  },
+  "kw:training-free": {
+    "slug": "kw:training-free",
+    "title": "training-free",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": "학습 없이 프론티어 모델로 제어"
+  },
+  "kw:long-horizon": {
+    "slug": "kw:long-horizon",
+    "title": "long-horizon",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": "장시간 복합 작업"
+  },
+  "kw:yam": {
+    "slug": "kw:yam",
+    "title": "YAM",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": "I2RT YAM 양팔 로봇 플랫폼"
+  },
+  "kw:unitree": {
+    "slug": "kw:unitree",
+    "title": "Unitree",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "status_ko": "유니트리 오픈소스·하드웨어"
+  }
+}

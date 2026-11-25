@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.local.json
+gws_credentials.json
+gws_token.json

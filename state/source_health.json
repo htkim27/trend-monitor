@@ -1,0 +1,156 @@
+{
+  "arxiv_cs_ro": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "9c92b0063f88bf6edb1c71d864d98f01a759e6471d42c475c8f49659c6a602c5"
+  },
+  "arxiv_robot_harness": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "deepmind_blog": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "\"gXiNfQ\""
+  },
+  "nvidia_dev_blog": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "\"85dfa6a1a7635dac5fdbcf51bf2444a6\"",
+    "last_modified": "Tue, 24 Nov 2026 22:26:24 GMT"
+  },
+  "bair_blog": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200,
+    "etag": "\"572e3-65fdb8cdc7a80-gzip\"",
+    "last_modified": "Mon, 09 Nov 2026 17:47:06 GMT"
+  },
+  "huggingface_blog": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "W/\"42270-nBN9iWdlDnwd4w3GFi9PEhpuLOE\""
+  },
+  "therobotreport": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "\"a64aff812c42110a8547426591103602\"",
+    "last_modified": "Tue, 24 Nov 2026 18:03:37 GMT"
+  },
+  "robohub": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "\"35b24-66106c1bb21de\"",
+    "last_modified": "Tue, 24 Nov 2026 14:45:08 GMT"
+  },
+  "ieee_spectrum_robotics": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "\"5b2090dfec5bdbd5e173b8f8893f3b26\"",
+    "last_modified": "Tue, 24 Nov 2026 03:45:40 GMT"
+  },
+  "irobotnews_all": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "\"c597-66115ee701c11-gzip\"",
+    "last_modified": "Wed, 25 Nov 2026 08:51:22 GMT"
+  },
+  "naver_d2": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "yt_unitree": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "yt_deepmind": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "yt_nvidia": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_roboprobe": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_unitree": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_i2rt": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_agibot": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_galaxea": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_limx": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "gh_booster": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "openai_news": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "anthropic_news": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  },
+  "qwen_blog": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "etag": "W/\"6970c244-98ff\"",
+    "last_modified": "Wed, 21 Jan 2026 12:10:44 GMT"
+  },
+  "latent_space": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200,
+    "last_modified": "Wed, 25 Nov 2026 13:51:29 GMT"
+  },
+  "simon_willison": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 304,
+    "last_modified": "Tue, 24 Nov 2026 23:02:07 GMT"
+  },
+  "hn_algolia_robotics": {
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-25T22:55:08+09:00",
+    "last_status": 200
+  }
+}
