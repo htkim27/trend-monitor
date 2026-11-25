@@ -22,5 +22,77 @@
     "days": [
       "2026-11-25"
     ]
+  },
+  "robotrack": {
+    "key": "robotrack",
+    "title": "RoboTrack",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "isaaclab-arena": {
+    "key": "isaaclab-arena",
+    "title": "IsaacLab-Arena",
+    "domain": "hardware_sdk",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "pan-2": {
+    "key": "pan-2",
+    "title": "PAN 2 World Model",
+    "domain": "embodied_models",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "harness-adapters": {
+    "key": "harness-adapters",
+    "title": "Harness Adapters (HF)",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "skill-distill": {
+    "key": "skill-distill",
+    "title": "skill-distill",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "anthropic-siren": {
+    "key": "anthropic-siren",
+    "title": "Anthropic Siren",
+    "domain": "ai_frontier",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "shellbench": {
+    "key": "shellbench",
+    "title": "ShellBench",
+    "domain": "ai_frontier",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "claude-ship": {
+    "key": "claude-ship",
+    "title": "Claude Ship",
+    "domain": "ai_frontier",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "glm-5-4": {
+    "key": "glm-5-4",
+    "title": "GLM-5.4 (Z.ai)",
+    "domain": "ai_frontier",
+    "days": [
+      "2026-11-26"
+    ]
   }
 }

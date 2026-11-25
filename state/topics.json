@@ -6,7 +6,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "roboprobe": {
@@ -36,7 +36,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "vla-as-tool": {
@@ -106,7 +106,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "naver-physical-ai": {
@@ -196,7 +196,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "gemini": {
@@ -206,7 +206,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "claude": {
@@ -216,7 +216,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "gpt": {
@@ -236,7 +236,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "deepseek-model": {
@@ -256,7 +256,7 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-25T22:56:56+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
     "status_ko": ""
   },
   "codex": {
@@ -518,5 +518,205 @@
     "created_at": "2026-11-25T22:56:56+09:00",
     "last_update_at": "2026-11-25T22:56:56+09:00",
     "status_ko": "유니트리 오픈소스·하드웨어"
+  },
+  "robocurve": {
+    "slug": "robocurve",
+    "title": "RoboCurve",
+    "domain": "harnesses",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "dream-1": {
+    "slug": "dream-1",
+    "title": "Dream Labs (Dream-1 / WAM)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "skild-ai": {
+    "slug": "skild-ai",
+    "title": "Skild AI",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "ai2-robotics": {
+    "slug": "ai2-robotics",
+    "title": "Ai2 Robotics (MolmoAct / RoboTrack)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "boston-dynamics": {
+    "slug": "boston-dynamics",
+    "title": "Boston Dynamics",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "1x-optimus": {
+    "slug": "1x-optimus",
+    "title": "1X / Optimus / Agility",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "fourier-gr": {
+    "slug": "fourier-gr",
+    "title": "Fourier Intelligence (GRx)",
+    "domain": "hardware_sdk",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:dream_labs": {
+    "slug": "lab:dream_labs",
+    "title": "Dream Labs (Dream-1)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:boston_dynamics": {
+    "slug": "lab:boston_dynamics",
+    "title": "Boston Dynamics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:one_x": {
+    "slug": "lab:one_x",
+    "title": "1X Technologies",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:tesla_optimus": {
+    "slug": "lab:tesla_optimus",
+    "title": "Tesla Optimus",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:agility": {
+    "slug": "lab:agility",
+    "title": "Agility Robotics",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:allenai": {
+    "slug": "lab:allenai",
+    "title": "Allen Institute for AI (Ai2)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:fourier": {
+    "slug": "lab:fourier",
+    "title": "Fourier Intelligence",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:stanford_sail": {
+    "slug": "lab:stanford_sail",
+    "title": "Stanford AI Lab (SAIL)",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "lab:mit_csail": {
+    "slug": "lab:mit_csail",
+    "title": "MIT CSAIL",
+    "domain": "embodied_models",
+    "origin": "seed",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": ""
+  },
+  "kw:robodojo": {
+    "slug": "kw:robodojo",
+    "title": "RoboDojo",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": "프론티어 모델 로봇 하네스 핵심 벤치마크"
+  },
+  "kw:robocurve": {
+    "slug": "kw:robocurve",
+    "title": "RoboCurve",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": "로봇 하네스/성능 스케일링 관련 타겟 키워드"
+  },
+  "kw:physical-intelligence": {
+    "slug": "kw:physical-intelligence",
+    "title": "Physical Intelligence",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": "Physical Intelligence 파운데이션 모델"
+  },
+  "kw:dream-1": {
+    "slug": "kw:dream-1",
+    "title": "Dream-1",
+    "domain": "harnesses",
+    "origin": "keyword",
+    "state": "active",
+    "created_at": "2026-11-26T00:22:27+09:00",
+    "last_update_at": "2026-11-26T00:22:27+09:00",
+    "status_ko": "Dream Labs 월드 액션 모델(WAM) · API"
   }
 }

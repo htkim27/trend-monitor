@@ -361,3 +361,97 @@
 {"id": "99b93f3e10984935", "title_simhash": 1140694630756470168, "lang": "en", "source_id": "openai_news", "first_seen": "2026-11-25T22:54:54+09:00"}
 {"id": "680b35173b971311", "title_simhash": 4680801632935282824, "lang": "en", "source_id": "openai_news", "first_seen": "2026-11-25T22:54:54+09:00"}
 {"id": "190619a69a1b2dac", "title_simhash": 16750281630957827388, "lang": "en", "source_id": "latent_space", "first_seen": "2026-11-25T22:54:54+09:00"}
+{"id": "5f11e93bd8b497db", "title_simhash": 2423792436305292491, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "f3b3ab34a5cf9651", "title_simhash": 13638889386956445081, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "7d9cf74c0b5d29a5", "title_simhash": 13638678297916363227, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "408017aa497bf635", "title_simhash": 10171711853518660767, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "d98fab949dd4770b", "title_simhash": 7172413742157575280, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "fb91531ea51a39bd", "title_simhash": 7209463899120874266, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "821c24d55e1ffeaf", "title_simhash": 9027422739415323099, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "7ccf312b125733e3", "title_simhash": 13241923468877914593, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "3c43d28f4206fd3b", "title_simhash": 9737080900457705850, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "76f7a86957472864", "title_simhash": 1070769769101641252, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "eea0f1b987c1f7af", "title_simhash": 13648118154443051417, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "952ec9dc7447d17e", "title_simhash": 370850018478915720, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "8eaab6c1b49ba66d", "title_simhash": 7289000820281061787, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "9db4556d3bb65571", "title_simhash": 11921464113496011537, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "1b97e62261ff05e1", "title_simhash": 7288398288446951833, "lang": "en", "source_id": "stanford_sail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "fff0e7ad1d2a9b8d", "title_simhash": 2447288220422914097, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "cafec574dc3b0f21", "title_simhash": 3733757883151773723, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "3b25cbadc9a2c24d", "title_simhash": 5851192080724700902, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "8cb035f8a79a66e5", "title_simhash": 6816070051495891134, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "4260d8b154b958cf", "title_simhash": 285231304672659893, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "9935d6ce29f5a6d0", "title_simhash": 9568390548586566831, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "bd97d9dded4d4426", "title_simhash": 121607661752684611, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "a7fa3a3b11e072b5", "title_simhash": 4178753390650754625, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "0ef3c80b085b5502", "title_simhash": 721711701694614529, "lang": "en", "source_id": "mit_csail", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "440cd3b589757fef", "title_simhash": 4354234690044753769, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "44745dbee50ae2d3", "title_simhash": 10068961819966141661, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "5bb4e5a12b192612", "title_simhash": 5534116080167656543, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "135d3f1d07b84d11", "title_simhash": 15635485604453288253, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "6fc310cfa53738c0", "title_simhash": 6975056884755630404, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "255aa7e58239f3dc", "title_simhash": 1982835497236239024, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "4fde918600f1627c", "title_simhash": 1784572625322153453, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "d40c2f387a1b797c", "title_simhash": 9556921419179823587, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "1d64a719ed7b0148", "title_simhash": 1461544665727111818, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "64534b8803fe487a", "title_simhash": 6954852948963754760, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "e85fb93d1ec2d681", "title_simhash": 1800615508817924364, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "b59ce0fb79cfd458", "title_simhash": 11719634967046127760, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "768ff92f4587c026", "title_simhash": 16203630305260000030, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "d6815fb95f41ff56", "title_simhash": 2351050435349807132, "lang": "en", "source_id": "yt_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "8f931dc956e632ee", "title_simhash": 10712944879553471917, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "0a3e777a0bca424a", "title_simhash": 11829351207865345502, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "6c83cc8c2adcfdc3", "title_simhash": 10392284946975925716, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "86c752521c340539", "title_simhash": 12716688416842950085, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "444a461bddbda09f", "title_simhash": 10429802586891464638, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "9006cb5a0fbca94e", "title_simhash": 443613432539874326, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "dba9eeeddeb033af", "title_simhash": 9272446243944779182, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "6a37c99037508a81", "title_simhash": 10388199163912750556, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "34e456c368cca7a2", "title_simhash": 9239236038403280324, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "69a085769d7ecbcd", "title_simhash": 10428298876830319765, "lang": "en", "source_id": "gh_openpi", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "c75412f40e03f4bf", "title_simhash": 2514873261255604064, "lang": "en", "source_id": "gh_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "f1363f7332193d0d", "title_simhash": 12314402587218981257, "lang": "en", "source_id": "gh_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "523877377d8cd22e", "title_simhash": 11736534320305934472, "lang": "en", "source_id": "gh_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "4a6fd0a43aaa1610", "title_simhash": 4244813936796815754, "lang": "en", "source_id": "gh_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "8b9da03cbcb98bdb", "title_simhash": 12314112183402624488, "lang": "en", "source_id": "gh_bostondynamics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "062513e630963ae4", "title_simhash": 11616008599191080073, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "50e0cfd03a6e87e3", "title_simhash": 13848578907642711041, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "2dcff64c4f2902b9", "title_simhash": 16218687195017103517, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "4aa72f2871e2bb75", "title_simhash": 11538251248274951369, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "455f876a12a56ba7", "title_simhash": 9232669523388320345, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "c32bc70533a8815c", "title_simhash": 380352554748355328, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "70a99dc8b7690335", "title_simhash": 9801183969278558992, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "1f89b493bd3c7a9d", "title_simhash": 11547510920670482432, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "1750a675a165d41c", "title_simhash": 9818089770408350464, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "bc4b2f1b56e2204f", "title_simhash": 9800958691490542336, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "c87937f0ffa69b87", "title_simhash": 1153354919454585600, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "5976bade11a508a3", "title_simhash": 10954054915002344257, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "3398caa0ce23beb6", "title_simhash": 145825690952192, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "399828b3ac027dcb", "title_simhash": 668601623940563712, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "635b267ac04d2887", "title_simhash": 2620442568381904173, "lang": "en", "source_id": "hn_algolia_robotics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "bc34ed6775f85d5c", "title_simhash": 17149131285581998385, "lang": "en", "source_id": "hn_algolia_robotics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "e5976c73aa665f1f", "title_simhash": 190347505846398518, "lang": "en", "source_id": "hn_algolia_robotics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "66fe91d410927892", "title_simhash": 2716111887538053296, "lang": "en", "source_id": "hn_algolia_robotics", "first_seen": "2026-11-26T00:20:28+09:00", "expired": true}
+{"id": "8b6e448afe7f0bbe", "title_simhash": 14180466897284794624, "lang": "ko", "source_id": "pytorch_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "1702434cb5e708e8", "title_simhash": 14319288299084381603, "lang": "ko", "source_id": "pytorch_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "7746e132cc7d52ea", "title_simhash": 14476479990902964953, "lang": "ko", "source_id": "pytorch_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "8a06fe62ab966c84", "title_simhash": 713962123518713987, "lang": "ko", "source_id": "pytorch_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "a98ebc24c8c3e0ae", "title_simhash": 554657574742919745, "lang": "ko", "source_id": "pytorch_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "ca17a006ecd7810d", "title_simhash": 15645463479432511851, "lang": "ko", "source_id": "aitimes_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "a0841831a8a24482", "title_simhash": 9803281753751161858, "lang": "ko", "source_id": "aitimes_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "c5951792e9cf70e8", "title_simhash": 13860200192300518433, "lang": "ko", "source_id": "aitimes_kr", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "5a4ef565ec2b51ab", "title_simhash": 8746086669221016738, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "76560941fcb4e355", "title_simhash": 7019018636044436542, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "d66090325b18d9ad", "title_simhash": 6371428029070262313, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "297a373b64b74b5d", "title_simhash": 17913511250623015138, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "dcb0015d58792fbb", "title_simhash": 13962286932864540932, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "14b33db1be001189", "title_simhash": 6593903475158762534, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "336e2b45ffdfa483", "title_simhash": 16726680943524595926, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "107706c7dff53707", "title_simhash": 15868407240629559323, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "b6a365a38353dfac", "title_simhash": 4757068102998797417, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "a0f418d73d3e2f1b", "title_simhash": 2468764935956128128, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "748099155ee5528b", "title_simhash": 10513418786241329931, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "5012cf16ea8909ee", "title_simhash": 11564034007774929556, "lang": "ko", "source_id": "aitimes_com", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "72f2c6a0e6f579fd", "title_simhash": 16149909589855387664, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "e15c0f88ad1534aa", "title_simhash": 16510226422233811985, "lang": "en", "source_id": "gh_isaac_sim", "first_seen": "2026-11-26T00:20:28+09:00"}
+{"id": "8f0c3cb56e805958", "title_simhash": 11043053748351538000, "lang": "en", "source_id": "gh_fourier", "first_seen": "2026-11-26T00:20:28+09:00"}
