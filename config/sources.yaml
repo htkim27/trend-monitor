@@ -62,6 +62,27 @@ sources:
     verified_at: "2026-11-25"
     selected: "[H][M] 해외 탑티어 로보틱스/AI 연구 블로그 (UC Berkeley)"
 
+  - id: stanford_sail
+    name: Stanford AI Lab (SAIL) Blog
+    type: rss
+    url: "https://ai.stanford.edu/blog/feed.xml"
+    channel: blog_global
+    lab: stanford_sail
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    selected: "[H][M] 스탠포드 AI/로보틱스 연구실 공식 블로그 (Fei-Fei Li·Chelsea Finn·Shuran Song)"
+
+  - id: mit_csail
+    name: MIT CSAIL News
+    type: rss
+    url: "https://www.csail.mit.edu/rss.xml"
+    channel: blog_global
+    lab: mit_csail
+    status: active
+    verified_at: "2026-11-26"
+    selected: "[H][M] MIT CSAIL 로보틱스·AI 공식 뉴스"
+
   - id: huggingface_blog
     name: Hugging Face Blog
     type: rss
@@ -122,9 +143,46 @@ sources:
     verified_at: "2026-11-25"
     selected: "[M][S] 국내 탑티어 기술 블로그 (AI·로봇 인프라)"
 
+  - id: pytorch_kr
+    name: 파이토치 한국 사용자 모임
+    type: rss
+    url: "https://discuss.pytorch.kr/latest.rss"
+    channel: community
+    status: active
+    verified_at: "2026-11-26"
+    selected: "[M][H][C] 국내 AI·월드모델·로보틱스 오픈소스 커뮤니티 최신 글 (0.4 상한)"
+
+  - id: aitimes_kr
+    name: 인공지능신문
+    type: rss
+    url: "https://www.aitimes.kr/rss/allArticle.xml"
+    channel: press_kr
+    status: active
+    verified_at: "2026-11-26"
+    selected: "[M][S] 국내 피지컬 AI·로보틱스·프론티어 모델 전문 매체"
+
+  - id: aitimes_com
+    name: AI타임스
+    type: rss
+    url: "https://www.aitimes.com/rss/allArticle.xml"
+    channel: press_kr
+    status: active
+    verified_at: "2026-11-26"
+    selected: "[M][F] 국내 주요 AI·로보틱스 뉴스 매체"
+
   # ══════════════════════════════════════════════════════════════
   # 4. 유튜브 (공식 Atom RSS) [M][S]
   # ══════════════════════════════════════════════════════════════
+  - id: yt_bostondynamics
+    name: YouTube · Boston Dynamics
+    type: atom
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UC7vVhkEfw4nOGp8TyDk7RcQ"
+    channel: youtube
+    lab: boston_dynamics
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    selected: "[S] 보스턴 다이내믹스 공식 유튜브 (Atlas·Spot 데모 및 발표)"
   - id: yt_unitree
     name: YouTube · Unitree Robotics
     type: atom
@@ -158,8 +216,68 @@ sources:
     selected: "[M][S] NVIDIA 공식 유튜브 (Isaac/GR00T/키노트)"
 
   # ══════════════════════════════════════════════════════════════
-  # 5. 중국 & 오픈소스 로보틱스 깃헙 (신규 리포/최근 푸시) [S][H]
+  # 5. 미국·중국·글로벌 오픈소스 로보틱스 깃헙 (신규 리포/최근 푸시) [S][H]
   # ══════════════════════════════════════════════════════════════
+  - id: gh_openpi
+    name: GitHub · Physical Intelligence
+    type: json_list
+    url: "https://api.github.com/orgs/Physical-Intelligence/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: physical_intel
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[M][H] Physical Intelligence 공식 깃헙 (openpi·π0 생태계)"
+
+  - id: gh_bostondynamics
+    name: GitHub · Boston Dynamics
+    type: json_list
+    url: "https://api.github.com/orgs/boston-dynamics/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: boston_dynamics
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] Boston Dynamics 공식 깃헙 (mjlab·Spot SDK)"
+
+  - id: gh_isaac_sim
+    name: GitHub · NVIDIA Isaac Sim
+    type: json_list
+    url: "https://api.github.com/orgs/isaac-sim/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: nvidia
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S][H] NVIDIA IsaacLab·IsaacLab-Arena 공식 깃헙"
+
+  - id: gh_allenai
+    name: GitHub · AllenAI (Ai2)
+    type: json_list
+    url: "https://api.github.com/orgs/allenai/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: allenai
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[M][H] Ai2 공식 깃헙 (MolmoAct·RoboTrack·평가체계)"
+
+  - id: gh_fourier
+    name: GitHub · Fourier Intelligence (FFTAI)
+    type: json_list
+    url: "https://api.github.com/orgs/FFTAI/repos?sort=pushed&per_page=10"
+    channel: github
+    lab: fourier
+    primary: true
+    status: active
+    verified_at: "2026-11-26"
+    extract: {items_path: "", id_field: id, title_field: full_name, summary_field: description, url_field: html_url, published_field: pushed_at}
+    selected: "[S] 중국 Fourier Intelligence 공식 깃헙 (GRx 휴머노이드 SDK/모델)"
+
   - id: gh_roboprobe
     name: GitHub · RoboProbe
     type: json_list
