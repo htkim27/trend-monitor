@@ -1,42 +1,36 @@
-# RoboSpine 트렌드 모니터 · 2026-11-26 오전 (07:06 KST)
-수집 14 (신규) · 판정 90 · 사건 22 · 버림 57 (off_topic 43, low_significance 14) · 대기 173
+# RoboSpine 트렌드 모니터 · 2026-11-27 오전 (07:38 KST)
+수집 13 (신규) · 판정 128 · 사건 14 (신규 14, 기존 병합 1) · 버림 112 (off_topic 111, low_significance 1) · 대기 0
 
 ## 한눈에
-- **[0.90] VLM 도구 호출 조작을 멀티턴 RL로 학습하는 'RoboHarness-RL' 및 비동기 코딩 에이전트 'ACAP' 공개** (arXiv cs.RO — PyRUA-Dex·MARGIN·CATWAY·Boundary-Aware Policy Learning 등 로봇 하네스 핵심 논문 집중 발표)
-- **[0.86] Google DeepMind, 차세대 인터랙티브 월드 모델 'Genie 4' 및 Project Genie 공식 출시** (DeepMind 공식 블로그 · YouTube 2곳 병합)
-- **[0.86] OpenAI, 코딩·컴퓨터 사용·비용 효율 강화한 'GPT-6.2 Astra 및 Sol' 공개** (ChatGPT Work · Codex · API 전반 출시)
+- **[0.78] 이산 스킬 어휘의 폐루프 실패를 분해 진단하는 'MPQ' 및 태스크 주도 시뮬 생성 플랫폼 'EmbodiedStudio' 공개** (arXiv cs.RO — 스킬 라이브러리 실패 귀속 분석과 자동 시뮬레이션 물리·채점 신뢰도 확보)
+- **[0.72] Hugging Face, 모델-하네스 맞춤 최적화 'Harness Adapters' 및 OpenAI 'Codex 샌드박스' 격리 구조 공개** (프론티어 에이전트 하네스의 비용·성능 어댑테이션과 크로스플랫폼 실행 안전 경계 제시)
+- **[0.68] 中 샤오펑, 통합 '튜링 피지컬 AI(VLA 3.0)' 및 1,500+ 촉각점 휴머노이드 '아이언' 공개** (차량·휴머노이드 공통 VLA 스택 통합 + DeepMind 'Genie 4' 내장 에이전트 비하인드 병합)
 
 ## 로봇 하네스 · 아키텍처
-- **[0.90] VLM 도구 호출 조작을 멀티턴 RL로 학습하는 'RoboHarness-RL' 공개** (PyRUA-Dex · MARGIN · CATWAY 병합 클러스터) — 인지·계획·제어 도구를 호출하는 에이전트 하네스에서 소형 오픈 웨이트 VLM의 성능을 끌어올리는 멀티턴 강화학습 프레임워크예요. 교사 시연 SFT 후 별도 VLA 없이 작업 결과 보상 기반 RL로 도구 호출 조작 능력을 개선해요. 함께 공개된 **PyRUA-Dex**(시연 없는 병렬 코딩 에이전트 양손 기민 조작), **MARGIN**(성공 롤아웃의 near-miss margin 기반 취약 코드 표적 수선), **CATWAY**(보정된 LLM 확률 기반 실행·질문·거부 3방향 비용 민감 게이트)와 맞물려 실행·검증·안전 전 축의 하네스 아키텍처가 빠르게 성숙하고 있어요.
-- **[0.88] 로봇 제어 그룹별 비동기 코딩 에이전트 팀 아키텍처 'ACAP' 공개** — 단일 코딩 에이전트가 로봇 전체를 제어할 때 생기는 지연을 줄이기 위해, 한 대의 로봇을 팔·그리퍼나 몸통·섀시 등 제어 그룹별 지속 에이전트 팀으로 구성해 비동기 추론·실행과 물리 의존성 조율을 수행하는 구조예요.
-- **[0.85] 에이전트-하위 정책 인계 실패를 줄이는 'Boundary-Aware Policy Learning'** (Weight-Space Programming 병합 클러스터) — 상위 멀티모달 에이전트가 하위 시각-운동 정책을 유효 시작 상태(handoff boundary) 밖에서 호출해 실패하는 문제를 정면으로 다뤘어요. 함께 발표된 **Weight-Space Programming(WSP)**은 추가 학습 없이 LLM 에이전트가 사전학습 VLA의 파라미터를 직접 소폭 편집해 반복 교착 실패를 교정하는 접근을 제시했어요.
-- **[0.82] Embodied AI 물리 안전·시간·동적 변화 벤치마크 3종 ('EmbodiSafety' · 'RoboClock' · 'CALVIN-MAX')** — **EmbodiSafety**는 844개 시각 시나리오(스냅샷 1,092·궤적 540)에서 6가지 안전 대응 모드를, **RoboClock**은 5개 도메인 60태스크의 시간 창·응답 지연·처리량을, **CALVIN-MAX**는 7,828개 케이스로 실행 도중 물체·카메라·로봇·지시 변화의 영향을 분해 측정해요.
-- **[0.81] 단일 실제 시연으로 검증 시뮬을 복원해 스킬을 자가 개선하는 'RESET'** — 단 한 번의 실제 시연에서 장면 기하·최종 성공 기준·물리 충실도 검증 참조를 추출해 LLM 코딩 에이전트가 이종 로봇(cross-embodiment) 스킬을 자가 개선할 수 있는 접촉 중심 월드를 복원해요.
-- **[0.80] Ai2, 실제 로봇 조작 포인트 추적 'RoboTrack' Hugging Face 공식 블로그 공개** — AllenAI가 실제 로봇 조작 환경의 포인트 추적 문제를 다룬 RoboTrack 공식 기술 문서를 Hugging Face 블로그에 게시했어요.
-- **[0.76] 장시간 조작 RL의 병목 구간을 집중 연습하는 'ReFocus'** — 진행도 기반으로 전역 RL과 국소 RL을 교차해 장시간 조작의 병목 구간을 찾아내고 추가 연습을 집중 배분하는 프레임워크예요.
+- **[0.78] 이산 스킬 어휘의 폐루프 실패를 분해 진단하는 'MPQ' 공개** ([arXiv](https://arxiv.org/abs/2611.32858v1)) — 유한 어휘에서 모션을 실행하는 기존 이산 스킬 정책은 잠재 코드북을 선택기·디코더와 함께 학습해, 폐루프 실패 시 어휘·선택·실행 중 어디가 원인인지 추적하기 어려웠어요. 본 연구는 학습된 정책 내부가 아닌 뒤에 시연 모션 라이브러리를 배치하는 Movement Prototype Quantization(MPQ)을 제안했어요. MPQ는 예측된 행동 청크를 가장 가까운 라이브러리 요소로 치환한 뒤 유한 범위 내에서 예측값 방향으로 보정해요. 스킬 라이브러리 기반 로봇 하네스에서 실패 원인을 단계별로 분해 진단하고 제어 안정성을 높이는 설계 근거가 돼요.
+- **[0.76] 태스크 주도형 로봇 시뮬레이션 생성·평가 플랫폼 'EmbodiedStudio' 공개** ([arXiv](https://arxiv.org/abs/2611.32534v1)) — 로봇 학습과 평가를 위한 자동 생성 시뮬레이션 환경은 겉보기에 그럴듯해도 의도된 상호작용이나 물리적 안정성이 무너지거나, 생성된 채점 프로그램이 태스크 조건을 충실히 구현하지 못하는 실무 간극이 있었어요. 이 논문은 두 가지 간극을 정면으로 겨냥한 태스크 주도형 시뮬레이션 생성 플랫폼 'EmbodiedStudio'를 제안했어요. 프론티어 모델 기반 로봇 하네스를 다양한 태스크에서 신뢰성 있게 평가·검증하기 위한 자동 시뮬레이션 인프라 연구로 의미가 커요.
 
 ## 빅테크 · 연구 모델 실험
-- **[0.86] Google DeepMind, 차세대 인터랙티브 월드 모델 'Genie 4' 및 Project Genie 공식 출시** (DeepMind 블로그 · YouTube 2곳 병합) — 브라우저에서 자연어로 날씨·캐릭터·행동 전환 등 동적 이벤트를 실시간 트리거하면 시뮬레이션 물리·조명·오디오로 반응하는 차세대 인터랙티브 월드 모델을 Gemini와 결합해 공개했어요.
-- **[0.84] NVIDIA, 두 개 프롬프트로 Cosmos 학습용 Physical AI 데이터셋 구축 워크플로 공개** — NVIDIA 공식 개발자 블로그에서 희귀 결함·야간 사고 등 수집이 어려운 엣지 케이스를 단 두 개 프롬프트로 합성해 월드 모델 학습 데이터를 구축하는 방법을 공개했어요.
-- **[0.82] VLA 6종 진단 'Seeing Is Not Reaching' 및 경량 WAM 연구 ('DexWAC' · 'LeanWAM' · 'TauPrune-VLA')** — **Seeing Is Not Reaching**은 π0.5 포함 6종 VLA에서 어텐션이 이동한 표적을 따라가도 행동은 학습 위치를 고집하는 지시·장면 단축 현상을 규명했어요. 함께 공개된 **DexWAC**(월드·액터·크리틱 단일 통합), **LeanWAM**(동결 비디오 모델에서 소수 토큰 잠재 WAM 증류), **TauPrune-VLA**(학습 없는 스케일 적응형 시각 토큰 가지치기)가 WAM·VLA의 효율과 표현 공유를 끌어올렸어요.
-- **[0.77] 표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'** — 표적 물체 자세만 밀리미터 정밀도로 예측하고 주변 환경은 여유 공간과 움직임 중심으로 분리 예측해 동적 조작 지연을 줄였어요.
-- **[0.75] π0 연속 학습 진단: 도메인 내 망각은 0에 가까워도 OOD 강건성은 급락** — LIBERO·LIBERO-Plus 검증에서 경험 리플레이로 연속 학습한 π0의 이전 태스크 OOD 성능이 빠르게 붕괴함을 보였어요.
+- **[0.72] Google DeepMind, 'Genie 4' 실시간 월드 시뮬레이션 및 내장 에이전트 제작 비하인드 공개** (기존 Genie 4 출시 사건 병합 · [YouTube](https://www.youtube.com/watch?v=pVc6KkjeCfU)) — Google DeepMind 공식 YouTube에서 차세대 인터랙티브 월드 모델 'Genie 4'와 Project Genie의 제작 비하인드 영상을 공개했어요. 정적 비디오 생성이 아니라 텍스트 프롬프트를 수초 만에 탐색 가능한 동적 월드로 만들고, 키보드 조작과 라이브 프롬프트로 장면을 실시간 제어하는 과정을 보여줬어요. 특히 Project Genie 내장 에이전트로 키보드 단축키에 매핑된 커스텀 앱을 만들어 캐릭터 이동·대화·이벤트를 실시간 트리거하고 프롬프트를 재현 가능한 시드로 활용한 점이 Embodied 시뮬레이션 관점에서 주목할 만해요.
+- **[0.68] 中 샤오펑, 통합 '튜링 피지컬 AI(VLA 3.0)' 및 1,500+ 촉각점 휴머노이드 '아이언' 공개** ([로봇신문](https://www.irobotnews.com/news/articleView.html?idxno=49826)) — 중국 샤오펑(XPENG)이 11월 25일 광저우 제8회 '샤오펑 AI 데이'에서 차세대 휴머노이드 로봇과 자율주행차에 공통 적용할 '튜링 피지컬 AI 아키텍처(VLA 3.0)'와 차세대 범용 휴머노이드 로봇 '아이언(IRON)'을 공개했어요. VLA 3.0은 AI의 인지 능력·실시간 의사결정·물리적 실행 능력을 단일 시스템으로 통합한 구조예요. 아이언에 1,500개 이상 촉각 감지점을 탑재한 점과 차량·휴머노이드 공통 VLA 스택 전략이 중국 피지컬 AI 하드웨어·모델 통합 흐름을 잘 보여줘요.
+- **[0.45] 중국 '2026 피지컬 AI 보고서', 삼지일체 전략 및 생산성 지표 'Worken' 제시** (비공식 2차 해설 · [로봇신문](https://www.irobotnews.com/news/articleView.html?idxno=49758)) — 중국 신화사·중국정보통신연구원이 공동 발표한 '2026 피지컬 AI 산업혁신 보고서'에서 운동지능·작업지능·상호작용지능을 통합하는 '삼지일체' 전략과 출하량 대신 현장 작업 생산성을 평가하는 지표 'Worken'이 제시됐다고 로봇신문이 전했어요. 중국 피지컬 AI 진영이 단순 하드웨어 양산에서 실제 작업 수행 능력 평가로 초점을 옮기는 방향성을 참고할 수 있어요.
 
 ## 로봇 플랫폼 · 미국/중국/한국/글로벌 깃헙 & SDK
-- **[0.75] Unitree 휴머노이드 XR 텔레오퍼레이션 'xr_teleoperate' (★1,741) & C++ SDK 'unitree_sdk2' (★1,460) 업데이트** — Unitree 공식 GitHub의 XR 텔레오퍼레이션과 핵심 C++ 제어 SDK가 나란히 업데이트됐어요.
-- **[0.73] NVIDIA 오픈소스 로봇 시뮬레이터 'IsaacSim' 공식 GitHub 업데이트 (★4,535)** — Omniverse 기반 오픈소스 로봇 시뮬레이터 IsaacSim 저장소가 업데이트됐어요.
-- **[0.72] 중국 AgiBot(지위안) 핸드 SDK 'agilink_omnihand_sdk' 업데이트 (★41)** — C++·Python·ROS2 API를 지원하는 공식 덱스터러스 핸드 SDK가 갱신됐어요.
-- **[0.72] Ai2, 종단간 오픈 로봇 학습 생태계 'molmospaces' 공식 GitHub 업데이트 (★533)** — AllenAI의 오픈 로보틱스 학습 생태계 저장소가 업데이트됐어요.
-- **[0.71] 중국 LimX Dynamics, 무의존성 저수준 모션 제어 SDK 'limxsdk-lowlevel' 업데이트 (★20)** — Linux·Windows 및 ROS/Gazebo·RL Sim2Real 배포를 지원하는 C++11/Python 저수준 제어 SDK가 업데이트됐어요.
+- **[0.68] NVIDIA Isaac Sim, 시뮬레이션 데이터 자동화 저장소 'isaac-sim/AutoData' (★19) & 'IsaacLabTutorial' (★84) 업데이트** ([AutoData](https://github.com/isaac-sim/AutoData) · [IsaacLabTutorial](https://github.com/isaac-sim/IsaacLabTutorial) 병합) — NVIDIA Isaac Sim 공식 GitHub 조직의 Python 저장소 `isaac-sim/AutoData`(★19)와 Isaac Lab 공식 문서 연계 튜토리얼 프로젝트 `isaac-sim/IsaacLabTutorial`(★84)이 나란히 업데이트됐어요. Isaac Sim 생태계의 시뮬레이션 기반 로봇 데이터 자동 생성 파이프라인과 RL 태스크 구성 예제 툴체인이 지속적으로 보강되고 있어요.
+- **[0.64] Unitree, 공식 로봇 카메라 캘리브레이션 도구 'uni_calib' GitHub 공개 (★5)** ([GitHub](https://github.com/unitreerobotics/uni_calib)) — Unitree 공식 GitHub에 로봇 카메라 캘리브레이션 도구 `unitreerobotics/uni_calib`(★5)가 등록·업데이트됐어요. 시각 기반 로봇 하네스와 3D 인지 도구를 실제 Unitree 하드웨어에 연결할 때 필수적인 카메라 보정을 공식 툴체인으로 지원하는 저장소예요.
+- **[0.58] 中 애지봇(AgiBot), 美 로보스토어와 공식 유통 계약 체결하며 북미 진출** ([로봇신문](https://www.irobotnews.com/news/articleView.html?idxno=49767)) — 중국 로봇 기업 애지봇(AGIBOT·智元)이 미국 로봇 유통업체 로보스토어(RoboStore)와 공식 유통 계약을 체결하고 미국 시장에 본격 진출했어요. 휴머노이드 로봇, 4족 보행 로봇, 정교한 로봇손 등 주요 제품군을 미국 연구자·교육기관·개발자·기업에 공급할 예정이에요. 중국 주요 휴머노이드·덱스터러스 핸드 플랫폼의 북미 연구·개발 접근성이 넓어지는 움직임이에요.
+- **[0.56] 중국 Booster Robotics, 3v3 시뮬레이션 프레임워크 'sim-3v3-simple-framework' 업데이트 (★18)** ([GitHub](https://github.com/BoosterRobotics/sim-3v3-simple-framework)) — 중국 Booster Robotics 공식 GitHub의 Python 저장소 `BoosterRobotics/sim-3v3-simple-framework`(★18)가 업데이트됐어요. 다중 휴머노이드 시뮬레이션과 협업 제어 실험을 지원하는 공식 오픈소스 프레임워크예요.
+- **[0.50] 美 SiMa.ai, 단일 칩 다중 피지컬 AI 실행 SW '팔레트 3.0' 출시** ([로봇신문](https://www.irobotnews.com/news/articleView.html?idxno=49756)) — 미국 시마닷에이아이(SiMa.ai)가 엄격한 전력 제한 내 단일 칩 위에서 여러 피지컬 AI 모델을 최적화해 동시 실행할 수 있는 '팔레트 3.0(Palette 3.0)' 소프트웨어를 출시했다고 보도됐어요. 지난 6월 발표한 '에이전틱 팔레트'를 기반으로 복잡한 기계 추론과 구동을 지원하는 엣지 배포 SW예요.
 
 ## 프론티어 모델 · 에이전트 (20% 슬라이스)
-- **[0.86] OpenAI, 코딩·컴퓨터 사용·비용 효율 강화한 'GPT-6.2 Astra 및 Sol' 공개** — ChatGPT Work·Codex·API 전반에서 전문 결과물·코딩·컴퓨터 사용(computer use) 성능과 비용 효율을 개선한 메이저 릴리스예요.
-- **[0.84] Google DeepMind, 'Gemini 4 Neon' 공식 블로그 발표** (DeepMind 공식 · Latent Space 2곳 병합) — Gemini 4 라인업 중급 플래그십 모델의 1차 공식 발표가 게시됐으며, Latent Space 요약 기준 Intelligence Index 61점으로 Opus·Sol 경쟁 구간에 위치했어요.
-- **[0.74] OpenAI, 코딩 에이전트의 AI 연구 가속 실측 보고서 'Research acceleration: The jagged frontier' 공개** — 코딩 에이전트가 AI 연구를 가속하는 영역과 불균일하게 실패하는 경계를 실측해 공개했어요.
+- **[0.72] Hugging Face, 모델-하네스 맞춤 최적화 'Harness Adapters' 공개** ([Hugging Face Blog](https://huggingface.co/blog/harness-adapters-at-scale)) — Hugging Face 공식 블로그에서 선호하는 모델을 특정 에이전트 하네스에 맞춰 적응시켜 성능과 비용 효율을 동시에 개선하는 'Harness Adapters'를 공개했어요. 프론티어 모델 자체를 통째로 재학습하는 대신, 특정 하네스의 도구 호출·실행 구조에 맞춘 어댑터로 실전 효율을 끌어올리는 접근이에요. 로봇 하네스에서도 동일한 제어 인터페이스 위에 다양한 VLM·LLM을 비용 효율적으로 연결할 때 직접 응용할 수 있는 설계 패턴이에요.
+- **[0.70] OpenAI, 크로스플랫폼 'Codex 샌드박스' 내부 격리 구조 공개** ([OpenAI](https://openai.com/index/inside-the-codex-sandbox)) — OpenAI 공식 블로그에서 코딩 에이전트 Codex가 로컬 머신에서 명령을 실행할 때 파일시스템과 네트워크 제한을 강제하는 샌드박스 아키텍처를 공개했어요. macOS·Linux·Windows 전반에서 사용자가 제어하는 권한 경계를 OS 수준으로 일관되게 강제하는 실행 구조를 설명해요. 코드 실행형 로봇 하네스에서 에이전트의 명령 실행 권한과 안전 경계(safety boundary)를 설계할 때 참고 가치가 높은 1차 문서예요.
+- **[0.66] Hugging Face, 멀티 에이전트 구축·학습·평가 가이드 'Swarms, Flocks, Gangs' 공개** ([Hugging Face Blog](https://huggingface.co/blog/training-swarms)) — Hugging Face 공식 블로그에서 멀티 에이전트 시스템을 구축하고 학습·평가하는 방법론을 다룬 기술 포스트 'Swarms, Flocks, Gangs'를 게시했어요. 단일 에이전트를 넘어 다중 에이전트 협업 구조를 설계하고 체계적으로 평가하는 실무 기준을 다뤘어요. 팔·그리퍼·이동체 등 제어 그룹별 멀티 에이전트 로봇 하네스를 설계하고 검증할 때도 유용한 참고 자료예요.
 
 ## 트렌드 · 평소 대비
-- 급상승 / 새로 등장(24h vs 7d): 기준선 축적 초기 단계로 24h 대비 급상승/신규 판정 없음 (최근 7일 누적 사건 35건).
-- 분야 비중(7일): 로봇 하네스 40.0% · 플랫폼/SDK 37.1% · 빅테크 모델 실험 17.1% · 프론티어 AI 5.7% (로보틱스 94.3% : 프론티어 AI 5.7%)
+- 급상승 / 새로 등장(24h vs 7d): 24시간 대비 급상승·신규 판정 없음 (최근 7일 누적 사건 68건).
+- 분야 비중(7일): 로봇 하네스 35.3% · 플랫폼/SDK 30.9% · 빅테크 모델 실험 20.6% · 프론티어 AI 13.2% (로보틱스 86.8% : 프론티어 AI 13.2%)
 
 ## 소스 점검
-- 전체 활성 소스 수집 성공 (신규 14건 추가, 중복 584건 제외, 만료 8건, 실패 소스 0건)
+- 실패 소스 2건: `arxiv_robot_harness` (read timeout 15s, 누적 실패 1), `latent_space` (read timeout 15s, 누적 실패 1)
+- 그 외 활성 소스 수집 성공 (총 491건 조회, 신규 13건 추가, 중복 478건 제외, 만료 0건)

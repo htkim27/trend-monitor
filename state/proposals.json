@@ -142,5 +142,181 @@
     "days": [
       "2026-11-26"
     ]
+  },
+  "roboarc": {
+    "key": "roboarc",
+    "title": "RoboARC",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "dtu-bench": {
+    "key": "dtu-bench",
+    "title": "DTU-Bench",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "real2simlab": {
+    "key": "real2simlab",
+    "title": "Real2SimLab",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "skeptic": {
+    "key": "skeptic",
+    "title": "Skeptic",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "seek-robot": {
+    "key": "seek-robot",
+    "title": "SEEK",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "chase-harness": {
+    "key": "chase-harness",
+    "title": "CHASE",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "regharness": {
+    "key": "regharness",
+    "title": "RegHarness",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "agentic-robotics-harness-study": {
+    "key": "agentic-robotics-harness-study",
+    "title": "Agentic Robotics Harness Study",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "roboevo2": {
+    "key": "roboevo2",
+    "title": "RoboEvo2",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "solve-keyposes": {
+    "key": "solve-keyposes",
+    "title": "SOLVE",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "prove-eval": {
+    "key": "prove-eval",
+    "title": "PROVE",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "demofoundry": {
+    "key": "demofoundry",
+    "title": "DemoFoundry",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "cairn-vla": {
+    "key": "cairn-vla",
+    "title": "Cairn",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "holobrain-0-5": {
+    "key": "holobrain-0-5",
+    "title": "HoloBrain-0.5",
+    "domain": "embodied_models",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "m2-wam": {
+    "key": "m2-wam",
+    "title": "M2-WAM",
+    "domain": "embodied_models",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "worldreforge": {
+    "key": "worldreforge",
+    "title": "WorldReforge",
+    "domain": "embodied_models",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "any2act": {
+    "key": "any2act",
+    "title": "Any2Act",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "fabricbench": {
+    "key": "fabricbench",
+    "title": "FabricBench",
+    "domain": "hardware_sdk",
+    "days": [
+      "2026-11-26"
+    ]
+  },
+  "embodied-studio": {
+    "key": "embodied-studio",
+    "title": "EmbodiedStudio",
+    "domain": "harnesses",
+    "days": [
+      "2026-11-27"
+    ]
+  },
+  "sima-palette": {
+    "key": "sima-palette",
+    "title": "SiMa.ai Palette",
+    "domain": "hardware_sdk",
+    "days": [
+      "2026-11-27"
+    ]
+  },
+  "glm-zhipu": {
+    "key": "glm-zhipu",
+    "title": "Z.ai GLM",
+    "domain": "ai_frontier",
+    "days": [
+      "2026-11-27"
+    ]
+  },
+  "xpeng-iron": {
+    "key": "xpeng-iron",
+    "title": "XPENG IRON / VLA 3.0",
+    "domain": "embodied_models",
+    "days": [
+      "2026-11-27"
+    ]
   }
 }

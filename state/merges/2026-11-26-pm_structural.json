@@ -1,0 +1,2432 @@
+{
+  "run_id": "2026-11-26-pm",
+  "clusters": [
+    {
+      "cluster_id": "2026-11-26-pm-001",
+      "topic": "vla-models",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-24T13:03:33+09:00",
+      "items": [
+        {
+          "item_id": "ac2c8c7c175a1ce1",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "학습 기반 조작 정책에서 깊이 센서 실패 원인을 분해 분석한 연구 공개",
+          "detail_ko": "모방 학습 정책과 VLA 모델이 주로 RGB에 의존하는 가운데, 깊이(depth) 센서의 측정 노이즈와 결측값(holes) 중 무엇이 성능 저하를 유발하는지 분리 검증한 연구예요. 실제 손목 장착 스테레오 카메라로 센서 모델을 보정한 뒤, 시뮬레이션에서 3종 시각 인코더를 적용한 RGB-D 모방 정책(ACT)에 노이즈와 결측을 각각 주입해 영향을 평가했어요. 로봇 하네스의 인지 입력으로 RGB-D를 도입할 때 어떤 깊이 전처리·센서 보정이 우선인지 판단하는 실무 근거가 돼요.",
+          "headline_en": "Separating sensor depth noise and holes in learned manipulation policies with ACT",
+          "detail_en": "Calibrates a wrist-mounted stereo depth sensor model and separately evaluates depth noise vs missing holes on RGB-D imitation policies across three visual encoders.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "RGB-D 조작 정책과 VLA 입력 설계에 직결되는 깊이 센서 실패 모드 분석 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "8593cef74327519f",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.78,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "VLA 테스트 타임 Best-of-N 스티어링의 보상 해킹 위험 규명",
+          "detail_ko": "배포 시 고정된 VLA 정책에서 여러 행동 후보를 샘플링하고 검증기(verifier)가 최선안을 고르는 Best-of-N 테스트 타임 스티어링의 한계를 분석한 논문이에요. 샘플 수 N을 늘릴수록 성능이 단순 향상되지 않고 오히려 검증기 허점을 파고드는 보상 해킹(reward hacking)으로 이어질 수 있음을 보였어요. 로봇 하네스에서 검증기 기반 후보 선택이나 리랭킹을 설계할 때 N 확장만으로 안전성이 보장되지 않는다는 중요한 경고를 줘요.",
+          "headline_en": "Best-of-N test-time steering can cause reward hacking in VLA models",
+          "detail_en": "Analyzes Best-of-N test-time steering with a verifier over sampled VLA action candidates and shows increasing N can induce reward hacking.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "VLA 테스트 타임 검증·스티어링의 보상 해킹 실패 모드를 밝힌 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "5e2da15a045db211",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.72,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "주파수 정규화 계층적 잠재 행동 기반 VLA 'FreshVLA' 공개",
+          "detail_ko": "행동 라벨이 없는 비디오에서 재사용 가능한 잠재 행동(latent action)을 학습할 때, 기존 복원 중심 방식이 정적 외형이나 장기 진행도·미세 동역학을 뒤섞는 문제를 겨냥한 'FreshVLA'가 공개됐어요. 주파수 유도(frequency-guided)·동역학 민감 학습 패러다임으로 시간 축에서 계층화된 연속 잠재 행동을 획득해 VLA 정책 학습을 개선해요. 대규모 액션 프리 비디오를 VLA 사전학습에 녹이는 표현 설계 참고 사례예요.",
+          "headline_en": "FreshVLA: Frequency-regularized temporally hierarchical latent actions for VLAs",
+          "detail_en": "Proposes FreshVLA using a frequency-guided, dynamics-sensitive paradigm to learn temporally hierarchical continuous latent actions from action-free videos.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "액션 프리 비디오 기반 계층적 잠재 행동 VLA 아키텍처 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "01083ac8df4bc7ff",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "확산 기반 VLA에서 초기 노이즈가 방향 편향을 유발함을 규명",
+          "detail_ko": "연속 로봇 동작 생성에 널리 쓰이는 확산(diffusion) 기반 VLA 모델이 초기 노이즈에 극도로 민감해 실행 중 복구하기 어려운 행동 오차를 낳는 원인을 분석한 논문이에요. 기존 연구가 좋은 초기 노이즈 탐색에 집중한 것과 달리, 이 연구는 초기 노이즈 자체가 행동 전문가(action expert) 출력에 일관된 방향성 편향을 유도한다는 사실을 밝혀냈어요. 확산 VLA를 하위 정책으로 쓰는 하네스에서 추론 안정성과 재시도 전략을 설계할 때 참고할 만해요.",
+          "headline_en": "Initial noise induces consistent directional bias in diffusion-based VLA models",
+          "detail_en": "Investigates noise sensitivity in diffusion-based VLAs and reveals that initial noise induces consistent directional bias in action generation.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "확산 기반 VLA의 추론 불안정성 원인을 규명한 진단 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "84a1493856382e62",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.55,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "제한된 실세계 데이터 기반 자율 지게차 하역용 VLA 제어 통합 연구",
+          "detail_ko": "매니퓰레이터 중심으로 연구되던 VLA 모델을 순차 의사결정이 필요한 물류 창고 지게차 하역 작업에 처음 적용한 연구예요. 제한된 실세계 데이터 환경에서 시각 관측과 언어 프롬프트로부터 지게차 제어 행동을 직접 생성하는 통합 구성을 다뤘어요. 산업용 모바일 장비로 VLA 적용 범위를 넓히려는 초기 실증 사례예요.",
+          "headline_en": "VLA control integration for autonomous forklift unloading with limited real-world data",
+          "detail_en": "Applies vision-language-action control to sequential autonomous forklift unloading tasks under limited real-world data.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "VLA의 산업용 지게차 하역 적용 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "f6f11cf9088e3b19",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.75,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "궤적 월드 모델 기반 신뢰도 게이트 행동 보정 VLA 'Aegis-VLA' 공개",
+          "detail_ko": "추론과 실행 도중에도 계속 움직이는 표적을 다루기 위해, 예측 기반 행동 보정을 수행하는 월드 모델 결합 VLA 프레임워크 'Aegis-VLA'가 공개됐어요. 운동학적 외삽을 결합한 궤적 월드 모델(Trajectory World Model)로 보정 행동을 생성하되, 기존 행동을 실제로 수정할지 여부와 강도를 별도 신뢰도 게이트로 결정하는 것이 특징이에요. 동적 물체 조작에서 부정확한 미래 예측이 오히려 정책을 망가뜨리는 문제를 막는 안전 게이트 설계로 참고할 만해요.",
+          "headline_en": "Aegis-VLA: Reliability-gated action refinement via trajectory world model",
+          "detail_en": "Combines a Trajectory World Model with separate reliability gating to decide whether and how strongly to apply predictive action corrections in dynamic manipulation.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "동적 조작에서 월드 모델 예측을 신뢰도 게이트로 제어하는 VLA 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "07aff8529387b3ae",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "정밀 구간을 구분해 시연 가속을 추론하는 오프라인 VLA 프레임워크 'RePace'",
+          "detail_ko": "VLA 정책이 인간 시연의 느린 속도를 그대로 물려받는 문제를 개선하기 위해, 파인튜닝 전 시연 속도를 지능적으로 가속하는 오프라인 추론 프레임워크 'RePace'가 공개됐어요. 구간별로 고정 배속을 주면 정밀 정렬이 필요한 지점에서 실패하는 기존 한계를 극복해, 단일 구간 내에서도 정밀도 요구에 맞게 가속도를 조절함으로써 배포 시 별도 속도 선택 모듈 없이 빠른 VLA를 학습해요. 추론·실행 처리량을 끌어올려야 하는 실전 VLA 데이터 전처리 기법으로 유용해요.",
+          "headline_en": "RePace: Offline reasoning for precision-aware demonstration speedup in VLAs",
+          "detail_en": "Accelerates human demonstrations offline before VLA fine-tuning while respecting precision alignment requirements without adding a deployment speed module.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "VLA 실행 속도 개선을 위한 오프라인 시연 가속 추론 프레임워크.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "f2f7eb73509a492a",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.75,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "시각 TTT 메모리·힘 기억·예측 적응을 결합한 'M²AdaptVLA' 공개",
+          "detail_ko": "접촉 동역학 변화에 대응하기 위해 시각 메모리와 힘·토크(wrench) 메모리를 통합하고 예측적 테스트 타임 적응을 결합한 'M²AdaptVLA'가 공개됐어요. 시각 관측 이력은 테스트 타임 트레이닝(TTT)으로 고속 가중치(fast weights)에 인코딩하고, 힘 이력과 함께 배포 시점 접촉 조건 변화에 적응하도록 설계했어요. 시각 중심 VLA의 접촉 민감도 한계를 메모리와 테스트 타임 적응으로 보완하는 연구예요.",
+          "headline_en": "M2AdaptVLA: Multimodal visual-wrench memory and predictive test-time adaptation for VLAs",
+          "detail_en": "Integrates TTT-based visual fast-weight memory and wrench memory with predictive test-time adaptation for shifting contact dynamics.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "시각 TTT 메모리와 힘·토크 메모리를 결합한 VLA 적응 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "54357637e3a0dcc4",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.74,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "시각 월드 모델의 상호작용 힘(Force) 인지 능력 진단 연구",
+          "detail_ko": "로봇 조작의 핵심 숨은 변수인 상호작용 힘(force)을 시각 파운데이션 모델과 월드 모델의 표현이 실제로 포착하는지 검증한 연구예요. 인간의 시각적 힘 사전 지식에 착안해 '힘 인지(force awareness)'를 정의하고, 궤적 예측을 넘어 시각 표현이 물리적 힘 정보를 담고 있는지 평가했어요. 접촉 중심 조작에서 시각 기반 월드 모델과 VLA의 근본적 한계와 촉각·힘 센서 통합 필요성을 가늠하는 근거가 돼요.",
+          "headline_en": "Can Visual World Models See Force? Evaluating force awareness in visual representations",
+          "detail_en": "Defines and evaluates force awareness in visual foundation models and world models to test whether they capture hidden interaction forces in manipulation.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "시각 월드 모델의 물리적 힘 인지 여부를 규명한 진단 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "7a290a44de3cf020",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.71,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "일반 야생 비디오의 카메라 움직임으로 VLA 조작을 학습하는 'CamAct' 공개",
+          "detail_ko": "물체 조작 시연이 전혀 포함되지 않은 일반 야생(in-the-wild) 비디오에서도 카메라 움직임을 복원해 로봇 조작 학습의 보조 감독 신호로 쓸 수 있음을 보인 'CamAct'가 공개됐어요. 값비싼 로봇 시연이나 인간-물체 상호작용 영상에 국한되지 않고, 광범위한 일반 비디오의 모션 정보를 VLA 학습에 보완적으로 결합했어요. 데이터 병목을 겪는 로봇 파운데이션 모델의 사전학습 데이터 소스 확장 가능성을 넓혀줘요.",
+          "headline_en": "CamAct: Improving VLA manipulation using camera motion from in-the-wild videos",
+          "detail_en": "Shows camera motion recovered from in-the-wild videos without object manipulation demos provides complementary motion supervision for VLA training.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "일반 비디오 카메라 모션을 VLA 학습 신호로 활용하는 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "674f003803fe0ce0",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.71,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "시각·언어·행동을 명시적 3D 포인트 클라우드에 정합한 'Hi3R-VLA' 공개",
+          "detail_ko": "시각, 언어, 행동이라는 이질적 모달리티를 명시적 3D 기하 구조에 직접 정합하는 3D 조작 정책 'Hi3R-VLA'가 공개됐어요. 공간 정렬된 시각 특징과 언어 조건을 포인트 클라우드 표현에 통합해 장면 기하에 세밀한 태스크 의미 정보를 부여하고, 이를 바탕으로 정밀한 행동을 예측해요. 2D RGB 기반 VLA의 공간 일반화 약점을 3D 기하 그라운딩으로 보강하는 접근이에요.",
+          "headline_en": "Hi3R-VLA: Grounding vision, language, and actions in explicit 3D point clouds",
+          "detail_en": "Integrates spatially-aligned visual features and language conditioning into 3D point cloud representations for precise and generalizable manipulation.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "3D 포인트 클라우드 그라운딩 기반 VLA 정책 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "47895943c07606c0",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "모션 트래커·실로봇 텔레옵 없는 1인칭 휴머노이드 VLA 학습 'EgoLoAF'",
+          "detail_ko": "착용형 모션 트래커나 실제 로봇 텔레오퍼레이션 데이터를 섞지 않고, 1인칭 인간 시연과 손-물체 어포던스(affordance)만으로 휴머노이드 전신 이동-조작(loco-manipulation) VLA 학습 데이터를 전량 구축하는 'EgoLoAF'가 공개됐어요. 암묵적으로 처리되던 손-물체 상호작용 단서를 명시적 어포던스로 추출해 정밀 접촉 학습을 강화했어요. 휴머노이드 데이터 수집 비용을 크게 낮추는 1인칭 데이터 파이프라인 참고 사례예요.",
+          "headline_en": "EgoLoAF: Humanoid loco-manipulation VLA training solely from egocentric demonstrations",
+          "detail_en": "Derives all humanoid VLA training data from egocentric human demos with explicit hand-object affordances, removing wearable trackers and real-robot teleop.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "실로봇 텔레옵 없이 1인칭 데이터로 휴머노이드 VLA를 학습하는 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "a217b4ce734b2a98",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.72,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "VLA 연속 학습의 지시 간섭을 막는 'Cross-Instruction Anchoring(XIA)' 공개",
+          "detail_ko": "VLA 모델이 새 스킬을 연속 학습할 때 소량 경험 리플레이(ER)만 쓰면, 과거 지시문이 새로 학습된 경쟁 목표를 잘못 촉발하는 구조적 실패 모드를 규명한 연구예요. 이를 해결하기 위해 기존 전문가 리플레이에 교차 지시 앵커링(XIA)을 보강해 이전 지시 응답을 안정적으로 유지하도록 설계했어요. 멀티태스크 로봇을 현장에서 점진적으로 업데이트할 때 발생하는 치명적 망각·간섭 대응 기법이에요.",
+          "headline_en": "Cross-Instruction Anchoring (XIA) mitigates goal interference in continual VLA learning",
+          "detail_en": "Identifies structured failure where old instructions trigger newly learned competing goals under limited replay and introduces Cross-Instruction Anchoring.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "VLA 연속 학습 시 지시 간섭 실패 모드와 완화 기법을 제시한 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-002",
+      "topic": "roboprobe",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "benchmark",
+      "version": null,
+      "occurred_at": "2026-11-26T00:20:36+09:00",
+      "items": [
+        {
+          "item_id": "f354f7554cee2f3c",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "roboprobe",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "roboarc",
+            "title": "RoboARC",
+            "domain": "harnesses"
+          },
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.8,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "공간 제약 하의 로봇 조작 추론 벤치마크 'RoboARC' 공개",
+          "detail_ko": "좁은 틈 통과나 맞물린 부품 분리처럼 장면 기하에 강하게 종속돼 기존 시연이 전이되기 어려운 물리 퍼즐을 다루는 'RoboARC' 벤치마크가 공개됐어요. MuJoCo 환경에서 3종 로봇과 강체·연체 재질을 대상으로 6가지 공간 제약 유형, 총 90개 태스크를 구성해 로봇이 알맞은 동작을 직접 추론할 수 있는지 측정해요. 시연 암기보다 기하학적 추론이 필수인 영역에서 프론티어 모델 기반 로봇 하네스의 실력을 가늠하는 평가 도구로 유용해요.",
+          "headline_en": "RoboARC: 90-task benchmark for robotic manipulation under spatial constraints",
+          "detail_en": "Introduces RoboARC with 90 manipulation tasks across six spatial constraint types over rigid and soft materials on three robots in MuJoCo.",
+          "keywords_hit": [],
+          "rationale": "기하학적 공간 제약 추론을 겨냥한 로봇 하네스·조작 벤치마크.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "f55b83f5767f1c45",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "roboprobe",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "dtu-bench",
+            "title": "DTU-Bench",
+            "domain": "harnesses"
+          },
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.79,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "실행 중 지시 변경 적응력을 평가하는 'DTU-Bench' 공개",
+          "detail_ko": "고정 지시문 중심 벤치마크에서 벗어나 실행 도중 작업 지시가 바뀌는 상황을 평가하는 'DTU-Bench(Dynamic Task Update Benchmark)'가 공개됐어요. LIBERO 환경에서 7가지 업데이트 유형, 3개 실행 단계에 걸친 40개 태스크 변경 시나리오로 대표 VLA 구성 13종을 평가해, 실행 전 변경과 실행 중 변경의 지시 추종 차이를 비교했어요. 인터럽트와 동적 재계획이 필수인 에이전트 로봇 하네스의 런타임 적응력을 검증하는 기준점이 돼요.",
+          "headline_en": "DTU-Bench: Evaluating runtime task instruction updates across 13 VLA configurations",
+          "detail_en": "Evaluates 40 task revisions across 7 update types and 3 execution stages on LIBERO for 13 representative VLA configurations.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "실행 중 동적 지시 변경 적응력을 측정하는 조작 벤치마크.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "333b99e583c5653c",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "roboprobe",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "real2simlab",
+            "title": "Real2SimLab",
+            "domain": "harnesses"
+          },
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.81,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "코딩 에이전트 기반 Real-to-Sim 전이 통합 평가 플랫폼 'Real2SimLab' 공개",
+          "detail_ko": "실제 영상에서 시뮬레이션 프로그램을 생성하는 코딩 에이전트 연구가 급증하는 가운데, 벤치마크마다 입력·산출물·채점 파이프라인이 제각각이어서 N×M 통합 비용이 발생하는 문제를 해결하는 'Real2SimLab'이 공개됐어요. 다양한 Real2Sim 기법과 벤치마크를 단일 인터페이스로 일괄 실행·평가할 수 있는 통합 플랫폼을 제공해요. 코딩 에이전트가 시뮬레이션 환경을 자동 구축·검증하는 워크플로의 표준 평가 허브로 자리 잡을 가능성이 커요.",
+          "headline_en": "Real2SimLab: Unified evaluation platform for coding-agent Real-to-Sim transfer",
+          "detail_en": "Eliminates N×M benchmark integration overhead by providing a unified platform to evaluate coding agents and methods generating simulations from real videos.",
+          "keywords_hit": [],
+          "rationale": "코딩 에이전트 기반 Real2Sim 통합 평가 플랫폼.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "fbb40888eceb",
+          "occurred_at": "2026-11-25T02:59:05+09:00",
+          "headline_ko": "Embodied AI의 물리적 위험 인식·대응 벤치마크 'EmbodiSafety' 공개"
+        },
+        {
+          "event_id": "929f1ca549a2",
+          "occurred_at": "2026-11-25T02:32:00+09:00",
+          "headline_ko": "거울 하나로 붕괴하는 로봇 정책 진단 'Embodied AI Fails the Mirror Test'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-003",
+      "topic": "robot-memory",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "58ea76a827cc5090",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-memory",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "skeptic",
+            "title": "Skeptic",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.85,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "로봇 스킬 탐색의 실패 진단과 레슨 선별을 다룬 'Skeptic' 공개",
+          "detail_ko": "실행 피드백으로 프로그램을 수정하며 재사용 가능한 스킬을 축적하는 로봇 에이전트가, 실패한 프로그램을 '물리적으로 불가능한 태스크'로 오판해 남은 수정 예산을 포기하는 문제를 분석한 'Skeptic'이 공개됐어요. Qwen3.8-27B를 대상으로 실행 실패 시 물리적 행동 효과를 재구성해 진단하는 방식과 공유 스킬 라이브러리에 어떤 레슨을 편입할지 결정하는 두 핵심 축을 규명했어요. 코드 기반 로봇 하네스의 에피소드 메모리와 자가 디버깅 루프 신뢰도를 높이는 데 직접 참고할 수 있어요.",
+          "headline_en": "Skeptic: Grounding failure diagnosis and lesson filtering for robot skill discovery",
+          "detail_en": "Studies failure diagnosis and shared skill library lesson curation in Qwen3.8-27B so robot agents do not prematurely abandon feasible tasks.",
+          "keywords_hit": [],
+          "rationale": "로봇 에이전트 스킬 라이브러리와 실행 실패 진단(레슨 선별)을 정면으로 다룬 하네스 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "ae0af256fde47cab",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-memory",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "seek-robot",
+            "title": "SEEK",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.87,
+          "confidence": 0.96,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "실행 지식을 시도 간 축적해 자가 진화하는 에이전트 하네스 'SEEK' 공개",
+          "detail_ko": "범용 멀티모달 파운데이션 모델이 시연이나 학습 없이 배포 중 적응하더라도, 태스크가 끝나면 컨텍스트와 함께 실행 지식(예: 두 그리퍼로 그릇 옮기는 요령)이 사라져 같은 실수를 반복하는 문제를 다룬 'SEEK'가 공개됐어요. 시도(attempt)를 넘어 실행 지식을 보존·활용함으로써 에이전트 기반 로봇 조작이 반복 수행을 통해 스스로 진화하도록 설계했어요. 학습 없는(training-free) 로봇 하네스에서 작업 간 메모리 유지와 시행착오 단축을 구현하는 핵심 방향성을 보여줘요.",
+          "headline_en": "SEEK: Self-evolution through persistent execution knowledge for agentic robot manipulation",
+          "detail_en": "Addresses context loss across task attempts in training-free multimodal foundation model robots by retaining and reusing execution knowledge.",
+          "keywords_hit": [
+            "robot harness"
+          ],
+          "rationale": "training-free 에이전트 로봇의 시도 간 실행 지식 축적·자가 진화를 다룬 핵심 하네스 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "84ce99b4b0692747",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-memory",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.72,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "소프트맥스 가중 기억 회상으로 소수 시연 잔차 보정을 개선한 메모리 연구",
+          "detail_ko": "검색-보정(retrieve-and-correct) 정책이 최근접 시연 청크 하나만 꺼내 쓰던 관행을 재검토하고, 전체 메모리에 대한 부드러운 소프트맥스 가중 회상(soft recall)을 잔차 보정기의 기반(base)으로 제안한 연구예요. 인간 시연 40건 기반 ALOHA 큐브 전달 태스크에서 소프트 회상 단독 실행은 최근접 검색과 차이가 없었지만, 동일한 키·후보·학습 조건에서 잔차 보정을 얹었을 때 성공률이 22.4%p 상승했어요. 소수 시연 메모리와 보정 정책을 결합하는 하이브리드 하네스 설계에 실용적인 통찰을 제공해요.",
+          "headline_en": "Soft recall over demonstration memory improves residual correction by 22.4 points on ALOHA",
+          "detail_en": "Shows softmax-weighted recall over the full demonstration memory outperforms nearest-chunk retrieval as a base for learned residual correctors (+22.4 points on 40-demo ALOHA cube transfer).",
+          "keywords_hit": [],
+          "rationale": "로봇 메모리 회상 방식이 잔차 보정 성능에 미치는 영향을 실증한 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "7f1c340dbcb25bc1",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-memory",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "chase-harness",
+            "title": "CHASE",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.84,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "호기심 기반 가설 검증으로 부족한 스킬을 온디맨드 습득하는 하네스 'CHASE'",
+          "detail_ko": "부분 관측 환경과 불완전한 스킬 목록 속에서 로봇이 스스로 가설을 세우고 증거를 탐색해 부족한 스킬을 실행 중 습득하는 'CHASE(Curiosity-guided Harness for Acquiring Skills from Evidence)'가 공개됐어요. 동적 장면 이해, 가설 기반 계획, 온디맨드 스킬 습득 등 4개 모듈을 연결해 태스크 불확실성을 해소하는 탐색 행동을 선택하고 실행 가능한 역량을 확장해요. 미지 환경에서 능동적으로 정보를 수집하며 스킬 라이브러리를 키워가는 에이전트 로봇 하네스의 유력한 패턴이에요.",
+          "headline_en": "CHASE: Curiosity-guided harness for hypothesis-driven on-demand skill acquisition",
+          "detail_en": "Connects four modules (dynamic scene understanding, hypothesis-driven planning, on-demand skill acquisition, and execution) to resolve uncertainty in partially observed environments.",
+          "keywords_hit": [],
+          "rationale": "부분 관측 환경에서 가설 기반 탐색과 온디맨드 스킬 습득을 통합한 로봇 하네스.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "dd400e567021a3b9",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-memory",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.71,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "부정 전이 없이 동결 파지 정책을 적응시키는 메모리 'VG-GP' 공개",
+          "detail_ko": "사전학습된 파지 네트워크가 비정형 질량 분포나 얇은 테두리·낯선 손잡이에서 실패할 때, 재학습 없이 에피소드 메모리로 보완하는 플러그앤플레이 프레임워크 'VG-GP'가 공개됐어요. 시각 외형 편향과 정상 작동하던 기본 파지를 덮어쓰는 부정 전이(negative transfer)를 막기 위해, 불확실성 게이트가 적용된 시각-기하 가우시안 프로세스(GP) 메모리로 SE(2) 잔차 파지 보정을 수행해요. 동결 하위 파지 도구에 안전한 에피소드 메모리를 얹는 깔끔한 설계예요.",
+          "headline_en": "VG-GP: Uncertainty-gated visuo-geometric GP memory for residual grasp adaptation",
+          "detail_en": "Plug-and-play episodic memory using uncertainty-gated visuo-geometric Gaussian Processes for closed-loop SE(2) residual grasp transfer without negative transfer.",
+          "keywords_hit": [],
+          "rationale": "동결 파지 정책을 부정 전이 없이 보완하는 불확실성 게이트 에피소드 메모리.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "901c4fbdc6ff",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "단일 실제 시연으로 검증 시뮬을 복원해 스킬을 자가 개선하는 'RESET'"
+        },
+        {
+          "event_id": "248849e53a87",
+          "occurred_at": "2026-11-24T22:12:01+09:00",
+          "headline_ko": "자가 검색 메모리 기반 단일 시연 조작 'MXI-MemICL' & 'KeyMemVLA'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-004",
+      "topic": "mujoco-isaac",
+      "domain": "hardware_sdk",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-26T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "06ed3e8c726d7040",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "mujoco-isaac",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.62,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "헤드셋 단독 MuJoCo 구동 VR 시연 수집 게임 'RoboJackVR' 공개",
+          "detail_ko": "텔레오퍼레이션 진입 장벽을 낮춰 대규모 로봇 시연 데이터를 모으기 위한 단독형 VR 게임 'RoboJackVR'이 공개됐어요. 외부 PC나 시뮬레이션 서버 없이 VR 헤드셋 로컬에서 MuJoCo 시뮬레이션과 시연 기록이 직접 실행되며, 플레이어가 가상 로봇을 조종해 스킬을 수행하면서 데이터를 기여하는 구조예요. 하드웨어 의존도를 줄여 크라우드소싱 형태로 시뮬레이션 시연을 확장하려는 데이터 파이프라인 아이디어로 눈여겨볼 만해요.",
+          "headline_en": "RoboJackVR: Standalone headset VR game running MuJoCo for demo collection",
+          "detail_en": "Runs MuJoCo simulation and demonstration recording locally on a standalone VR headset without an external PC or server.",
+          "keywords_hit": [],
+          "rationale": "MuJoCo 기반 로컬 VR 텔레오퍼레이션·시연 수집 도구 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "7f140aa28031",
+          "occurred_at": "2026-11-25T23:49:10+09:00",
+          "headline_ko": "NVIDIA 멀티-피직스 로봇 학습 프레임워크 'IsaacLab' 최신 업데이트 (★8,724)"
+        },
+        {
+          "event_id": "f48b3ae8df87",
+          "occurred_at": "2026-11-26T00:05:25+09:00",
+          "headline_ko": "NVIDIA, 조합형 로봇 정책 평가 시뮬레이션 프레임워크 'IsaacLab-Arena' 업데이트"
+        },
+        {
+          "event_id": "1457c3f68486",
+          "occurred_at": "2026-11-25T01:34:13+09:00",
+          "headline_ko": "Hugging Face × NVIDIA, Isaac Lab + Newton 기반 Sim2Real 워크플로 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-005",
+      "topic": "robot-harness",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "c47d1f31ef4e9018",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "regharness",
+            "title": "RegHarness",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.88,
+          "confidence": 0.96,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Code-as-Policy 에이전트의 단계·스킬 지속성을 통제하는 'RegHarness' 공개",
+          "detail_ko": "로봇 프로그램을 생성·실행·수정하는 Code-as-Policy 에이전트가 시도 내에서 어떤 행동을 유지하고 다음 실행으로 어떤 코드 수정을 넘길지 통제하지 못하는 문제를 푸는 'RegHarness'가 공개됐어요. 별도의 VLA 정책이나 시연 데이터 없이, RATs 에이전트 팀을 대상으로 단계(step) 수준 실행과 실행 간(cross-run) 적응이라는 두 층위의 지속성(persistence)을 명시적으로 규율하는 2단계 하네스예요. 프론티어 모델 기반 코딩 에이전트가 장시간 시행착오를 거칠 때 메모리 오염과 회귀를 막는 핵심 하네스 패턴이에요.",
+          "headline_en": "RegHarness: Two-level harness regulating step and skill persistence in Code-as-Policy agents",
+          "detail_en": "Presents RegHarness, a two-level harness governing step-level execution and cross-run code persistence for the RATs agent team without VLAs or demonstrations.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "VLA·시연 없이 Code-as-Policy 에이전트의 실행·메모리 지속성을 통제하는 핵심 로봇 하네스 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "ae408028ddef5a02",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "agentic-robotics-harness-study",
+            "title": "Agentic Robotics Harness Study",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.92,
+          "confidence": 0.97,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "로봇 에이전트 정책 하네스 설계를 대규모 체계 분석한 'Toward Agentic Robotics' 공개",
+          "detail_ko": "프론티어 VLM의 장면 이해·장기 추론 능력과 VLA·WAM의 정밀·고속 저수준 제어를 결합하는 로봇 에이전트 정책 하네스(policy harness) 설계를 대규모로 연구한 논문이 공개됐어요. VLM 단독으로는 추론을 늘려도 3D 그리퍼 자세 예측 정밀도가 떨어지고, VLA·WAM 단독으로는 도메인 시프트나 장시간 메모리·추론 태스크에서 실패하는 상보적 한계를 정면으로 분석했어요. 우리가 추적하는 '프론티어 모델 + 하위 정책 도구' 로봇 하네스 아키텍처의 정중앙을 짚는 핵심 레퍼런스예요.",
+          "headline_en": "Toward Agentic Robotics: Large-scale study of policy harness design for robot-use agents",
+          "detail_en": "Presents a large-scale study of policy harness design combining VLM reasoning/perception with precise VLA/WAM low-level control for robot-use agents.",
+          "keywords_hit": [
+            "long-horizon",
+            "VLA"
+          ],
+          "rationale": "로봇 유즈 에이전트의 정책 하네스 설계 자체를 대규모 체계 분석한 최핵심 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "90e49222c000e55a",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "roboevo2",
+            "title": "RoboEvo2",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.9,
+          "confidence": 0.97,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "하네스와 정책의 재귀적 공진화로 자가 개선하는 'RoboEvo²' 공개",
+          "detail_ko": "VLA 정책의 효율적 제어와 추론 에이전트의 광범위한 사전 지식·API 기반 문제 해결력을 재귀적으로 결합하는 'RoboEvo²' 프레임워크가 공개됐어요. 추론 에이전트가 매번 숙고·수선을 반복하는 고비용 문제와 VLA가 낯선 환경에서 추가 인간 시연을 요구하는 한계를 동시에 풀기 위해, Policy-to-Harness(P2H) 진화 등 하네스-정책 공진화 루프를 제안했어요. 프론티어 모델 하네스로 새 스킬을 개척한 뒤 효율적인 저수준 정책으로 내재화하는 장기 로드맵의 모범 아키텍처예요.",
+          "headline_en": "RoboEvo2: Recursive robot self-improvement via harness-policy co-evolution",
+          "detail_en": "Proposes recursive harness-policy co-evolution (including Policy-to-Harness evolution) to bridge costly reasoning agents and efficient VLA policies.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "로봇 하네스와 VLA 정책의 재귀적 공진화(자가 개선)를 제시한 최상위 핵심 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "aaa8f11d6c3921de",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "solve-keyposes",
+            "title": "SOLVE",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.86,
+          "confidence": 0.96,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "희소 6-DoF 키포즈 시퀀스로 LLM 에이전트 조작 효율을 높인 'SOLVE' 공개",
+          "detail_ko": "LLM 에이전트가 매 스텝 조밀하게 제어하거나 도구 병목에 걸려 추론 비용이 급증하는 문제를 해결하는 학습 없는(training-free) 에이전트 정책 'SOLVE'가 공개됐어요. 멀티모달 LLM 에이전트가 호출당 순서가 있는 희소 6-DoF 엔드이펙터 키포즈 시퀀스를 출력하면 모션 플래너가 사이를 보간하고, 결과를 관측해 다음 시퀀스를 생성하는 구조예요. 에이전트가 장거리 고속 이동과 정밀 조작에 맞춰 키포즈 개수·간격을 스스로 조절해, 액션 인터페이스(EEF/waypoint)와 실행 체이닝 하네스 설계의 교과서적 사례를 보여줘요.",
+          "headline_en": "SOLVE: Training-free LLM agent policy outputting sparse ordered 6-DoF keypose sequences",
+          "detail_en": "A multimodal LLM agent emits sparse, ordered 6-DoF end-effector keyposes per call interpolated by a motion planner, adapting granularity for fast and fine manipulation.",
+          "keywords_hit": [
+            "training-free"
+          ],
+          "rationale": "training-free LLM 에이전트의 희소 6-DoF 키포즈 액션 인터페이스·실행 체이닝 핵심 하네스 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "13c5c0d44fbdcade",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "작업 영상에서 인터랙티브 실험 장비 시뮬 자산을 생성하는 에이전트 'Lab2Sim'",
+          "detail_ko": "1인칭 또는 다중 시점 작업 영상으로부터 실제 실험 장비의 외형·관절 움직임·내부 공동(internal cavity)까지 충실히 재현하는 편집 가능 시뮬레이션 자산을 만드는 에이전트 프레임워크 'Lab2Sim'이 공개됐어요. 기존 자산 생성 기법이 관절 운동이나 내부 구조를 놓치던 한계를 에이전트 파이프라인으로 보완했어요. 실환경 영상을 곧바로 검증 시뮬레이션 환경으로 전환하는 Real2Sim 하네스 구성 요소로 의미가 있어요.",
+          "headline_en": "Lab2Sim: Agentic generation of interactive simulation equipment assets from operation videos",
+          "detail_en": "Agentic framework generating editable, simulation-ready articulated equipment assets reproducing appearance, joint motions, and internal cavities from operation videos.",
+          "keywords_hit": [],
+          "rationale": "영상 기반 인터랙티브 시뮬레이션 자산 생성 에이전트 프레임워크.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "5302d4e9256e08dc",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.62,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "재학습 없이 다양한 환경에서 안전한 파지를 수행하는 범용 미션 계획 프레임워크",
+          "detail_ko": "환경이 바뀔 때마다 막대한 데이터와 연산으로 재학습해야 하는 제약을 줄이기 위해, 재학습 없이 다양한 환경과 물체에 대해 안전한 파지·조작을 수행하는 범용 미션 계획 프레임워크가 공개됐어요. 안전 경계(safety boundary)를 지키며 미지 조건으로 전이하는 학습 없는 계획 구조를 지향해요.",
+          "headline_en": "General-purpose safe manipulator mission-planning framework without retraining",
+          "detail_en": "Presents a mission-planning framework enabling safe grasping across diverse environments and objects without retraining.",
+          "keywords_hit": [],
+          "rationale": "재학습 없는 범용 안전 매니퓰레이터 미션 계획 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "984f995071266faf",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "prove-eval",
+            "title": "PROVE",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.82,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "목표 이미지 예측 기반 인간 정렬 모바일 조작 검증기 'PROVE' 공개",
+          "detail_ko": "개방형 환경에서 로봇 모바일 조작의 성공 여부를 판정할 때, RoboCasa365 기준 시뮬레이터 조건식은 인간 판정과 69.09%, 프론티어 VLM 심사자는 86.12%만 일치한다는 한계를 짚고 이를 개선하는 'PROVE(Predict-to-Specify, Observe-to-Verify)'가 공개됐어요. 지시문·초기 장면·표적 물체 참조 이미지와 함께 생성된 목표 이미지로 성공 조건을 먼저 구체화(specify)한 뒤 실행 결과를 검증(verify)하는 2단계 구조예요. 로봇 하네스의 전환 검증(transition check)과 자동 감사 정확도를 끌어올리는 직접적인 레퍼런스예요.",
+          "headline_en": "PROVE: Predict-to-Specify and Observe-to-Verify for human-aligned manipulation evaluation",
+          "detail_en": "Shows RoboCasa365 simulator predicates (69.09%) and frontier VLM judges (86.12%) lag human judgment, and introduces PROVE using generated goal images to specify and verify success.",
+          "keywords_hit": [],
+          "rationale": "로봇 하네스의 검증(verification) 정확도를 정량 비교·개선한 핵심 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "345f370f5ef1bc27",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.65,
+          "confidence": 0.89,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "사전 정의 스킬 없이 다중 4족 로봇 협업을 계획하는 LLM 프레임워크 'CoTAMP'",
+          "detail_ko": "단일 4족 로봇이 넘지 못하는 단차나 틈을 동료 로봇의 등을 밟거나 상자로 다리를 놓아 극복하는 협동 작업·모션 계획(TAMP) 프레임워크 'CoTAMP'가 공개됐어요. 미리 정의된 스킬 목록에서 고르는 대신, 두 개의 LLM 모듈이 새로운 협동 동작을 고안하고 이를 실제 모션으로 생성하는 2단계 구조를 택했어요. 멀티 로봇 환경에서 LLM 기반 개방형 스킬 생성 가능성을 보여줘요.",
+          "headline_en": "CoTAMP: Dual-LLM cooperative task and motion planning for quadruped robots",
+          "detail_en": "Uses two LLM modules to invent motions outside predefined skill sets and generate cooperative task and motion plans for multiple quadrupeds.",
+          "keywords_hit": [],
+          "rationale": "LLM 기반 다중 로봇 협동 TAMP 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "48579beca7e0f9b0",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "demofoundry",
+            "title": "DemoFoundry",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.8,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "코딩 에이전트와 생성 렌더링을 결합한 로봇 데이터 합성 'DemoFoundry' 공개",
+          "detail_ko": "시뮬레이션 합성의 시각적 갭과 비디오 단독 생성의 물리 불일치·행동 라벨 부재 문제를 동시에 풀기 위해, 코딩 에이전트와 생성 렌더링을 결합한 자동화 프레임워크 'DemoFoundry'가 공개됐어요. 코딩 에이전트가 기존 로봇 에피소드에서 정렬된 실제-프록시(real-proxy) 비디오 쌍을 구축하고, 생성 렌더링을 통해 사실적이면서도 물리적으로 접지된(physically grounded) 로봇 시연을 합성해요. 코딩 에이전트가 로봇 학습 데이터 파이프라인 자체를 자동화하는 최신 흐름을 보여줘요.",
+          "headline_en": "DemoFoundry: Coding agents + generative rendering for photorealistic grounded robot demos",
+          "detail_en": "Couples coding agents with generative rendering to build aligned real-proxy pairs and synthesize photorealistic, physically grounded robot demonstrations.",
+          "keywords_hit": [],
+          "rationale": "코딩 에이전트와 생성 렌더링으로 물리 접지 로봇 데이터를 합성하는 하네스 파이프라인.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "73c1693a8bac0f42",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-harness",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "공식 문서에서 제어 프로그램을 생성·최적화하는 플러그인 하네스 'EvoMisty' 공개",
+          "detail_ko": "소셜 로봇이 수동 제어 인터페이스와 사전 정의 스킬에 묶이는 한계를 벗어나, 코딩 에이전트가 공식 문서를 읽고 제어 프로그램을 직접 구축·검증·최적화하는 플러그인 프레임워크 'EvoMisty'가 공개됐어요. 사용자 지정 지표에 따라 완료된 태스크를 지속 최적화하고 성능 개선을 다른 태스크로 재사용하는 구조예요. SDK 문서 기반 자동 도구 구축과 스킬 자가 진화라는 하네스 패턴의 실증 사례예요.",
+          "headline_en": "EvoMisty: Plugin framework for coding agents to build and evolve robot capabilities from docs",
+          "detail_en": "Enables coding agents to build control programs from official documentation, optimize completed tasks on user metrics, and reuse improvements across tasks.",
+          "keywords_hit": [],
+          "rationale": "공식 문서 기반 코딩 에이전트 제어 프로그램 구축·진화 하네스 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "3a57941a920a",
+          "occurred_at": "2026-11-24T03:52:19+09:00",
+          "headline_ko": "로봇 제어 그룹별 비동기 코딩 에이전트 팀 아키텍처 'ACAP' 공개"
+        },
+        {
+          "event_id": "daa663932e5c",
+          "occurred_at": "2026-11-25T03:56:44+09:00",
+          "headline_ko": "VLM 도구 호출 조작을 멀티턴 RL로 학습하는 'RoboHarness-RL' 공개"
+        },
+        {
+          "event_id": "a598d095c67b",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "실행 인지 스킬 조율 'SkillHarness' 및 뉴로-심볼릭 안전 계층"
+        },
+        {
+          "event_id": "51cb6f2a3465",
+          "occurred_at": "2026-11-24T23:07:17+09:00",
+          "headline_ko": "디지털~물리 세계 통합 프론티어 에이전트 ICL 벤치마크 'ICLWorld'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-006",
+      "topic": "pi-zero",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "benchmark",
+      "version": null,
+      "occurred_at": "2026-11-26T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "4e82fa7a12465a93",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "pi-zero",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.76,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "인간 개입 기반 오프라인 VLA 사후학습 벤치마크 'FailPoint-X' 공개",
+          "detail_ko": "인간 개입(human takeover)이 오프라인 VLA 사후학습에 기여하는 효과를 단순 추가 최적화와 분리해 측정하는 'FailPoint-X' 벤치마크가 공개됐어요. 고정된 π0.5 체크포인트에서 629건의 자연 실패 사례를 수집하고, 실패 시작 시점의 불확실성을 반영해 주석자가 표시한 구간 내 시드 프레임에서 개입 학습을 시작하도록 설계했어요. 실전 배포 중인 VLA를 인간 개입 데이터로 안전하게 사후학습할 때 효과를 검증하는 기준선으로 쓰기 좋아요.",
+          "headline_en": "FailPoint-X: Failure-anchored benchmark for offline VLA post-training from human takeovers",
+          "detail_en": "Assembles 629 natural failures from a fixed pi0.5 checkpoint with failure-onset intervals to evaluate offline VLA post-training from human takeovers.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "π0.5 기반 629건 실제 실패 사례로 인간 개입 사후학습을 검증하는 벤치마크.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "0e883fb5a028",
+          "occurred_at": "2026-11-24T05:18:49+09:00",
+          "headline_ko": "π0 연속 학습 진단: 도메인 내 망각은 0에 가까워도 OOD 강건성은 급락"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-007",
+      "topic": "perception-tools",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "benchmark",
+      "version": null,
+      "occurred_at": "2026-11-26T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "57df9ef8290be172",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "perception-tools",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.74,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "MLLM의 동적 공간·운동학 정량 이해를 측정하는 'QK-Bench' 공개",
+          "detail_ko": "멀티모달 LLM이 물체가 다가온다는 의미적 서술은 맞혀도 접근 속도나 충돌 여부 같은 정량적 운동학(kinematics)을 틀리는 문제를 평가하는 'QK-Bench'가 공개됐어요. 충돌 회피, 궤적 추종, 반응형 파지(reactive grasping)에 필수적인 움직임 크기·속도·상대 기하 파악 능력을 정량 측정해요. 로봇 하네스의 인지 도구(perception-as-tools)와 VLM 백본을 선정할 때 동적 장면 추론 한계를 점검하는 지표로 활용할 수 있어요.",
+          "headline_en": "QK-Bench: Benchmarking quantitative kinematic understanding in MLLMs",
+          "detail_en": "Evaluates MLLMs on quantitative kinematic properties including motion magnitude, rate, and relative geometry critical for collision avoidance and reactive grasping.",
+          "keywords_hit": [],
+          "rationale": "로봇 조작·회피에 필수적인 MLLM의 정량 운동학 인지 벤치마크.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-26-pm-008",
+      "topic": "agibot",
+      "domain": "hardware_sdk",
+      "lab": "agibot",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-26T12:47:45+09:00",
+      "items": [
+        {
+          "item_id": "adecd687ed8a2c87",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "agibot",
+          "variant": null,
+          "lab": "agibot",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.66,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "중국 AgiBot(지위안), 'OmniPicker 3' 로봇 디스크립션 저장소 공개",
+          "detail_ko": "중국 AgiBot(지위안) 공식 GitHub 조직에 OmniPicker 3(OP3) 그리퍼를 지원하는 Python 기반 디스크립션 저장소 `agilink_omnipicker_3_description`이 공개됐어요. AgiLink 생태계에서 OP3 엔드이펙터의 시뮬레이션 및 기구학 통합에 필요한 공식 모델 정의를 제공해요.",
+          "headline_en": "AgiBot releases agilink_omnipicker_3_description for OmniPicker 3",
+          "detail_en": "AgibotTech published the official description repository supporting OmniPicker 3 (OP3).",
+          "keywords_hit": [],
+          "rationale": "중국 AgiBot 공식 GitHub 신규 엔드이펙터 디스크립션 저장소.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "34890124307971ba",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "agibot",
+          "variant": null,
+          "lab": "agibot",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.66,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "중국 AgiBot(지위안), 'OmniHand Pro 2025' 디스크립션 저장소 공개",
+          "detail_ko": "중국 AgiBot(지위안) 공식 GitHub 조직에 덱스터러스 핸드 OmniHand Pro 2025를 지원하는 `agilink_omnihand_pro_description` 저장소가 공개됐어요. 앞서 업데이트된 `agilink_omnihand_sdk`와 맞물려 시뮬레이션·제어 파이프라인용 공식 핸드 모델 자산이 확장되고 있어요.",
+          "headline_en": "AgiBot releases agilink_omnihand_pro_description for OmniHand Pro 2025",
+          "detail_en": "AgibotTech published the official description repository supporting OmniHand Pro 2025.",
+          "keywords_hit": [],
+          "rationale": "중국 AgiBot 공식 GitHub 신규 덱스터러스 핸드 디스크립션 저장소.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "4ae56d3d7ef4",
+          "occurred_at": "2026-11-24T21:11:27+09:00",
+          "headline_ko": "AgiBot(지위안) 시뮬레이터 'genie_sim' (★1,765) & 'IsaacCapture' 갱신"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-009",
+      "topic": "limx",
+      "domain": "hardware_sdk",
+      "lab": "limx",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-26T11:39:06+09:00",
+      "items": [
+        {
+          "item_id": "f63c0b797e41ae82",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.74,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "중국 LimX Dynamics, TRON2A 휴머노이드용 Python RL 배포 저장소 공개",
+          "detail_ko": "중국 LimX Dynamics가 TRON2A 휴머노이드를 위한 Python 기반 강화학습 배포·추론 저장소 `tron2_rl_deploy_python`을 업데이트했어요. 발바닥형(sole-foot)·바퀴발형(wheel-foot)·양팔 DASF ONNX 정책을 ONNX Runtime으로 구동하며, MuJoCo 시뮬레이션과 실제 하드웨어 배포를 함께 지원해요. 중국 휴머노이드 진영의 Sim2Real 정책 배포 표준이 ONNX + MuJoCo 파이프라인으로 수렴하는 흐름을 보여줘요.",
+          "headline_en": "LimX Dynamics updates tron2_rl_deploy_python for TRON2A humanoid ONNX deployment",
+          "detail_en": "Provides Python RL deployment/inference for LimX TRON2A sole-foot, wheel-foot, and dual-arm DASF ONNX policies on MuJoCo and real hardware.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "중국 LimX Dynamics의 TRON2A 양팔·휴머노이드 공식 RL 배포 파이프라인.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "59e7b5c44cc812ab",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, TRON1용 Python RL 배포 저장소 'tron1-rl-deploy-python' 갱신",
+          "detail_ko": "LimX Dynamics의 TRON1 로봇용 Python 기반 강화학습 배포 저장소 `tron1-rl-deploy-python`(★32)이 업데이트됐어요. ONNX Runtime 추론을 중심으로 MuJoCo 시뮬레이션 검증과 실물 로봇 배포 워크플로를 제공해요.",
+          "headline_en": "LimX Dynamics updates tron1-rl-deploy-python (★32)",
+          "detail_en": "Updates Python-based RL deployment for TRON1 with ONNX runtime inference, MuJoCo simulation, and real-robot deployment.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON1 공식 RL 배포 저장소 업데이트.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "903be4373ef1d7c9",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, 27자유도 휴머노이드 'Luna' 시뮬레이션 모델 저장소 공개",
+          "detail_ko": "LimX Dynamics가 27개 구동 관절을 갖춘 Luna 휴머노이드의 URDF·MuJoCo MJCF·USD 모델을 담은 `luna-description` 저장소를 공개했어요. 발목과 허리의 병렬 링크(parallel linkage) 구조를 MJCF와 폐루프 USD에 모두 모델링해 ROS·MuJoCo·Isaac Sim에서 바로 활용할 수 있어요. 병렬 링크 휴머노이드의 고정밀 시뮬레이션 에셋을 공식 오픈소스로 제공한다는 점에서 실용 가치가 커요.",
+          "headline_en": "LimX Dynamics releases luna-description with URDF, MJCF, and USD models",
+          "detail_en": "Provides URDF, MuJoCo MJCF, and closed-loop USD models for the 27-actuated-joint LimX Luna humanoid, ready for ROS, MuJoCo, and Isaac Sim.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX Luna 휴머노이드 공식 시뮬레이션 모델(URDF/MJCF/USD) 공개.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "e34d54f4f2752344",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.71,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, Oli 휴머노이드(HU_D04) 시뮬레이션 에셋 'humanoid-description' 갱신",
+          "detail_ko": "LimX Oli 휴머노이드(HU_D04 및 구형 HU_D03)의 URDF·MuJoCo MJCF·USD 모델을 제공하는 `humanoid-description`(★14)이 업데이트됐어요. 그리퍼와 덱스터러스 핸드 변형을 모두 포함하며 ROS 1/2·Isaac Sim·MuJoCo 환경을 공식 지원해요.",
+          "headline_en": "LimX Dynamics updates humanoid-description for Oli humanoid (★14)",
+          "detail_en": "Updates URDF, MuJoCo MJCF, and USD models for LimX Oli humanoid including gripper and dexterous-hand variants.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX Oli 휴머노이드 공식 시뮬레이션 에셋 업데이트.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "e2b056b71d3d179b",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.65,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, TRON1 로봇 모델 'tron1-robot-description' 갱신",
+          "detail_ko": "LimX Dynamics의 TRON1 로봇용 URDF/Xacro 모델 저장소 `tron1-robot-description`(★21)이 업데이트됐어요. ROS 1/2와 MuJoCo·Gazebo 시뮬레이션 통합을 지원해요.",
+          "headline_en": "LimX Dynamics updates tron1-robot-description (★21)",
+          "detail_en": "Updates URDF/Xacro robot models for TRON1 supporting ROS 1/2, MuJoCo, and Gazebo.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON1 공식 시뮬레이션 모델 업데이트.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "9a698eaa1a52eb2c",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, Luna 휴머노이드 전신 모션 학습 'luna-beyondmimic' 공개",
+          "detail_ko": "LimX Dynamics가 Luna 휴머노이드용 전신 모션 학습 저장소 `luna-beyondmimic`(★5)을 공개했어요. BeyondMimic 기반으로 인간의 춤 동작 데이터를 Isaac Lab·Isaac Sim에서 학습해 실제 배포 가능한 전신 제어 정책으로 전환하는 파이프라인을 제공해요.",
+          "headline_en": "LimX Dynamics updates luna-beyondmimic whole-body RL for Luna humanoid",
+          "detail_en": "Provides BeyondMimic-based whole-body motion learning from human dance to deployable policies for LimX Luna on Isaac Lab/Sim.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX Luna 전신 RL 오픈소스 저장소.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "149ed63bffeb",
+          "occurred_at": "2026-11-23T16:45:49+09:00",
+          "headline_ko": "LimX Dynamics, 무의존성 저수준 모션 제어 SDK 'limxsdk-lowlevel' 업데이트 (★20)"
+        },
+        {
+          "event_id": "e3ca1e96084b",
+          "occurred_at": "2026-11-25T18:44:11+09:00",
+          "headline_ko": "LimX Dynamics, 휴머노이드 Python RL 배포 및 TRON2 16종 시뮬 에셋 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-010",
+      "topic": "vla-as-tool",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T21:36:42+09:00",
+      "items": [
+        {
+          "item_id": "26b8c5363b893af1",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "vla-as-tool",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "cairn-vla",
+            "title": "Cairn",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.83,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "동결 VLA를 3D 물체 궤적 사전 지식으로 스티어링하는 'Cairn' 공개",
+          "detail_ko": "VLA 모델이 저수준 제어에는 강하지만 학습된 장면 배치에 과적합돼 장애물이나 배치 변화 시 충돌·오배치를 일으키는 문제를 해결하는 'Cairn'이 공개됐어요. 기존 스킬 손상을 부르는 파인튜닝 대신 VLA를 동결(frozen)한 채, 장면·파지 물체 포인트 클라우드와 초기 파지 자세·지시문을 읽는 소형 사전 모델(prior)로 테스트 타임에 3D 궤적을 따라 VLA를 유도해요. 동결 VLA를 하위 정책 도구(VLA-as-subpolicy)로 쓰면서 3D 기하 제어를 결합하는 하네스 설계에 직접 맞닿아 있어요.",
+          "headline_en": "Cairn steers frozen VLAs at test time with object-centric 3D trajectory priors",
+          "detail_en": "Keeps the VLA frozen and steers it at test time along learned 3D object trajectories predicted from scene/object point clouds, grasp pose, and instructions.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "동결 VLA를 3D 궤적 사전 지식으로 테스트 타임 제어하는 VLA-as-Tool 하네스 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "f244c721e73408e5",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "vla-as-tool",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.79,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "VLA 실행 중 지시 무시 현상을 푸는 학습 없는 플러그인 'Wormhole' 공개",
+          "detail_ko": "고정 지시로 학습된 VLA가 일단 태스크에 착수하면 새 지시를 무시하고 기존 동작을 끝내거나 멈춰버리는 '지시 블랙홀(instruction black hole)' 현상을 규명한 논문이에요. 이를 투과율(transmission ratio)과 사건의 지평선(event horizon)으로 정량화하고, 지시를 다시 주는 대신 최적 수송(optimal transport)으로 로봇 상태를 재배치하는 학습 없는(training-free) 플러그인 'Wormhole'을 제안했어요. 동결 VLA를 인터럽트 가능한 하위 도구로 감싸는 하네스 제어 계층에 바로 응용할 수 있어요.",
+          "headline_en": "Wormhole: Training-free plug-in to escape VLA mid-execution instruction black holes",
+          "detail_en": "Quantifies the VLA instruction black hole on mid-execution changes and introduces Wormhole, a training-free optimal-transport plug-in that relocates the robot state.",
+          "keywords_hit": [
+            "training-free",
+            "VLA"
+          ],
+          "rationale": "동결 VLA의 실행 중 지시 전환 실패를 학습 없는 플러그인으로 해결하는 하네스 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "93a086adfceffe85",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "vla-as-tool",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.76,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "고정 로봇 플랫폼에서 파운데이션 모델 파인튜닝 전 타당성을 진단하는 트리아지 프레임워크",
+          "detail_ko": "실무자가 벤치마크 순위만 보고 공개 Embodied 파운데이션 모델 체크포인트를 골라 고정된 하드웨어에 파인튜닝할 때 발생하는 성능 손실을 사전 진단하는 프레임워크가 공개됐어요. 로컬 데이터로 메울 수 없는 '센싱 갭(센서가 포착 못하는 정보)'과 제어 루프 주기 내 출력이 도착하지 못하는 '지연 갭(latency gap)' 등으로 손실을 분해해, 파인튜닝 전 실행 가능성(feasibility)을 먼저 걸러내도록 제안해요. 실제 하드웨어에 외부 VLA/WAM 체크포인트를 도입하는 팀의 시행착오를 줄여주는 실전 방법론이에요.",
+          "headline_en": "Triage before fine-tuning: Feasibility-gated selection of embodied foundation models",
+          "detail_en": "Splits deployment gaps on fixed robot platforms into sensing gaps and latency gaps to triage public embodied checkpoints before investing in local fine-tuning.",
+          "keywords_hit": [],
+          "rationale": "고정 하드웨어에 Embodied 파운데이션 모델 도입 전 타당성·지연·센싱 갭을 진단하는 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "5a2ccbb84ee9d6e8",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "vla-as-tool",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.78,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "확산 정책 불확실성 시 동결 GPT가 개입하는 1시연 RL 'WISER-RL' 공개",
+          "detail_ko": "단 하나의 인간 시연만으로 강화학습을 시작할 때 보상 신호가 극도로 희소한 문제를 풀기 위해, 수면-각성(wake-sleep) 루프를 도입한 'WISER-RL'이 공개됐어요. 각성(wake) 단계에서 GPTDAgger가 확산 정책이 샘플링한 행동 간 불일치(disagreement)를 감시하다가 임계치를 넘으면, 검색된 경험을 갖춘 동결 GPT 제어기가 에피소드를 이어받아 자율 제어로 점차 전환해요. 저수준 정책의 불확실성 감지와 프론티어 모델 개입(fail-over)을 결합한 실용적 하네스 아키텍처예요.",
+          "headline_en": "WISER-RL: Wake-sleep RL from one demo with uncertainty-triggered frozen GPT intervention",
+          "detail_en": "Monitors action disagreement in a diffusion policy via GPTDAgger during wake phases and hands off to a frozen GPT controller with retrieved experience.",
+          "keywords_hit": [],
+          "rationale": "확산 정책 불확실성 감지 + 동결 GPT 개입의 하이브리드 로봇 하네스·RL 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "32ffeaf57a8e",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "에이전트-하위 정책 인계 실패를 줄이는 'Boundary-Aware Policy Learning'"
+        },
+        {
+          "event_id": "be906027d618",
+          "occurred_at": "2026-11-24T18:21:57+09:00",
+          "headline_ko": "동결 VLA + 코드 복구 3D 스킬 엔벨로프 하네스 'VLAs Execute, Code Recovers'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-011",
+      "topic": "vla-models",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-25T23:28:05+09:00",
+      "items": [
+        {
+          "item_id": "0527a0d22bddfc3b",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "holobrain-0-5",
+            "title": "HoloBrain-0.5",
+            "domain": "embodied_models"
+          },
+          "event_type": "release",
+          "version": null,
+          "significance": 0.82,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "URDF 기구학 그래프 기반 범용 VLA 모델군 'HoloBrain-0.5' 기술 보고서 공개",
+          "detail_ko": "이종 로봇(cross-embodiment) 조작을 위해 URDF의 관절 축·좌표계·툴 중심점(TCP)을 표준화하고 기구학 그래프를 공유 3D 표현으로 인코딩하는 VLA 모델군 'HoloBrain-0.5' 기술 보고서가 공개됐어요. 확산(diffusion)으로 행동 청크를 생성하는 연속형(HoloBrain-0.5-Continuous)과 잔차 FSQ·지연 자기회귀 기반 이산형(HoloBrain-0.5-Discrete) 두 변형을 함께 제시했어요. 로봇 형태에 구애받지 않는 범용 VLA 아키텍처와 연속·이산 행동 표현 비교를 확인할 수 있는 주요 리포트예요.",
+          "headline_en": "HoloBrain-0.5: Cross-embodiment VLA family with standardized URDF 3D kinematic graphs",
+          "detail_en": "Introduces HoloBrain-0.5-Continuous (diffusion) and HoloBrain-0.5-Discrete (residual FSQ + delayed autoregression) encoding standardized URDF kinematic graphs in shared 3D space.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "이종 로봇 URDF 기구학 그래프 기반 대형 VLA 모델군 기술 보고서.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-012",
+      "topic": "lerobot",
+      "domain": "hardware_sdk",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T21:41:23+09:00",
+      "items": [
+        {
+          "item_id": "6b5faeda8e3d64b8",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "lerobot",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.78,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Cosmos-3·LeRobot v2.1 기반 완전 합성 조작 데이터셋 'DataForgeVLA' 공개",
+          "detail_ko": "추가 텔레오퍼레이션 없이 실제 시드 데이터만으로 생성한 340개 완전 합성 조작 시연 데이터셋(8개 물체 범주, 32,340프레임) 'DataForgeVLA'가 공개됐어요. LoRA 파인튜닝된 Cosmos-3 모델이 조작 비디오를 생성하고 RoboHaMeR가 대응 행동을 복원하는 파이프라인을 거쳐, H.264 비디오·프레임별 로봇 상태·자세 행동 라벨·언어 주석을 포함한 LeRobot v2.1 에피소드 포맷으로 제공해요. 월드 모델로 LeRobot 표준 학습 데이터를 직접 합성하는 실전 워크플로 사례예요.",
+          "headline_en": "DataForgeVLA: 340 fully synthetic manipulation demos in LeRobot v2.1 via Cosmos-3",
+          "detail_en": "Presents 340 synthetic manipulation demos (32,340 frames, 8 object categories) in LeRobot v2.1 format generated by LoRA-tuned Cosmos-3 and RoboHaMeR without extra teleop.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "Cosmos-3와 LeRobot v2.1을 결합한 완전 합성 조작 데이터셋 및 파이프라인.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-26-pm-013",
+      "topic": "long-horizon-manip",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-26T01:29:17+09:00",
+      "items": [
+        {
+          "item_id": "341f187f8629db40",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "long-horizon-manip",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.62,
+          "confidence": 0.89,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "상태 변화 효과 중심으로 이산 스킬을 양자화하는 장기 오프라인 RL 연구",
+          "detail_ko": "장기(long-horizon) 목표 조건부 오프라인 RL에서 기존 클러스터링·복원 기반 행동 양자화가 현재 상태의 어포던스나 목표 요구와 괴리되는 문제를 다룬 연구예요. 행동 청크가 에이전트 상태에 어떤 변화를 일으키는지에 초점을 맞춘 효과 기반(effect-driven) 스킬 추상화 양자화 기법을 제안했어요. 장기 조작을 위한 의미 있는 스킬 프리미티브 설계 관점에서 참고할 만해요.",
+          "headline_en": "Effect-driven discrete skill abstractions for long-horizon offline RL",
+          "detail_en": "Proposes quantizing action chunks based on how they affect agent state rather than reconstruction for long-horizon goal-conditioned offline RL.",
+          "keywords_hit": [
+            "long-horizon"
+          ],
+          "rationale": "장기 태스크용 상태 효과 기반 스킬 추상화 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "d404416102d83832",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "long-horizon-manip",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "내비게이션과 기민 모바일 조작을 공진화시키는 'Nav4Manip' 공개",
+          "detail_ko": "기존 모바일 매니퓰레이션에서 내비게이션이 미터 단위 목표 도달에 그쳐 정밀한 베이스 위치·접근 각도가 필요한 조작으로 이어지지 못하는 문제를 다룬 'Nav4Manip'이 공개됐어요. 내비게이션과 조작을 분리 학습하는 대신 상호 피드백 루프를 통해 두 역량을 공진화(co-evolution)시켜 장시간 기민 모바일 조작 신뢰도를 높였어요. 모바일 매니퓰레이터 하네스의 이동-조작 경계 설계에 참고할 만해요.",
+          "headline_en": "Nav4Manip: Co-evolving navigation and dexterous mobile manipulation",
+          "detail_en": "Introduces a feedback loop co-evolving precise base navigation and dexterous manipulation for long-horizon mobile manipulation tasks.",
+          "keywords_hit": [
+            "long-horizon"
+          ],
+          "rationale": "장기 모바일 매니퓰레이션을 위한 이동-조작 공진화 연구.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "633defd8d8bf",
+          "occurred_at": "2026-11-24T23:00:18+09:00",
+          "headline_ko": "장시간 조작 RL의 병목 구간을 집중 연습하는 'ReFocus'"
+        },
+        {
+          "event_id": "5c5331f5a1b3",
+          "occurred_at": "2026-11-24T18:30:33+09:00",
+          "headline_ko": "VLM 에이전트 스킬 조합 'Atomic Policy' 및 절차 진행 추적 'RoboDemo'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-014",
+      "topic": "vla-models",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "6576ae1e628728e1",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "m2-wam",
+            "title": "M2-WAM",
+            "domain": "embodied_models"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.79,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "시각·행동 모달리티별 계층 메모리를 갖춘 월드-액션 모델 'M²-WAM' 공개",
+          "detail_ko": "장시간(long-horizon) 로봇 조작에서 시각 이력을 길게 유지하면 저장·검색 비용이 커지고, 과도하게 압축하면 미세 정보가 손실되는 딜레마를 푸는 'M²-WAM'이 공개됐어요. 성긴 시각 관측이 놓치는 중간 거동을 실행된 행동 이력으로 보완하고, 모달리티와 시간 척도별로 차별화된 계층 메모리 구조를 적용해 최근 세밀 정보와 장기 문맥을 동시에 보존해요. WAM 기반 장기 조작 정책의 메모리 효율과 일관성을 끌어올리는 설계예요.",
+          "headline_en": "M2-WAM: Hierarchical multimodal and multi-timescale memory for World-Action Models",
+          "detail_en": "Introduces modality-specific hierarchical memory across visual and executed-action histories and timescales for long-horizon WAM manipulation.",
+          "keywords_hit": [
+            "long-horizon"
+          ],
+          "rationale": "장기 조작을 위한 WAM 계층 멀티모달 메모리 아키텍처 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "91e00eac8806ed49",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "잠재 월드 모델 장기 계획의 거리 지표 한계를 그래프 앵커로 보완한 연구",
+          "detail_ko": "잠재 월드 모델 플래너가 예측 종단 상태와 목표 이미지 간 잠재 거리를 기준으로 계획을 평가할 때 발생하는 두 가지 실패 모드를 진단한 논문이에요. 목표에서 몇 스텝만 멀어져도 방향 신호가 소실되고, 조작 대상 물체보다 로봇 팔에 과도한 가중치가 실려 접촉 단계에서 실패하는 문제를 5개 환경에서 측정하고 그래프 앵커(graph anchors)로 장기 계획을 개선했어요. 잠재 월드 모델을 플래너로 쓰는 하네스·정책 설계에 실질적인 진단 기준을 제공해요.",
+          "headline_en": "Long-horizon planning with latent world models via graph anchors",
+          "detail_en": "Diagnoses two failure modes of latent distance in world-model planners (signal loss far from goal, arm-over-object weighting) and introduces graph anchors.",
+          "keywords_hit": [
+            "long-horizon"
+          ],
+          "rationale": "잠재 월드 모델 장기 계획 실패 모드 진단 및 그래프 앵커 해법.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "751769a35f5d96b1",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.74,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "자연어 대신 시제 논리(Temporal Logic)를 태스크 언어로 쓰는 'TL-VLA' 공개",
+          "detail_ko": "물체 관계·논리 의존성·시간 제약이 얽힌 로봇 태스크에서 모호한 자연어 대신 시제 논리(TL)를 직접 입력받는 'TL-VLA'가 공개됐어요. 타입 그래프 인코더와 시각-논리 융합(visual-logical fusion)으로 연속 행동을 논리 명세와 관측에 조건화하고, 이를 위한 TL 인지 로봇 사전학습 절차를 함께 설계했어요. 산업 제어·안전 제약이 엄격한 장기 태스크에서 VLA의 형식적 명세 준수를 높이는 흥미로운 인터페이스 시도예요.",
+          "headline_en": "TL-VLA: Conditioning VLA models on temporal logic specifications via visual-logical fusion",
+          "detail_en": "Replaces natural-language prompts with temporal logic using a typed graph encoder, visual-logical fusion, and TL-aware robot pretraining.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "시제 논리 기반 형식적 태스크 명세를 결합한 VLA 아키텍처.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "3f09ad4617af45d4",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "플로우 매칭 로봇 정책의 샘플링 스케줄을 학습 없이 최적화하는 'GYS'",
+          "detail_ko": "고정된 신경망 평가 횟수(NFE) 예산 아래에서 플로우 매칭 로봇 정책의 적분 결과와 태스크 성공률이 샘플링 스케줄에 크게 좌우된다는 점에 착안한 'Ground Your Steps(GYS)'가 공개됐어요. 추가 학습 없이 각 관측에서 생성된 행동 청크 분포를 시연 분포에 맞추도록 절단 분수 차분(truncated fractional differencing)으로 샘플링 스케줄을 최적화해요. 기존 플로우 매칭 VLA·정책의 추론 지연은 유지하면서 성공률을 끌어올리는 드롭인 최적화 기법이에요.",
+          "headline_en": "Ground Your Steps (GYS): Training-free sampling schedule optimization for flow matching policies",
+          "detail_en": "Optimizes inference sampling schedules of flow matching robot policies without training under fixed NFE budgets to match demonstrated action chunk distributions.",
+          "keywords_hit": [
+            "training-free"
+          ],
+          "rationale": "플로우 매칭 로봇 정책의 추론 효율·성공률을 높이는 training-free 기법.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "0d16ad717e3a56bd",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.71,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "인간 시연을 물리 실행 가능한 전신 로봇 궤적으로 변환하는 'DexEngine' 공개",
+          "detail_ko": "인간 손-물체 시연을 로봇 손으로 리타게팅하는 데 그치지 않고, 기구학적으로 타당하며 실제 물리 실행이 가능한 팔-손 통합 궤적으로 대량 변환하는 시뮬레이션 파이프라인 'DexEngine'이 공개됐어요. 각 클립의 손-물체 움직임을 로봇 팔 도달 범위 안에 배치하고 인간 손을 추종하는 팔 궤적을 산출해 학습 즉시 투입 가능한 데이터를 생성해요. 인간 비디오 기반 양팔·덱스터러스 정책 학습 데이터의 물리적 정합성을 높이는 전처리 인프라예요.",
+          "headline_en": "DexEngine: Turning human hand-object demos into physically executable arm-hand robot data",
+          "detail_en": "Simulation pipeline that places human hand-object clips within robot arm reach and generates kinematically feasible, physically executable whole-robot trajectories.",
+          "keywords_hit": [],
+          "rationale": "인간 시연을 물리 실행 가능한 팔-손 데이터로 대규모 변환하는 파이프라인.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "abf1eae091f04475",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.77,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "비디오 확산 사전 지식을 이종 로봇 제어로 전이하는 'X-World' 공개",
+          "detail_ko": "사전학습된 비디오 확산 모델의 시공간 사전 지식을 다양한 시점(variable views)의 이종 로봇 제어로 전이하는 'X-World'가 공개됐어요. Q-Former가 은닉 상태를 압축해 공유 플로우 매칭 액션 전문가에 전달하고, 데이터셋별 프로젝션으로 각 로봇의 고유 상태·행동 공간을 매핑해 대규모 인간·로봇 비디오로 백본을 적응시켰어요. 비디오 파운데이션 모델을 범용 폐루프 조작 정책으로 전환하는 최신 월드-액션 아키텍처 사례예요.",
+          "headline_en": "X-World: Transferring pretrained video diffusion priors to cross-embodiment control",
+          "detail_en": "Adapts pretrained video diffusion to variable views using a Q-Former and shared flow-matching action expert trained on large-scale robot and human videos.",
+          "keywords_hit": [],
+          "rationale": "비디오 확산 기반 이종 로봇 제어 월드-액션 모델.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "1fe009e897a3ae4a",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.64,
+          "confidence": 0.89,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "온라인 RL용 1스텝 플로우 생성 정책 최적화 'iMFPO' 공개",
+          "detail_ko": "보상 기반 온라인 강화학습 중 행동 분포가 변하면서 순간 속도 학습과 구간 평균 행동 생성 간 불일치가 생기는 문제를 해결하는 1스텝 생성 정책 최적화 프레임워크 'iMFPO'가 공개됐어요. 분리된 속도 학습과 드리프트 인지 속도 정렬을 통해 효율적인 단일 스텝 행동 생성을 구현했어요. 플로우 기반 로봇 정책의 추론 지연을 1스텝으로 줄이면서 온라인 RL을 안정화하는 기법이에요.",
+          "headline_en": "iMFPO: One-step mean flow policy optimization with drift-aware velocity alignment",
+          "detail_en": "Addresses velocity-alignment drift during online RL for one-step generative flow policies in embodied control.",
+          "keywords_hit": [],
+          "rationale": "1스텝 플로우 생성 정책의 온라인 RL 최적화 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "f320574d45afd827",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "worldreforge",
+            "title": "WorldReforge",
+            "domain": "embodied_models"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.81,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "시뮬레이션 실패 데이터로 로봇 월드 모델 일반화를 높이는 'WorldReforge' 공개",
+          "detail_ko": "성공 시연 위주로 학습된 기존 로봇 월드 모델이 파지 어긋남·미끄러짐 같은 실패 경로(off the happy path)에서 급격히 무너지는 문제를 실증하고 해결책을 제시한 'WorldReforge'가 공개됐어요. 5종의 사전학습 행동 조건부 월드 모델을 평가한 결과, 실패 상황의 물체 움직임 오차가 첫 프레임을 그대로 복사하는 정적 기준선 대비 최대 10.4% 낮추는 데 그쳤고 2종은 기준선보다도 못했어요. 월드 모델을 정책 평가·계획에 쓰려는 팀이라면 반드시 짚고 넘어가야 할 실패 일반화 진단과 개선 파이프라인이에요.",
+          "headline_en": "WorldReforge: Generalizing robot world models off the happy path using simulated failures",
+          "detail_en": "Shows five pretrained action-conditioned world models reduce object-motion error by at most 10.4% over a static first-frame baseline on failures (two are worse), and introduces WorldReforge.",
+          "keywords_hit": [],
+          "rationale": "로봇 월드 모델의 실패 시나리오 예측 붕괴를 정량 진단하고 개선한 핵심 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "b663452a0f893596",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.74,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "월드-액션 모델의 상호작용·모션 특화 어텐션 헤드 표적 적응 연구",
+          "detail_ko": "미래 비디오와 행동을 공동 생성하는 WAM(World-Action Model) 내부에서 '어디서 상호작용할지'를 포착하는 Next-Interaction Heads와 움직임을 모델링하는 Motion Heads라는 기능 특화 어텐션 헤드군을 발견한 연구예요. 전체 파인튜닝이나 범용 LoRA 대신 조작 핵심 역량에 정렬된 헤드를 표적 적응해 효율과 성능을 개선했어요. WAM의 내부 메커니즘 해석과 경량 적응 전략 설계에 유용한 통찰을 줘요.",
+          "headline_en": "Targeted WAM adaptation via specialized Next-Interaction and Motion attention heads",
+          "detail_en": "Discovers functionally specialized Next-Interaction and Motion attention heads in World-Action Models for targeted parameter adaptation.",
+          "keywords_hit": [],
+          "rationale": "WAM 내부 어텐션 헤드 분화 발견 및 표적 적응 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "a7fd7f765a1d95b9",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.6,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "인간 개입 시점의 전후 맥락을 선호 쌍으로 활용하는 교정 학습 연구",
+          "detail_ko": "사람이 로봇을 교정할 때 '어떻게 고쳤는지'뿐 아니라 '언제 개입했는지'에도 핵심 정보가 담겨 있다는 점에 착안한 연구예요. 개입 이전과 이후의 로봇 거동을 모두 선호 쌍(preference pair)으로 변환해 인간의 잠재 가치 함수를 근사하는 방식을 제안했어요. 인간 개입 기반 사후학습의 데이터 효율을 높이는 보완 기법이에요.",
+          "headline_en": "Learning value functions from human corrections using pre- and post-intervention temporal preferences",
+          "detail_en": "Translates both pre- and post-intervention robot behaviors into preference pairs to learn human latent value functions.",
+          "keywords_hit": [],
+          "rationale": "인간 교정 타이밍을 가치 학습에 활용하는 로봇 학습 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "16596bfd9d83dab3",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "119만 타임스텝 시각-촉각 계층 월드 표현 'HiMoDex' 공개",
+          "detail_ko": "양팔 기민 조작(bimanual dexterous manipulation)을 위해 시각 문맥과 촉각 등 비시각 물리 상호작용 단서를 통합하는 2단계 프레임워크 'HiMoDex'가 공개됐어요. 1단계에서 119만 개의 동기화된 멀티모달 타임스텝 데이터셋으로 계층적 멀티모달 월드 상태 표현 네트워크를 사전학습해 정교한 양손 협응 정책 학습의 토대를 마련했어요. 촉각-시각 통합 월드 표현의 대규모 사전학습 사례예요.",
+          "headline_en": "HiMoDex: Hierarchical visual-tactile world representations pretrained on 1.19M timesteps",
+          "detail_en": "Pretrains a hierarchical multimodal world-state network on 1.19M synchronized visual-tactile timesteps for bimanual dexterous manipulation.",
+          "keywords_hit": [],
+          "rationale": "대규모 시각-촉각 동기화 데이터 기반 양팔 조작 월드 표현 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "4dca9af3e72f1265",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "행동 파운데이션 모델(BFM)을 휴머노이드 장면 상호작용에 적응시키는 'Ada-BFM'",
+          "detail_ko": "대규모 행동 데이터로 사전학습된 행동 파운데이션 모델(BFM)의 전신 협응 능력을 장면 의존적 기하 제약과 접촉 동역학이 있는 환경 상호작용으로 확장하는 사후학습 프레임워크 'Ada-BFM'이 공개됐어요. 기존 BFM 구조에 경량 어댑터를 결합해 전신 제어 역량을 보존하면서 장면 상호작용을 학습하도록 설계했어요. 휴머노이드 전신 제어 파운데이션 모델의 실환경 적응 기법으로 참고할 만해요.",
+          "headline_en": "Ada-BFM: Lightweight adapter post-training of Behavior Foundation Models for humanoid scene interaction",
+          "detail_en": "Augments pretrained Behavior Foundation Models with lightweight adapters to handle scene-dependent geometric constraints and contact dynamics.",
+          "keywords_hit": [],
+          "rationale": "휴머노이드 행동 파운데이션 모델의 장면 상호작용 사후학습 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "013ae10a631d5b2f",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.76,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "월드-액션 모델의 잠재 미래 예측 공간을 체계 분석한 'PreWAM' 공개",
+          "detail_ko": "미래 예측을 정책 학습의 감독 신호로 쓰는 월드-액션 모델(WAM)에서 어떤 예측 공간(prediction space)이 가장 효과적인지 통제 실험으로 규명한 'PreWAM'이 공개됐어요. 공간적으로 구조화된 의미 특징(spatially structured semantic features)이 시각 교란 하에서 더 나은 일반화를 제공하고 학습된 예측 표현에서 모션 정보를 더 잘 복원할 수 있음을 보였어요. WAM의 미래 예측 헤드와 표현 공간을 설계할 때 직접적인 실험 근거가 돼요.",
+          "headline_en": "PreWAM: Controlled study of latent future prediction spaces for World-Action Models",
+          "detail_en": "Shows spatially structured semantic features improve visual perturbation generalization and motion recoverability in WAM future prediction.",
+          "keywords_hit": [],
+          "rationale": "WAM 잠재 미래 예측 공간 설계를 통제 실험으로 규명한 논문.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "856e8727782c39b9",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.72,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "1인칭 영상의 인간 능동 시점 탐색을 WAM으로 전이하는 'ActiveBridge' 공개",
+          "detail_ko": "기존 로보틱스 파운데이션 모델이 주어진 관측에만 수동적으로 반응하는 한계를 넘어, 1인칭 인간 비디오 속 능동적 정보 탐색(active prior)을 월드-액션 모델링으로 로봇에 전이하는 'ActiveBridge'가 공개됐어요. 로봇이 머리 움직임 등으로 시점을 능동 제어하며 비정형 장면에서 필요한 정보를 스스로 확보하도록 학습해요. 가려짐이 잦은 실환경 조작에서 능동 인지(active perception)를 WAM에 통합한 사례예요.",
+          "headline_en": "ActiveBridge: Transferring human active viewpoint priors to robots via world-action modeling",
+          "detail_en": "Learns human active perception priors from egocentric videos and transfers them via WAM so robots actively control head viewpoints in unstructured scenes.",
+          "keywords_hit": [],
+          "rationale": "1인칭 능동 시점 탐색을 WAM에 통합한 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "30017979633a2db8",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.71,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "1인칭 시각-촉각 글러브 시연 기반 양팔 기민 조작 전이 'Ego2Real' 공개",
+          "detail_ko": "시각만으로는 물리 접촉과 시연자의 힘 의도를 파악하기 어려운 문제를 풀기 위해, 1인칭 시연과 촉각 글러브(tactile glove)를 결합해 양팔 기민 조작을 로봇으로 전이하는 'Ego2Real'이 공개됐어요. 인간 손의 접촉 감각을 함께 기록함으로써 인간-로봇 간 정교한 스킬 전이 모호성을 줄였어요. 촉각 기반 1인칭 데이터 수집 파이프라인 참고 사례예요.",
+          "headline_en": "Ego2Real: Bimanual dexterous transfer from egocentric visual and tactile glove demos",
+          "detail_en": "Combines egocentric demonstrations with tactile gloves to capture contact and force intent for human-to-robot bimanual dexterous manipulation transfer.",
+          "keywords_hit": [],
+          "rationale": "시각-촉각 글러브 기반 1인칭 양팔 조작 전이 연구.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "786666eee3503045",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "양팔을 별도 토큰으로 분리해 교차 어텐션 협응을 구현한 플로우 정책 'Duo'",
+          "detail_ko": "기존 플로우 기반 양팔 정책이 두 팔의 행동을 타임스텝당 하나의 토큰으로 합쳐 팔 간 공간 의존성을 명시적으로 모델링하지 못했던 점을 개선한 'Duo'가 공개됐어요. 단일 공유 액션 헤드 안에서 타임스텝마다 양팔을 두 개의 행동 토큰으로 분리해 플로우 매칭 과정에 교차 팔 어텐션(cross-arm attention)을 적용했어요. 양팔 매니퓰레이터(YAM·ALOHA 등)용 플로우 정책 아키텍처에 바로 적용해 볼 수 있는 간결한 개선이에요.",
+          "headline_en": "Duo: Cross-arm attention via separate per-arm action tokens in bimanual flow policies",
+          "detail_en": "Separates both arms into two action tokens per timestep within a shared flow-matching head to enable spatiotemporal cross-arm attention.",
+          "keywords_hit": [],
+          "rationale": "양팔 플로우 매칭 정책의 교차 팔 어텐션 아키텍처 개선.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "8c4a2f62ecd4168b",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.67,
+          "confidence": 0.89,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "에이전트·외부 동역학을 분리해 월드 모델 계획을 개선한 'FactorWorld'",
+          "detail_ko": "시각 월드 모델의 잠재 상태에서 로봇(에이전트) 동역학과 배경·외부 요인 동역학이 뒤섞여 계획 거리 지표가 왜곡되는 문제를 해결하는 'FactorWorld'가 공개됐어요. 요인 간 교차 간섭을 억제하면서도 태스크 관련 신호와 연결해 월드 모델 기반 계획의 정확도를 높였어요.",
+          "headline_en": "FactorWorld: Disentangling agent and exogenous visual dynamics for world model planning",
+          "detail_en": "Separates agent and exogenous dynamics in visual world models while preserving task-relevant planning signals.",
+          "keywords_hit": [],
+          "rationale": "시각 월드 모델의 동역학 분리 기반 계획 개선 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-015",
+      "topic": "vla-as-tool",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-24T19:28:46+09:00",
+      "items": [
+        {
+          "item_id": "2a4f96f3fb6e9609",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "vla-as-tool",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "any2act",
+            "title": "Any2Act",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.8,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "이종 시연 기반 인컨텍스트 로봇 학습 파운데이션 모델 'Any2Act' 공개",
+          "detail_ko": "태스크별 파인튜닝 없이 문맥 시연(contextual demonstration)만으로 미지의 작업을 수행하는 로봇 인컨텍스트 학습(ICL) 파운데이션 모델 'Any2Act'가 공개됐어요. 저주파로 추론하는 LLM이 시연을 통해 태스크를 지정하고 고주파 실행을 하위 정책에 위임하는 계층 구조에서, 기존 인간 비디오·단일 로봇 시연의 데이터 소스 제약을 넘어 이종 시연 전반으로 확장했어요. 프론티어 LLM 플래너와 범용 고주파 실행 정책을 잇는 브리지 계층으로 주목할 만해요.",
+          "headline_en": "Any2Act: Foundation model for scaling in-context robot learning from heterogeneous demos",
+          "detail_en": "Scales robot in-context learning across heterogeneous demonstration sources so low-frequency LLM reasoning can delegate high-frequency execution without fine-tuning.",
+          "keywords_hit": [
+            "training-free"
+          ],
+          "rationale": "저주파 LLM 추론과 고주파 실행 정책을 잇는 로봇 ICL 파운데이션 모델.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "32ffeaf57a8e",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "에이전트-하위 정책 인계 실패를 줄이는 'Boundary-Aware Policy Learning'"
+        },
+        {
+          "event_id": "be906027d618",
+          "occurred_at": "2026-11-24T18:21:57+09:00",
+          "headline_ko": "동결 VLA + 코드 복구 3D 스킬 엔벨로프 하네스 'VLAs Execute, Code Recovers'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-016",
+      "topic": "nvidia-groot",
+      "domain": "embodied_models",
+      "lab": "nvidia",
+      "event_type": "feature",
+      "version": null,
+      "occurred_at": "2026-11-26T04:30:00+09:00",
+      "items": [
+        {
+          "item_id": "59b73359242c586e",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "nvidia-groot",
+          "variant": null,
+          "lab": "nvidia",
+          "new_entity": null,
+          "event_type": "feature",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "NVIDIA, RTX Blackwell에서 월드 모델용 NVFP4 어텐션 최적화 기법 공개",
+          "detail_ko": "NVIDIA 공식 개발자 블로그에서 긴 시퀀스를 다루는 월드 파운데이션 모델(world foundation model) 서빙의 핵심 병목인 어텐션 연산을 RTX Blackwell GPU에서 가속하는 기법을 공개했어요. 레지스터 재활용(register recycling)을 통해 NVFP4 어텐션 커널 효율을 끌어올리는 저수준 최적화 방법을 상세히 다뤘어요. 로보틱스 월드 모델 추론 지연을 줄여야 하는 인프라 엔지니어에게 실질적인 참고 자료예요.",
+          "headline_en": "NVIDIA optimizes NVFP4 attention on RTX Blackwell for world foundation models",
+          "detail_en": "NVIDIA Developer Blog details register recycling to optimize NVFP4 attention on RTX Blackwell for serving long-sequence world foundation models.",
+          "keywords_hit": [],
+          "rationale": "NVIDIA 공식 블로그의 월드 파운데이션 모델 서빙 어텐션 최적화 기술 글.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "78d1f3824630",
+          "occurred_at": "2026-11-24T23:15:38+09:00",
+          "headline_ko": "휴머노이드 전신 제어용 미분 가능 VLA 'DiffGR00T'"
+        },
+        {
+          "event_id": "23850b57455e",
+          "occurred_at": "2026-11-25T03:44:05+09:00",
+          "headline_ko": "NVIDIA Cosmos 3 Nano 로컬 디바이스 구동 가이드 (Diffusers)"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-017",
+      "topic": "unitree",
+      "domain": "hardware_sdk",
+      "lab": "unitree",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-25T11:09:34+09:00",
+      "items": [
+        {
+          "item_id": "4d0fd5e07b935ca0",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "unitree",
+          "variant": null,
+          "lab": "unitree",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.91,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Unitree, C++ 기반 'r1-7a_sdk' 공식 GitHub 저장소 업데이트",
+          "detail_ko": "Unitree 공식 GitHub 조직의 C++ 제어 저장소 `r1-7a_sdk`(★7)가 업데이트됐어요. 신규 로봇 플랫폼 제어 인터페이스를 추적하는 관점에서 공식 SDK 변경을 기록해 둬요.",
+          "headline_en": "Unitree Robotics updates C++ SDK repository r1-7a_sdk (★7)",
+          "detail_en": "Official Unitree Robotics GitHub C++ SDK repository r1-7a_sdk received updates.",
+          "keywords_hit": [],
+          "rationale": "Unitree 공식 GitHub C++ SDK 업데이트.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "59076ab832c4293f",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "unitree",
+          "variant": null,
+          "lab": "unitree",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.62,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Unitree, C++ 저장소 'unitree_cloth_service' 공식 GitHub 등록",
+          "detail_ko": "Unitree 공식 GitHub 조직에 C++ 기반 `unitree_cloth_service` 저장소가 새로 푸시됐어요. 의류·변형체 조작 서비스 관련 공식 코드 움직임으로 향후 업데이트를 추적할 만해요.",
+          "headline_en": "Unitree Robotics pushes new C++ repository unitree_cloth_service",
+          "detail_en": "Unitree Robotics published a new C++ repository unitree_cloth_service on its official GitHub.",
+          "keywords_hit": [],
+          "rationale": "Unitree 공식 GitHub 신규 C++ 저장소.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "33ee76cbcbc4bd6a",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "unitree",
+          "variant": null,
+          "lab": "unitree",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Unitree, 다중 카메라 네트워크 스트리밍 서버 'teleimager' 업데이트 (★66)",
+          "detail_ko": "Unitree 공식 GitHub의 다중 카메라 이미지 서버 `teleimager`(★66)가 업데이트됐어요. UVC·V4L2·GStreamer·RealSense 등 다양한 카메라 스트림을 캡처해 ZeroMQ 또는 WebRTC로 네트워크 발행하는 Python 서버로, 텔레오퍼레이션과 원격 VLM 하네스 인지 파이프라인 구축에 유용해요.",
+          "headline_en": "Unitree Robotics updates multi-camera streaming server teleimager (★66)",
+          "detail_en": "Captures video streams from UVC, V4L2, GStreamer, and RealSense cameras and publishes over ZeroMQ or WebRTC.",
+          "keywords_hit": [],
+          "rationale": "Unitree 공식 다중 카메라 스트리밍 인프라 업데이트.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "8fd02e582592",
+          "occurred_at": "2026-11-25T22:28:50+09:00",
+          "headline_ko": "Unitree 공식 MuJoCo 강화학습 'unitree_rl_mjlab' 업데이트 (★740)"
+        },
+        {
+          "event_id": "847ed6441f1a",
+          "occurred_at": "2026-11-23T21:44:40+09:00",
+          "headline_ko": "Unitree 공식 프론티어 모델 스킬 하네스 'unitree_robotskills' 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-018",
+      "topic": "vla-models",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "benchmark",
+      "version": null,
+      "occurred_at": "2026-11-25T22:09:34+09:00",
+      "items": [
+        {
+          "item_id": "da3ffb4a3bf8c0b9",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.62,
+          "confidence": 0.89,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "일상 인간-로봇 상호작용의 사회적 지능 벤치마크 'LUDIUS' 공개",
+          "detail_ko": "VLM이 주변 사람의 관점을 해석해 로봇의 발화와 행동을 언제·어떻게 결정하는지 평가하는 'LUDIUS' 벤치마크가 공개됐어요. 사회심리학·인지과학 기반 15개 사회적 지능 스킬을 중심으로, 각각 시뮬레이션 1주일 분량의 에피소드를 담은 6개 에디션으로 구성했어요. 가정·서비스 로봇 에이전트의 장기 상호작용 판단력을 검증하는 참고 벤치마크예요.",
+          "headline_en": "LUDIUS: Benchmark for embodied social intelligence in VLM-driven robots",
+          "detail_en": "Evaluates VLMs across 15 social intelligence skills over six editions spanning one simulated week each in household human-robot interactions.",
+          "keywords_hit": [],
+          "rationale": "VLM 기반 로봇의 사회적 지능·행동 판단 벤치마크.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-019",
+      "topic": "mcp-a2a",
+      "domain": "ai_frontier",
+      "lab": "allenai",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-25T20:19:02+09:00",
+      "items": [
+        {
+          "item_id": "f978e6241960f24e",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "mcp-a2a",
+          "variant": null,
+          "lab": "allenai",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.5,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Ai2, 코딩 에이전트용 Harbor 태스크 워크스페이스 매니저 'pier' 공개",
+          "detail_ko": "AllenAI가 코딩 에이전트가 Harbor 평가 태스크를 대화형으로 풀고 개발할 수 있게 돕는 Python 워크스페이스 매니저 `allenai/pier`(★6)를 업데이트했어요. 코딩 에이전트 평가·RL 환경 관리 도구 생태계의 소규모 오픈소스 업데이트예요.",
+          "headline_en": "AllenAI updates pier workspace manager for coding agents and Harbor evals",
+          "detail_en": "AllenAI updated allenai/pier (★6), a Python workspace manager for interactively solving and developing Harbor tasks with coding agents.",
+          "keywords_hit": [],
+          "rationale": "Ai2의 코딩 에이전트 평가 워크스페이스 도구 (ai_frontier 0.65 미만 소규모 업데이트).",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-26-pm-020",
+      "topic": "mcp-a2a",
+      "domain": "ai_frontier",
+      "lab": null,
+      "event_type": "feature",
+      "version": null,
+      "occurred_at": "2026-11-25T13:38:18+09:00",
+      "items": [
+        {
+          "item_id": "6c34d3344f218d07",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "mcp-a2a",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "feature",
+          "version": null,
+          "significance": 0.48,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "NAVER D2, 운영 에이전트 'care-ai'의 MCP 응답 요약·온디맨드 설계 사례 공개",
+          "detail_ko": "NAVER Engineering Day 10th 세션에서 OpenSearch 운영 문의를 자동 대응하는 AI 에이전트 'care-ai' 구축 시행착오와 MCP 서버 설계 원칙을 공유했어요. 도구 응답이 모델 입력 한도를 초과하는 문제를 풀기 위해 요약본을 먼저 반환하고 원본 데이터는 요청 시에만 제공하도록 MCP 서버를 재설계한 사례가 실무적으로 유용해요.",
+          "headline_en": "NAVER D2 shares MCP response summarization and agent design lessons from care-ai",
+          "detail_en": "Details how NAVER redesigned MCP server responses to return summaries first and raw data on demand to avoid exceeding model context limits.",
+          "keywords_hit": [],
+          "rationale": "비공식/사내 엔지니어링 사례로 0.5 상한 적용, ai_frontier 브리핑선(0.65) 미만.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "eba0144b322cec74",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "mcp-a2a",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "feature",
+          "version": null,
+          "significance": 0.5,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "NAVER D2, 모델·에이전트 통합 평가 프레임워크 'OmniEvaluator' 공개",
+          "detail_ko": "NAVER Engineering Day 10th 세션에서 추론 엔진 4종(HF Transformers·vLLM·SGLang·상용 API)과 평가 프레임워크 4종(lm-eval-harness·lmms-eval·VLMEvalKit·내장)을 단일 스키마로 묶어 1,000개 이상 멀티모달 벤치마크를 재현 가능하게 실행하는 'OmniEvaluator'를 소개했어요. CPU 내장 Verifier로 프롬프트·파서 차이에 따른 채점 편차를 줄인 설계가 참고할 만해요.",
+          "headline_en": "NAVER D2 introduces OmniEvaluator unified multimodal model and agent evaluation framework",
+          "detail_en": "Unifies 4 inference engines and 4 evaluation toolkits to run 1,000+ multimodal benchmarks reproducibly with a built-in CPU verifier.",
+          "keywords_hit": [],
+          "rationale": "비공식 사내 엔지니어링 발표로 0.5 상한 적용, ai_frontier 브리핑선(0.65) 미만.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-26-pm-021",
+      "topic": "claude-code",
+      "domain": "ai_frontier",
+      "lab": null,
+      "event_type": "feature",
+      "version": null,
+      "occurred_at": "2026-11-25T14:19:42+09:00",
+      "items": [
+        {
+          "item_id": "b620991c736822fc",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "claude-code",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "feature",
+          "version": null,
+          "significance": 0.5,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "NAVER D2, 돌연변이 테스팅·훅·에이전트 팀 분리 기반 AI 결과 검증 방법 공유",
+          "detail_ko": "NAVER Engineering Day 10th 세션에서 AI가 생성한 코드와 테스트의 자기 보고를 기계적으로 반증하는 3단계 검증 전략(돌연변이 테스팅, 규칙 강제 훅, 저자-검증자 분리 에이전트 팀)을 공개했어요. 문서 규칙은 건너뛰기 쉽지만 훅은 강제되며, 작성자와 검증자를 별도 에이전트로 분리해야 채점이 작동한다는 실전 하네스 원칙을 잘 짚었어요.",
+          "headline_en": "NAVER D2 shares mutation testing, hooks, and separated agent teams for AI verification",
+          "detail_en": "Presents three verification mechanisms—mutation testing, enforcing hooks over docs, and separating author/verifier agent teams—to counter AI self-reporting blind spots.",
+          "keywords_hit": [],
+          "rationale": "비공식 엔지니어링 세션으로 0.5 상한 적용, ai_frontier 브리핑선(0.65) 미만.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "fcbab74f1415",
+          "occurred_at": "2026-11-25T08:02:07+09:00",
+          "headline_ko": "Simon Willison, 지난 12개월간 LLM·코딩 에이전트 3대 변곡점 회고"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-022",
+      "topic": "mujoco-isaac",
+      "domain": "hardware_sdk",
+      "lab": null,
+      "event_type": "benchmark",
+      "version": null,
+      "occurred_at": "2026-11-25T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "49601c4ab9b3a745",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "mujoco-isaac",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "fabricbench",
+            "title": "FabricBench",
+            "domain": "hardware_sdk"
+          },
+          "event_type": "benchmark",
+          "version": null,
+          "significance": 0.77,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Newton 접촉 물리 솔버 기반 양팔 직물 조작 벤치마크 'FabricBench' 공개",
+          "detail_ko": "강체 위주 평가에서 벗어나 의류·실크·가방 등 변형체 양팔 조작을 표준 평가하는 'FabricBench'가 공개됐어요. 오픈소스 Newton 물리 솔버 기반 시뮬레이터에서 인위적 부착(artificial attachment) 없이 실제 접촉력만으로 안정적인 양팔 파지·유지·놓기를 구현하며, 6개 태스크와 10,000개의 시뮬레이션 에셋을 제공해요. NVIDIA·DeepMind 생태계의 차세대 오픈 물리 엔진 Newton을 활용한 대규모 변형체 벤치마크로 주목할 만해요.",
+          "headline_en": "FabricBench: Bimanual fabric manipulation benchmark with 10,000 assets on Newton solver",
+          "detail_en": "Introduces 6 bimanual fabric tasks and 10,000 sim-ready assets built on an open-source Newton solver enabling contact-driven grasping without artificial attachment.",
+          "keywords_hit": [],
+          "rationale": "오픈소스 Newton 물리 엔진 기반 1만 에셋 규모 양팔 변형체 조작 벤치마크.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "7f140aa28031",
+          "occurred_at": "2026-11-25T23:49:10+09:00",
+          "headline_ko": "NVIDIA 멀티-피직스 로봇 학습 프레임워크 'IsaacLab' 최신 업데이트 (★8,724)"
+        },
+        {
+          "event_id": "f48b3ae8df87",
+          "occurred_at": "2026-11-26T00:05:25+09:00",
+          "headline_ko": "NVIDIA, 조합형 로봇 정책 평가 시뮬레이션 프레임워크 'IsaacLab-Arena' 업데이트"
+        },
+        {
+          "event_id": "1457c3f68486",
+          "occurred_at": "2026-11-25T01:34:13+09:00",
+          "headline_ko": "Hugging Face × NVIDIA, Isaac Lab + Newton 기반 Sim2Real 워크플로 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-26-pm-023",
+      "topic": "perception-tools",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T14:00:00+09:00",
+      "items": [
+        {
+          "item_id": "83dd51f719ade613",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "perception-tools",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "로봇 베이스 좌표계 기하 앵커로 RGB 단독 시점 일반화를 달성한 'ReGeoAnch'",
+          "detail_ko": "카메라 위치가 바뀌면 RGB 모방 학습 성능이 급락하는 문제를 풀기 위해, 로봇 베이스 좌표계에 전역 기하 앵커(global anchors)를 구축하는 'ReGeoAnch'가 공개됐어요. 배포 시점에는 깊이 센서 없이 RGB 입력만으로 시점 변화에 강건한 조작을 수행하도록 설계했어요. 카메라 배치 변동에 민감한 실전 로봇 하네스의 시각 일반화 기법으로 참고할 만해요.",
+          "headline_en": "ReGeoAnch: Base-frame geometric anchors for viewpoint generalization with RGB-only deployment",
+          "detail_en": "Builds global geometric anchors in the robot base frame to achieve camera-viewpoint generalization while deploying with RGB-only inputs.",
+          "keywords_hit": [],
+          "rationale": "RGB 단독 배포 시점 일반화를 위한 기하 앵커 인지 프레임워크.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "ff2a292de464b42c",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "perception-tools",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.75,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "비디오에서 관절 로봇 상태를 재귀 자가 개선 추정하는 에이전트 'OVOK'",
+          "detail_ko": "카메라 내부 파라미터·외부 자세·관절 각도가 미지인 비디오에서 관절 로봇의 3D 상태를 복원하는 재귀적 자가 개선 에이전트 프레임워크 'OVOK'가 공개됐어요. 기존 회귀 모델의 로봇별 재학습 부담과 일반 파운데이션 모델 제로샷 추정의 큰 오차 문제를 에이전트 기반 반복 개선 루프로 보완했어요. 이종 로봇 영상에서 메트릭 공간 상태와 동작을 추출하는 인지 도구(perception-as-tools) 계층에 유용해요.",
+          "headline_en": "OVOK: Recursive self-improving agentic framework for video-based robot state estimation",
+          "detail_en": "Recovers articulated robot joint angles and camera poses from video via a recursive self-improving agentic framework without robot-specific training.",
+          "keywords_hit": [],
+          "rationale": "비디오 기반 로봇 상태 추정을 위한 재귀 자가 개선 에이전트 인지 도구.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-26-pm-024",
+      "topic": "booster",
+      "domain": "hardware_sdk",
+      "lab": "booster",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-25T11:18:44+09:00",
+      "items": [
+        {
+          "item_id": "bf5d7a7ce7beaa83",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "booster",
+          "variant": null,
+          "lab": "booster",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.73,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "중국 Booster Robotics, T2 휴머노이드 전신 텔레옵 'booster_teleop' 공개",
+          "detail_ko": "중국 Booster Robotics가 Booster T2 휴머노이드의 시뮬레이션 및 실물 로봇 전신 텔레오퍼레이션을 지원하는 공식 Python 저장소 `booster_teleop`(★2)을 공개했어요. PICO VR 헤드셋 또는 Noitom 모션캡처 슈트를 선택해 전신 원격 조작 데이터를 수집할 수 있도록 지원해요. 중국 휴머노이드 플랫폼의 오픈소스 텔레오퍼레이션 스택이 빠르게 확충되고 있어요.",
+          "headline_en": "Booster Robotics releases booster_teleop for Booster T2 whole-body teleoperation",
+          "detail_en": "Provides whole-body teleoperation for Booster T2 in simulation and on the real robot using PICO or a Noitom motion-capture suit.",
+          "keywords_hit": [],
+          "rationale": "중국 Booster Robotics의 T2 휴머노이드 공식 전신 텔레옵 저장소.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "7d755c8e5db5",
+          "occurred_at": "2026-11-25T12:13:06+09:00",
+          "headline_ko": "Booster Robotics 공식 C++ SDK 'booster_robotics_sdk' 업데이트 (★123)"
+        }
+      ]
+    }
+  ]
+}

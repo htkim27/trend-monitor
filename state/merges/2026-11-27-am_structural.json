@@ -1,0 +1,762 @@
+{
+  "run_id": "2026-11-27-am",
+  "clusters": [
+    {
+      "cluster_id": "2026-11-27-am-001",
+      "topic": "robot-memory",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-25T00:58:53+09:00",
+      "items": [
+        {
+          "item_id": "79bc6a73380aa1ba",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "robot-memory",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.78,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "이산 스킬 어휘의 폐루프 실패를 분해 진단하는 'MPQ' 공개",
+          "detail_ko": "유한 어휘에서 모션을 실행하는 기존 이산 스킬 정책은 잠재 코드북을 선택기·디코더와 함께 학습해, 폐루프 실패 시 어휘·선택·실행 중 어디가 원인인지 추적하기 어려웠어요. 본 연구는 학습된 정책 내부가 아닌 뒤에 시연 모션 라이브러리를 배치하는 Movement Prototype Quantization(MPQ)을 제안했어요. MPQ는 예측된 행동 청크를 가장 가까운 라이브러리 요소로 치환한 뒤 유한 범위 내에서 예측값 방향으로 보정해요. 스킬 라이브러리 기반 로봇 하네스에서 실패 원인을 단계별로 분해 진단하고 제어 안정성을 높이는 설계 근거가 돼요.",
+          "headline_en": "MPQ: Closed-loop failure decomposition for discrete robot skill vocabularies",
+          "detail_en": "Introduces Movement Prototype Quantization (MPQ), placing a library of demonstrated motions after a trained policy to replace action chunks with bounded nearest-element corrections.",
+          "keywords_hit": [],
+          "rationale": "스킬 라이브러리 기반 이산 정책의 폐루프 실패를 어휘·선택·실행으로 분해하는 로봇 하네스 핵심 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "0af7924d97d7",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "실행 지식을 시도 간 축적해 자가 진화하는 에이전트 하네스 'SEEK' 공개"
+        },
+        {
+          "event_id": "901c4fbdc6ff",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "단일 실제 시연으로 검증 시뮬을 복원해 스킬을 자가 개선하는 'RESET'"
+        },
+        {
+          "event_id": "248849e53a87",
+          "occurred_at": "2026-11-24T22:12:01+09:00",
+          "headline_ko": "자가 검색 메모리 기반 단일 시연 조작 'MXI-MemICL' & 'KeyMemVLA'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-002",
+      "topic": "roboprobe",
+      "domain": "harnesses",
+      "lab": null,
+      "event_type": "paper",
+      "version": null,
+      "occurred_at": "2026-11-24T21:58:24+09:00",
+      "items": [
+        {
+          "item_id": "a6b77a53dd9652a6",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "roboprobe",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "embodied-studio",
+            "title": "EmbodiedStudio",
+            "domain": "harnesses"
+          },
+          "event_type": "paper",
+          "version": null,
+          "significance": 0.76,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "태스크 주도형 로봇 시뮬레이션 생성·평가 플랫폼 'EmbodiedStudio' 공개",
+          "detail_ko": "로봇 학습과 평가를 위한 자동 생성 시뮬레이션 환경은 겉보기에 그럴듯해도 의도된 상호작용이나 물리적 안정성이 무너지거나, 생성된 채점 프로그램이 태스크 조건을 충실히 구현하지 못하는 실무 간극이 있었어요. 이 논문은 두 가지 간극을 정면으로 겨냥한 태스크 주도형 시뮬레이션 생성 플랫폼 'EmbodiedStudio'를 제안했어요. 프론티어 모델 기반 로봇 하네스를 다양한 태스크에서 신뢰성 있게 평가·검증하기 위한 자동 시뮬레이션 인프라 연구로 의미가 커요.",
+          "headline_en": "EmbodiedStudio: Task-driven simulation generation platform for embodied evaluation",
+          "detail_en": "Presents EmbodiedStudio to close gaps in physical stability, task interaction support, and faithful scoring programs in generated robot simulation environments.",
+          "keywords_hit": [],
+          "rationale": "로봇 학습·평가용 시뮬레이션 생성의 물리 안정성과 채점 충실도 문제를 다룬 하네스 평가 인프라 논문.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "379da5eb7cc5",
+          "occurred_at": "2026-11-26T00:20:36+09:00",
+          "headline_ko": "코딩 에이전트 기반 Real-to-Sim 전이 통합 평가 플랫폼 'Real2SimLab' 공개"
+        },
+        {
+          "event_id": "fbb40888eceb",
+          "occurred_at": "2026-11-25T02:59:05+09:00",
+          "headline_ko": "Embodied AI의 물리적 위험 인식·대응 벤치마크 'EmbodiSafety' 공개"
+        },
+        {
+          "event_id": "929f1ca549a2",
+          "occurred_at": "2026-11-25T02:32:00+09:00",
+          "headline_ko": "거울 하나로 붕괴하는 로봇 정책 진단 'Embodied AI Fails the Mirror Test'"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-003",
+      "topic": "mcp-a2a",
+      "domain": "ai_frontier",
+      "lab": "huggingface",
+      "event_type": "announcement",
+      "version": null,
+      "occurred_at": "2026-11-23T09:00:00+09:00",
+      "items": [
+        {
+          "item_id": "6fd4c32fe34a4cba",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "mcp-a2a",
+          "variant": null,
+          "lab": "huggingface",
+          "new_entity": null,
+          "event_type": "announcement",
+          "version": null,
+          "significance": 0.55,
+          "confidence": 0.86,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Hugging Face, 에이전트 평가 체계 구축·유지관리 가이드 게시",
+          "detail_ko": "Hugging Face 공식 블로그에서 에이전트 시스템의 평가(agentic evaluation)를 구축하고 지속적으로 유지관리하는 방법을 다룬 글을 게시했어요. 에이전트 하네스의 회귀 방지와 평가셋 관리 실무에 참고할 수 있는 공식 가이드예요.",
+          "headline_en": "Hugging Face guide on building and maintaining agentic evaluations",
+          "detail_en": "Hugging Face blog post on how to build and maintain an agentic evaluation.",
+          "keywords_hit": [],
+          "rationale": "에이전트 평가 구축·유지관리 공식 가이드(20% 슬라이스 브리핑 기준 0.65 미만으로 기록용).",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "e843a5b42d62",
+          "occurred_at": "2026-11-25T13:38:18+09:00",
+          "headline_ko": "NAVER D2, 모델·에이전트 통합 평가 프레임워크 'OmniEvaluator' 공개"
+        },
+        {
+          "event_id": "683238cde2e1",
+          "occurred_at": "2026-11-25T20:19:02+09:00",
+          "headline_ko": "Ai2, 코딩 에이전트용 Harbor 태스크 워크스페이스 매니저 'pier' 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-004",
+      "topic": "mcp-a2a",
+      "domain": "ai_frontier",
+      "lab": "huggingface",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-20T09:00:00+09:00",
+      "items": [
+        {
+          "item_id": "211fbe8009a45ecd",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "mcp-a2a",
+          "variant": null,
+          "lab": "huggingface",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.72,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Hugging Face, 모델-하네스 맞춤 최적화 'Harness Adapters' 공개",
+          "detail_ko": "Hugging Face 공식 블로그에서 선호하는 모델을 특정 에이전트 하네스에 맞춰 적응시켜 성능과 비용 효율을 동시에 개선하는 'Harness Adapters'를 공개했어요. 프론티어 모델 자체를 통째로 재학습하는 대신, 특정 하네스의 도구 호출·실행 구조에 맞춘 어댑터로 실전 효율을 끌어올리는 접근이에요. 로봇 하네스에서도 동일한 제어 인터페이스 위에 다양한 VLM·LLM을 비용 효율적으로 연결할 때 직접 응용할 수 있는 설계 패턴이에요.",
+          "headline_en": "Hugging Face introduces Harness Adapters to adapt models to agent harnesses",
+          "detail_en": "Hugging Face blog introduces harness adapters to adapt models to specific agent harnesses for better performance and lower cost.",
+          "keywords_hit": [],
+          "rationale": "에이전트 하네스 맞춤형 모델 어댑터 공개로, 프론티어 에이전트 및 로봇 하네스 비용·성능 최적화에 직결.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-27-am-005",
+      "topic": "vla-models",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "direction",
+      "version": null,
+      "occurred_at": "2026-11-25T02:13:21+09:00",
+      "items": [
+        {
+          "item_id": "52324b69109a5800",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": null,
+          "event_type": "direction",
+          "version": null,
+          "significance": 0.45,
+          "confidence": 0.85,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "중국 '2026 피지컬 AI 보고서', 삼지일체 전략 및 생산성 지표 'Worken' 제시",
+          "detail_ko": "중국 신화사·중국정보통신연구원이 공동 발표한 '2026 피지컬 AI 산업혁신 보고서'에서 운동지능·작업지능·상호작용지능을 통합하는 '삼지일체' 전략과 출하량 대신 현장 작업 생산성을 평가하는 지표 'Worken'이 제시됐다고 로봇신문이 전했어요. 중국 피지컬 AI 진영이 단순 하드웨어 양산에서 실제 작업 수행 능력 평가로 초점을 옮기는 방향성을 참고할 수 있어요.",
+          "headline_en": "China's 2026 Physical AI report highlights tri-intelligence strategy and 'Worken' metric",
+          "detail_en": "A joint report by Xinhua and CAICT outlines China's tri-intelligence Physical AI strategy and proposes 'Worken' to evaluate real-world robot task productivity.",
+          "keywords_hit": [],
+          "rationale": "중국 피지컬 AI 전략 및 생산성 지표 'Worken'을 다룬 비공식 2차 방향성 해설(0.5 상한 준수).",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "1d107856a56e",
+          "occurred_at": "2026-11-25T22:09:34+09:00",
+          "headline_ko": "일상 인간-로봇 상호작용의 사회적 지능 벤치마크 'LUDIUS' 공개"
+        },
+        {
+          "event_id": "02ddf12fa093",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "시뮬레이션 실패 데이터로 로봇 월드 모델 일반화를 높이는 'WorldReforge' 공개"
+        },
+        {
+          "event_id": "c59a290079c4",
+          "occurred_at": "2026-11-25T23:28:05+09:00",
+          "headline_ko": "URDF 기구학 그래프 기반 범용 VLA 모델군 'HoloBrain-0.5' 기술 보고서 공개"
+        },
+        {
+          "event_id": "27e21965914c",
+          "occurred_at": "2026-11-24T13:03:33+09:00",
+          "headline_ko": "VLA 테스트 타임 Best-of-N 스티어링의 보상 해킹 위험 규명"
+        },
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-006",
+      "topic": "agibot",
+      "domain": "hardware_sdk",
+      "lab": "agibot",
+      "event_type": "announcement",
+      "version": null,
+      "occurred_at": "2026-11-24T20:58:18+09:00",
+      "items": [
+        {
+          "item_id": "2937c1b0a9f21c1a",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "agibot",
+          "variant": null,
+          "lab": "agibot",
+          "new_entity": null,
+          "event_type": "announcement",
+          "version": null,
+          "significance": 0.58,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "中 애지봇(AgiBot), 美 로보스토어와 공식 유통 계약 체결하며 북미 진출",
+          "detail_ko": "중국 로봇 기업 애지봇(AGIBOT·智元)이 미국 로봇 유통업체 로보스토어(RoboStore)와 공식 유통 계약을 체결하고 미국 시장에 본격 진출했어요. 휴머노이드 로봇, 4족 보행 로봇, 정교한 로봇손 등 주요 제품군을 미국 연구자·교육기관·개발자·기업에 공급할 예정이에요. 중국 주요 휴머노이드·덱스터러스 핸드 플랫폼의 북미 연구·개발 접근성이 넓어지는 움직임이에요.",
+          "headline_en": "AgiBot partners with RoboStore for official US robotics distribution",
+          "detail_en": "China's AgiBot signed an official distribution deal with US distributor RoboStore to supply humanoids, quadrupeds, and dexterous hands to US researchers and developers.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "AgiBot의 북미 공식 유통망 확보 및 연구자·개발자 대상 하드웨어 공급 확대 소식.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "e9dc70fe428d",
+          "occurred_at": "2026-11-26T12:47:45+09:00",
+          "headline_ko": "중국 AgiBot(지위안), 'OmniPicker 3' 로봇 디스크립션 저장소 공개"
+        },
+        {
+          "event_id": "4ae56d3d7ef4",
+          "occurred_at": "2026-11-24T21:11:27+09:00",
+          "headline_ko": "AgiBot(지위안) 시뮬레이터 'genie_sim' (★1,765) & 'IsaacCapture' 갱신"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-007",
+      "topic": "vla-models",
+      "domain": "hardware_sdk",
+      "lab": null,
+      "event_type": "release",
+      "version": "3.0",
+      "occurred_at": "2026-11-24T04:05:54+09:00",
+      "items": [
+        {
+          "item_id": "2797fc58a1053764",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "sima-palette",
+            "title": "SiMa.ai Palette",
+            "domain": "hardware_sdk"
+          },
+          "event_type": "release",
+          "version": "3.0",
+          "significance": 0.5,
+          "confidence": 0.85,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "美 SiMa.ai, 단일 칩 다중 피지컬 AI 실행 SW '팔레트 3.0' 출시",
+          "detail_ko": "미국 시마닷에이아이(SiMa.ai)가 엄격한 전력 제한 내 단일 칩 위에서 여러 피지컬 AI 모델을 최적화해 동시 실행할 수 있는 '팔레트 3.0(Palette 3.0)' 소프트웨어를 출시했다고 보도됐어요. 지난 6월 발표한 '에이전틱 팔레트'를 기반으로 복잡한 기계 추론과 구동을 지원하는 엣지 배포 SW예요.",
+          "headline_en": "SiMa.ai launches Palette 3.0 software for concurrent Physical AI models on a single chip",
+          "detail_en": "SiMa.ai released Palette 3.0, built on Agentic Palette, to run multiple Physical AI models concurrently on a single chip under strict power budgets.",
+          "keywords_hit": [],
+          "rationale": "엣지 단일 칩에서 다중 피지컬 AI 모델을 동시 실행하는 배포 소프트웨어 출시 보도.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "1d107856a56e",
+          "occurred_at": "2026-11-25T22:09:34+09:00",
+          "headline_ko": "일상 인간-로봇 상호작용의 사회적 지능 벤치마크 'LUDIUS' 공개"
+        },
+        {
+          "event_id": "02ddf12fa093",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "시뮬레이션 실패 데이터로 로봇 월드 모델 일반화를 높이는 'WorldReforge' 공개"
+        },
+        {
+          "event_id": "c59a290079c4",
+          "occurred_at": "2026-11-25T23:28:05+09:00",
+          "headline_ko": "URDF 기구학 그래프 기반 범용 VLA 모델군 'HoloBrain-0.5' 기술 보고서 공개"
+        },
+        {
+          "event_id": "27e21965914c",
+          "occurred_at": "2026-11-24T13:03:33+09:00",
+          "headline_ko": "VLA 테스트 타임 Best-of-N 스티어링의 보상 해킹 위험 규명"
+        },
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-008",
+      "topic": "gemini-robotics",
+      "domain": "embodied_models",
+      "lab": "google_deepmind",
+      "event_type": "announcement",
+      "version": "Genie 4",
+      "occurred_at": "2026-11-19T03:12:24+09:00",
+      "items": [
+        {
+          "item_id": "265a9d6476f12b05",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "gemini-robotics",
+          "variant": null,
+          "lab": "google_deepmind",
+          "new_entity": null,
+          "event_type": "announcement",
+          "version": "Genie 4",
+          "significance": 0.72,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Google DeepMind, 'Genie 4' 실시간 월드 시뮬레이션 및 내장 에이전트 제작 비하인드 공개",
+          "detail_ko": "Google DeepMind 공식 YouTube에서 차세대 인터랙티브 월드 모델 'Genie 4'와 Project Genie의 제작 비하인드 영상을 공개했어요. 정적 비디오 생성이 아니라 텍스트 프롬프트를 수초 만에 탐색 가능한 동적 월드로 만들고, 키보드 조작과 라이브 프롬프트로 장면을 실시간 제어하는 과정을 보여줬어요. 특히 Project Genie 내장 에이전트로 키보드 단축키에 매핑된 커스텀 앱을 만들어 캐릭터 이동·대화·이벤트를 실시간 트리거하고 프롬프트를 재현 가능한 시드로 활용한 점이 Embodied 시뮬레이션 관점에서 주목할 만해요.",
+          "headline_en": "DeepMind shares behind-the-scenes look at Genie 4 real-time worlds and built-in agent",
+          "detail_en": "DeepMind YouTube video showing how Genie 4 and Project Genie turn prompts into real-time explorable worlds with keyboard controls, live prompts, and a built-in agent.",
+          "keywords_hit": [],
+          "rationale": "Google DeepMind 공식 Genie 4 인터랙티브 월드 모델 및 내장 에이전트 활용 비하인드 공개.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-27-am-009",
+      "topic": "unitree",
+      "domain": "hardware_sdk",
+      "lab": "unitree",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-18T11:31:00+09:00",
+      "items": [
+        {
+          "item_id": "abf257765c7a3f36",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "unitree",
+          "variant": null,
+          "lab": "unitree",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.64,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Unitree, 공식 로봇 카메라 캘리브레이션 도구 'uni_calib' GitHub 공개 (★5)",
+          "detail_ko": "Unitree 공식 GitHub에 로봇 카메라 캘리브레이션 도구 'unitreerobotics/uni_calib'(★5)가 등록·업데이트됐어요. 시각 기반 로봇 하네스와 3D 인지 도구를 실제 Unitree 하드웨어에 연결할 때 필수적인 카메라 보정을 공식 툴체인으로 지원하는 저장소예요.",
+          "headline_en": "Unitree updates official robot camera calibration tool uni_calib",
+          "detail_en": "Unitree Robotics official GitHub updated uni_calib, a tool for robot camera calibration.",
+          "keywords_hit": [
+            "Unitree"
+          ],
+          "rationale": "Unitree 공식 GitHub의 로봇 카메라 캘리브레이션 도구 업데이트.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "a75af700d155",
+          "occurred_at": "2026-11-19T21:09:48+09:00",
+          "headline_ko": "Unitree 공식 C++ 로봇 제어 SDK 'unitree_sdk2' 최신 업데이트 (★1,460)"
+        },
+        {
+          "event_id": "aba0e957cbe4",
+          "occurred_at": "2026-11-17T18:08:28+09:00",
+          "headline_ko": "Unitree 휴머노이드 XR 텔레오퍼레이션 'xr_teleoperate' 공식 리포 업데이트 (★1,741)"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-010",
+      "topic": "booster",
+      "domain": "hardware_sdk",
+      "lab": "booster",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-18T17:05:06+09:00",
+      "items": [
+        {
+          "item_id": "97262fe7406952bd",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "booster",
+          "variant": null,
+          "lab": "booster",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.56,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "중국 Booster Robotics, 3v3 시뮬레이션 프레임워크 'sim-3v3-simple-framework' 업데이트 (★18)",
+          "detail_ko": "중국 Booster Robotics 공식 GitHub의 Python 저장소 'BoosterRobotics/sim-3v3-simple-framework'(★18)가 업데이트됐어요. 다중 휴머노이드 시뮬레이션과 협업 제어 실험을 지원하는 공식 오픈소스 프레임워크예요.",
+          "headline_en": "Booster Robotics updates sim-3v3-simple-framework (18 stars)",
+          "detail_en": "Booster Robotics official GitHub updated its Python simulation framework sim-3v3-simple-framework.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "Booster Robotics 공식 GitHub의 3v3 시뮬레이션 프레임워크 업데이트.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-27-am-011",
+      "topic": "codex",
+      "domain": "ai_frontier",
+      "lab": "openai",
+      "event_type": "announcement",
+      "version": null,
+      "occurred_at": "2026-11-18T17:00:00+09:00",
+      "items": [
+        {
+          "item_id": "53f2a14376dda94d",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "codex",
+          "variant": null,
+          "lab": "openai",
+          "new_entity": null,
+          "event_type": "announcement",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "OpenAI, 크로스플랫폼 'Codex 샌드박스' 내부 격리 구조 공개",
+          "detail_ko": "OpenAI 공식 블로그에서 코딩 에이전트 Codex가 로컬 머신에서 명령을 실행할 때 파일시스템과 네트워크 제한을 강제하는 샌드박스 아키텍처를 공개했어요. macOS·Linux·Windows 전반에서 사용자가 제어하는 권한 경계를 OS 수준으로 일관되게 강제하는 실행 구조를 설명해요. 코드 실행형 로봇 하네스에서 에이전트의 명령 실행 권한과 안전 경계(safety boundary)를 설계할 때 참고 가치가 높은 1차 문서예요.",
+          "headline_en": "OpenAI details cross-platform Codex sandbox architecture",
+          "detail_en": "OpenAI explains how Codex executes commands locally while enforcing user-controlled filesystem and network limits across macOS, Linux, and Windows.",
+          "keywords_hit": [],
+          "rationale": "OpenAI Codex의 OS별 샌드박스 격리 아키텍처 공식 기술 공개.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "8e6695e96da5",
+          "occurred_at": "2026-11-18T17:00:00+09:00",
+          "headline_ko": "OpenAI, 코딩 에이전트의 AI 연구 가속 실측 보고서 'The jagged frontier' 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-012",
+      "topic": "glm-zhipu",
+      "domain": "ai_frontier",
+      "lab": null,
+      "event_type": "release",
+      "version": "5.4",
+      "occurred_at": "2026-11-24T08:40:49+09:00",
+      "items": [
+        {
+          "item_id": "ef3910f6a7af585b",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "glm-zhipu",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "glm-zhipu",
+            "title": "Z.ai GLM",
+            "domain": "ai_frontier"
+          },
+          "event_type": "release",
+          "version": "5.4",
+          "significance": 0.4,
+          "confidence": 0.85,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "중국 Z.ai, 첫 루프 트랜스포머 기반 코딩 모델 'GLM-5.4' 공개",
+          "detail_ko": "중국 AI 연구소 Z.ai가 가중치를 공유하는 레이어 그룹을 여러 번 반복 실행해 파라미터 수 증가 없이 깊은 표현을 얻는 루프 트랜스포머(Loop Transformer) 구조의 코딩 모델 'GLM-5.4'를 공개했다고 Simon Willison 블로그가 소개했어요.",
+          "headline_en": "Z.ai releases GLM-5.4 coding model using Loop Transformer architecture",
+          "detail_en": "Simon Willison highlights Z.ai's GLM-5.4, its first coding model using a weight-shared looped transformer architecture.",
+          "keywords_hit": [],
+          "rationale": "개인 블로그 2차 소개(커뮤니티 0.4 상한 준수, 브리핑 0.65 미만 기록용).",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-27-am-013",
+      "topic": "mujoco-isaac",
+      "domain": "hardware_sdk",
+      "lab": "nvidia",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-24T07:47:25+09:00",
+      "items": [
+        {
+          "item_id": "6d434cc82067cc47",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "mujoco-isaac",
+          "variant": null,
+          "lab": "nvidia",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.68,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "NVIDIA Isaac Sim, 시뮬레이션 데이터 자동화 저장소 'isaac-sim/AutoData' 업데이트 (★19)",
+          "detail_ko": "NVIDIA Isaac Sim 공식 GitHub 조직의 Python 저장소 'isaac-sim/AutoData'(★19)가 11월 25일 업데이트됐어요. Isaac Sim 생태계 내 시뮬레이션 기반 로봇 데이터 자동 생성 워크플로와 직결된 공식 저장소로, 합성 데이터 파이프라인 변화 추적이 필요해요.",
+          "headline_en": "NVIDIA updates isaac-sim/AutoData repository (19 stars)",
+          "detail_en": "NVIDIA's official isaac-sim GitHub organization updated the Python repository isaac-sim/AutoData.",
+          "keywords_hit": [],
+          "rationale": "NVIDIA Isaac Sim 공식 GitHub의 데이터 자동화 저장소 업데이트.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "8e1823436b11e445",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "mujoco-isaac",
+          "variant": null,
+          "lab": "nvidia",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.58,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "NVIDIA, Isaac Lab 공식 문서 연계 튜토리얼 저장소 'IsaacLabTutorial' 업데이트 (★84)",
+          "detail_ko": "NVIDIA Isaac Sim 공식 GitHub의 Python 튜토리얼 저장소 'isaac-sim/IsaacLabTutorial'(★84)이 업데이트됐어요. Isaac Lab 공식 문서와 연동해 시뮬레이션·RL 태스크 구성을 익히는 공식 예제 저장소예요.",
+          "headline_en": "NVIDIA updates isaac-sim/IsaacLabTutorial repository (84 stars)",
+          "detail_en": "NVIDIA updated isaac-sim/IsaacLabTutorial, the tutorial project accompanying Isaac Lab documentation.",
+          "keywords_hit": [],
+          "rationale": "NVIDIA Isaac Lab 공식 튜토리얼 저장소 업데이트.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "e91cae9e09f4",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "Newton 접촉 물리 솔버 기반 양팔 직물 조작 벤치마크 'FabricBench' 공개"
+        },
+        {
+          "event_id": "c462b56100d2",
+          "occurred_at": "2026-11-26T14:00:00+09:00",
+          "headline_ko": "헤드셋 단독 MuJoCo 구동 VR 시연 수집 게임 'RoboJackVR' 공개"
+        },
+        {
+          "event_id": "7f140aa28031",
+          "occurred_at": "2026-11-25T23:49:10+09:00",
+          "headline_ko": "NVIDIA 멀티-피직스 로봇 학습 프레임워크 'IsaacLab' 최신 업데이트 (★8,724)"
+        },
+        {
+          "event_id": "f48b3ae8df87",
+          "occurred_at": "2026-11-26T00:05:25+09:00",
+          "headline_ko": "NVIDIA, 조합형 로봇 정책 평가 시뮬레이션 프레임워크 'IsaacLab-Arena' 업데이트"
+        },
+        {
+          "event_id": "1457c3f68486",
+          "occurred_at": "2026-11-25T01:34:13+09:00",
+          "headline_ko": "Hugging Face × NVIDIA, Isaac Lab + Newton 기반 Sim2Real 워크플로 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-014",
+      "topic": "mcp-a2a",
+      "domain": "ai_frontier",
+      "lab": "huggingface",
+      "event_type": "announcement",
+      "version": null,
+      "occurred_at": "2026-11-26T09:00:00+09:00",
+      "items": [
+        {
+          "item_id": "c01600d4160315a4",
+          "relevant": true,
+          "domain": "ai_frontier",
+          "entity_key": "mcp-a2a",
+          "variant": null,
+          "lab": "huggingface",
+          "new_entity": null,
+          "event_type": "announcement",
+          "version": null,
+          "significance": 0.66,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Hugging Face, 멀티 에이전트 구축·학습·평가 가이드 'Swarms, Flocks, Gangs' 공개",
+          "detail_ko": "Hugging Face 공식 블로그에서 멀티 에이전트 시스템을 구축하고 학습·평가하는 방법론을 다룬 기술 포스트 'Swarms, Flocks, Gangs'를 게시했어요. 단일 에이전트를 넘어 다중 에이전트 협업 구조를 설계하고 체계적으로 평가하는 실무 기준을 다뤘어요. 팔·그리퍼·이동체 등 제어 그룹별 멀티 에이전트 로봇 하네스를 설계하고 검증할 때도 유용한 참고 자료예요.",
+          "headline_en": "Hugging Face publishes multi-agent build, train, and eval guide 'Swarms, Flocks, Gangs'",
+          "detail_en": "Hugging Face blog post covering how to build, train, and evaluate multi-agent systems.",
+          "keywords_hit": [],
+          "rationale": "Hugging Face 공식 멀티 에이전트 구축·학습·평가 기술 문서.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "e843a5b42d62",
+          "occurred_at": "2026-11-25T13:38:18+09:00",
+          "headline_ko": "NAVER D2, 모델·에이전트 통합 평가 프레임워크 'OmniEvaluator' 공개"
+        },
+        {
+          "event_id": "683238cde2e1",
+          "occurred_at": "2026-11-25T20:19:02+09:00",
+          "headline_ko": "Ai2, 코딩 에이전트용 Harbor 태스크 워크스페이스 매니저 'pier' 공개"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-27-am-015",
+      "topic": "vla-models",
+      "domain": "embodied_models",
+      "lab": null,
+      "event_type": "announcement",
+      "version": "VLA 3.0",
+      "occurred_at": "2026-11-27T03:36:24+09:00",
+      "items": [
+        {
+          "item_id": "1d23825a2f27c61b",
+          "relevant": true,
+          "domain": "embodied_models",
+          "entity_key": "vla-models",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "xpeng-iron",
+            "title": "XPENG IRON / VLA 3.0",
+            "domain": "embodied_models"
+          },
+          "event_type": "announcement",
+          "version": "VLA 3.0",
+          "significance": 0.68,
+          "confidence": 0.9,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "中 샤오펑, 통합 '튜링 피지컬 AI(VLA 3.0)' 및 1,500+ 촉각점 휴머노이드 '아이언' 공개",
+          "detail_ko": "중국 샤오펑(XPENG)이 11월 25일 광저우 제8회 '샤오펑 AI 데이'에서 차세대 휴머노이드 로봇과 자율주행차에 공통 적용할 '튜링 피지컬 AI 아키텍처(VLA 3.0)'와 차세대 범용 휴머노이드 로봇 '아이언(IRON)'을 공개했어요. VLA 3.0은 AI의 인지 능력·실시간 의사결정·물리적 실행 능력을 단일 시스템으로 통합한 구조예요. 아이언에 1,500개 이상 촉각 감지점을 탑재한 점과 차량·휴머노이드 공통 VLA 스택 전략이 중국 피지컬 AI 하드웨어·모델 통합 흐름을 잘 보여줘요.",
+          "headline_en": "XPENG unveils Turing Physical AI (VLA 3.0) and IRON humanoid with 1,500+ tactile points",
+          "detail_en": "At its 8th AI Day in Guangzhou, XPENG unveiled its unified Turing Physical AI architecture (VLA 3.0) and next-gen IRON humanoid robot with over 1,500 tactile sensing points.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "샤오펑 AI 데이 공식 VLA 3.0 아키텍처 및 촉각 휴머노이드 IRON 공개 보도.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "1d107856a56e",
+          "occurred_at": "2026-11-25T22:09:34+09:00",
+          "headline_ko": "일상 인간-로봇 상호작용의 사회적 지능 벤치마크 'LUDIUS' 공개"
+        },
+        {
+          "event_id": "02ddf12fa093",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "시뮬레이션 실패 데이터로 로봇 월드 모델 일반화를 높이는 'WorldReforge' 공개"
+        },
+        {
+          "event_id": "c59a290079c4",
+          "occurred_at": "2026-11-25T23:28:05+09:00",
+          "headline_ko": "URDF 기구학 그래프 기반 범용 VLA 모델군 'HoloBrain-0.5' 기술 보고서 공개"
+        },
+        {
+          "event_id": "27e21965914c",
+          "occurred_at": "2026-11-24T13:03:33+09:00",
+          "headline_ko": "VLA 테스트 타임 Best-of-N 스티어링의 보상 해킹 위험 규명"
+        },
+        {
+          "event_id": "fe54bb48e8b3",
+          "occurred_at": "2026-11-25T14:00:00+09:00",
+          "headline_ko": "표적·주변 역할을 분리해 4D 동적 조작 지연을 줄이는 'FoveaWAM'"
+        },
+        {
+          "event_id": "73ec75cf0a43",
+          "occurred_at": "2026-11-24T09:50:08+09:00",
+          "headline_ko": "VLA 6종 진단 'Seeing Is Not Reaching': 물체를 옮겨도 학습 위치를 잡는 단축 현상"
+        }
+      ]
+    }
+  ]
+}
