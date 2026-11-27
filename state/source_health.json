@@ -1,177 +1,177 @@
 {
   "arxiv_cs_ro": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
-    "last_status": 200,
+    "last_success_at": "2026-11-28T07:00:24+09:00",
+    "last_status": 304,
     "etag": "0aca495ac87d758e760f2ce4564e8817fffc77c7b28f3057c9e3941d84c6afb4"
   },
   "arxiv_robot_harness": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
     "last_error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=15)",
     "last_error_at": "2026-11-27T07:01:05+09:00"
   },
   "deepmind_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
-    "etag": "\"aqDd6A\""
+    "etag": "\"wBs0cQ\""
   },
   "nvidia_dev_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 304,
     "etag": "\"15389f7ebb8eb62b6c889027dac42bce\"",
     "last_modified": "Wed, 25 Nov 2026 22:56:39 GMT"
   },
   "bair_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
     "etag": "\"572e3-65fdb8cdc7a80-gzip\"",
     "last_modified": "Mon, 09 Nov 2026 17:47:06 GMT"
   },
   "huggingface_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
-    "last_status": 304,
-    "etag": "W/\"42554-LX2l54tnYn4kVUChXgg1busOxBs\""
+    "last_success_at": "2026-11-28T07:00:24+09:00",
+    "last_status": 200,
+    "etag": "W/\"42676-LtG2tM8PP55r2AsJTaaxFMoyXOI\""
   },
   "therobotreport": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
-    "last_status": 304,
-    "etag": "\"c09dce5f239c3c5d391fccfb166e5478\"",
-    "last_modified": "Wed, 25 Nov 2026 18:24:42 GMT"
+    "last_success_at": "2026-11-28T07:00:24+09:00",
+    "last_status": 200,
+    "etag": "\"ba15d38cde5ba941a1791f50fcf9b516\"",
+    "last_modified": "Fri, 27 Nov 2026 13:56:43 GMT"
   },
   "robohub": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
-    "last_status": 304,
-    "etag": "\"35ea7-66134ae27c706\"",
-    "last_modified": "Thu, 26 Nov 2026 21:32:28 GMT"
+    "last_success_at": "2026-11-28T07:00:24+09:00",
+    "last_status": 200,
+    "etag": "\"35eda-661421b8b918e\"",
+    "last_modified": "Fri, 27 Nov 2026 13:33:38 GMT"
   },
   "ieee_spectrum_robotics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 304,
     "etag": "\"e876b8e668e4dac96b6e684d4e3c13e9\"",
     "last_modified": "Wed, 25 Nov 2026 15:01:26 GMT"
   },
   "irobotnews_all": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
-    "etag": "\"c004-6613c462f786d-gzip\"",
-    "last_modified": "Fri, 27 Nov 2026 06:36:03 GMT"
+    "etag": "\"c004-661448d647d0a-gzip\"",
+    "last_modified": "Fri, 27 Nov 2026 16:28:38 GMT"
   },
   "naver_d2": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "yt_unitree": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "yt_deepmind": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "yt_nvidia": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_roboprobe": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_unitree": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_i2rt": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_agibot": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_galaxea": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_limx": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_booster": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "openai_news": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "anthropic_news": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "qwen_blog": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 304,
     "etag": "W/\"6970c244-98ff\"",
     "last_modified": "Wed, 21 Jan 2026 12:10:44 GMT"
   },
   "latent_space": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
-    "last_modified": "Fri, 27 Nov 2026 09:21:38 GMT",
+    "last_modified": "Fri, 27 Nov 2026 21:57:27 GMT",
     "last_error": "HTTPSConnectionPool(host='latent.space', port=443): Read timed out. (read timeout=15)",
     "last_error_at": "2026-11-27T07:01:05+09:00"
   },
   "simon_willison": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 304,
     "last_modified": "Thu, 26 Nov 2026 15:09:31 GMT"
   },
   "hn_algolia_robotics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "dream_labs": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "stanford_sail": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 304,
     "etag": "\"55e73-639d3ec345800\"",
     "last_modified": "Sun, 13 Jul 2025 18:43:44 GMT"
   },
   "mit_csail": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
     "etag": "\"1795769736-gzip\"",
     "last_modified": "Fri, 27 Nov 2026 08:55:36 GMT"
@@ -197,34 +197,34 @@
   },
   "yt_bostondynamics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_openpi": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_bostondynamics": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_isaac_sim": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   },
   "gh_allenai": {
-    "consecutive_failures": 1,
-    "last_success_at": "2026-11-27T07:01:05+09:00",
+    "consecutive_failures": 0,
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200,
     "last_error": "HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)",
     "last_error_at": "2026-11-27T18:08:17+09:00"
   },
   "gh_fourier": {
     "consecutive_failures": 0,
-    "last_success_at": "2026-11-27T18:08:17+09:00",
+    "last_success_at": "2026-11-28T07:00:24+09:00",
     "last_status": 200
   }
 }

@@ -126,8 +126,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-27T07:37:42+09:00",
-    "status_ko": "Unitree 공식 GitHub에서 로봇 카메라 캘리브레이션 도구 unitreerobotics/uni_calib(★5)가 공개·업데이트됐어요. 기존 teleimager·xr_teleoperate·unitree_sdk2·unitree_robotskills에 카메라 보정 툴체인까지 더해지며 시각 기반 로봇 하네스 연동 기반이 촘촘해지고 있어요."
+    "last_update_at": "2026-11-28T07:02:05+09:00",
+    "status_ko": "Unitree가 공식 유튜브를 통해 최대 동기화율 99.8%, 최소 종단간 지연 80ms의 실시간 전신 텔레오퍼레이션 시스템 'Embodied Avatar V3.0 Guardian'을 공개했어요. 최근 공개된 카메라 보정 도구 uni_calib와 기존 teleimager·xr_teleoperate·unitree_sdk2·unitree_robotskills에 더해 저지연 원격 제어 및 학습 데이터 수집 스택이 한층 보강되고 있어요."
   },
   "yam-i2rt": {
     "slug": "yam-i2rt",
@@ -556,8 +556,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-26T00:22:27+09:00",
-    "last_update_at": "2026-11-26T07:05:42+09:00",
-    "status_ko": "Allen Institute for AI(Ai2)가 실제 로봇 조작 포인트 추적기 'RoboTrack' 공식 기술 블로그를 Hugging Face에 공개하고, 종단간 오픈 로봇 학습 생태계 'molmospaces'(★533)도 지속 업데이트하고 있어요. 인지 도구와 오픈 시뮬레이션 인프라를 함께 넓혀가는 흐름이에요."
+    "last_update_at": "2026-11-28T07:02:05+09:00",
+    "status_ko": "Allen Institute for AI(Ai2)가 어떤 VLA 모델이든 다양한 로봇 시뮬레이션 벤치마크에서 평가할 수 있는 통합 프레임워크 'allenai/vla-evaluation-harness'(★685)를 공식 GitHub에 공개했어요. 앞서 선보인 실제 로봇 조작 포인트 추적기 'RoboTrack'과 오픈 로봇 학습 생태계 'molmospaces'(★533)에 이어 시뮬레이션 기반 VLA 평가 표준 하네스까지 생태계를 넓히고 있어요."
   },
   "boston-dynamics": {
     "slug": "boston-dynamics",

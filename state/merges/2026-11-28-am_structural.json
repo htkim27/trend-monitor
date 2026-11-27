@@ -1,0 +1,94 @@
+{
+  "run_id": "2026-11-28-am",
+  "clusters": [
+    {
+      "cluster_id": "2026-11-28-am-001",
+      "topic": "unitree",
+      "domain": "hardware_sdk",
+      "lab": "unitree",
+      "event_type": "release",
+      "version": "V3.0",
+      "occurred_at": "2026-11-27T19:44:57+09:00",
+      "items": [
+        {
+          "item_id": "a15bd6e7a298a43f",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "unitree",
+          "variant": null,
+          "lab": "unitree",
+          "new_entity": null,
+          "event_type": "release",
+          "version": "V3.0",
+          "significance": 0.68,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Unitree, 실시간 전신 텔레오퍼레이션 'Embodied Avatar V3.0 Guardian' 공개",
+          "detail_ko": "Unitree가 공식 유튜브 채널을 통해 실시간 전신 텔레오퍼레이션 시스템 'Embodied Avatar V3.0 Guardian'을 공개했어요. 공개된 사양에 따르면 최대 동기화율 99.8%, 최소 종단간(end-to-end) 지연 시간 80ms를 달성했어요. 완전 자율 모드에 더해 복잡한 원격 작업과 로봇 학습용 데이터 수집을 지원하는 전신 원격 제어 기능으로, 휴머노이드 데이터 수집·원격 개입 파이프라인의 지연과 동기화 기준을 끌어올리는 업데이트예요.",
+          "headline_en": "Unitree unveils Embodied Avatar V3.0 Guardian real-time full-body teleoperation",
+          "detail_en": "Unitree unveiled Embodied Avatar V3.0 Guardian on its official YouTube channel, reporting a maximum synchronization rate of 99.8% and minimum end-to-end latency of 80 ms for real-time full-body teleoperation, complex remote operations, and data collection.",
+          "keywords_hit": [
+            "Unitree"
+          ],
+          "rationale": "Unitree 공식 실시간 전신 텔레오퍼레이션·데이터 수집 시스템 V3.0 공개(최대 동기화율 99.8%, 최소 종단간 지연 80ms).",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "bf791a570b25",
+          "occurred_at": "2026-11-25T11:09:34+09:00",
+          "headline_ko": "Unitree, 다중 카메라 네트워크 스트리밍 서버 'teleimager' 업데이트 (★66)"
+        },
+        {
+          "event_id": "8fd02e582592",
+          "occurred_at": "2026-11-25T22:28:50+09:00",
+          "headline_ko": "Unitree 공식 MuJoCo 강화학습 'unitree_rl_mjlab' 업데이트 (★740)"
+        }
+      ]
+    },
+    {
+      "cluster_id": "2026-11-28-am-002",
+      "topic": "ai2-robotics",
+      "domain": "harnesses",
+      "lab": "allenai",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-27T22:17:23+09:00",
+      "items": [
+        {
+          "item_id": "75193c028bc1e713",
+          "relevant": true,
+          "domain": "harnesses",
+          "entity_key": "ai2-robotics",
+          "variant": null,
+          "lab": "allenai",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.74,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "Ai2, 범용 VLA 시뮬레이션 평가 프레임워크 'vla-evaluation-harness' 공개 (★685)",
+          "detail_ko": "Allen Institute for AI(Ai2) 공식 GitHub에 어떤 VLA(Vision-Language-Action) 모델이든 다양한 로봇 시뮬레이션 벤치마크에서 평가할 수 있는 통합 Python 프레임워크 'allenai/vla-evaluation-harness'(★685)가 올라왔어요. 모델과 시뮬레이션 벤치마크 조합마다 제각각이던 평가 파이프라인을 단일 하네스로 묶어 표준화하려는 오픈소스 프로젝트예요. VLA 모델을 서브폴리시로 비교·검증하거나 시뮬레이션 기반 회귀 평가를 구축하는 로봇 하네스 엔지니어에게 실무 참고 가치가 높아요.",
+          "headline_en": "Ai2 publishes vla-evaluation-harness for evaluating VLA models on robot simulation benchmarks (★685)",
+          "detail_en": "Allen Institute for AI (Ai2) published allenai/vla-evaluation-harness (★685, Python) on GitHub as a unified framework to evaluate any VLA model on any robot simulation benchmark.",
+          "keywords_hit": [
+            "VLA"
+          ],
+          "rationale": "Ai2 공식 GitHub의 범용 VLA 로봇 시뮬레이션 벤치마크 평가 하네스 오픈소스(★685).",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "a21ea15538c4",
+          "occurred_at": "2026-11-25T15:50:01+09:00",
+          "headline_ko": "Ai2, 종단간 오픈 로봇 학습 생태계 'molmospaces' 공식 GitHub 업데이트 (★533)"
+        }
+      ]
+    }
+  ]
+}
