@@ -25,7 +25,7 @@ PROMPT="너는 RoboSpine Trend Monitor의 정기 회차 실행자다. 저장소 
   --print "${PROMPT}" \
   --mode auto \
   --dangerously-skip-permissions \
-  --print-timeout 15m \
+  --print-timeout 30m \
   >> "${LOG_FILE}" 2>&1
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S %z')] Finished scheduled run" >> "${LOG_FILE}"
