@@ -176,8 +176,8 @@
     "origin": "seed",
     "state": "active",
     "created_at": "2026-11-25T22:56:56+09:00",
-    "last_update_at": "2026-11-26T19:10:27+09:00",
-    "status_ko": "중국 LimX Dynamics가 27자유도 휴머노이드 Luna(luna-description·luna-beyondmimic), Oli(humanoid-description), TRON2A/TRON1 Python ONNX RL 배포 저장소 등 6개 공식 저장소를 동시 갱신했어요. URDF·MuJoCo MJCF·폐루프 USD와 ONNX Runtime 배포 스택이 전 라인업으로 확대되고 있어요."
+    "last_update_at": "2026-11-27T21:17:31+09:00",
+    "status_ko": "중국 LimX Dynamics가 TRON2A·TRON2·TRON1 라인업의 오픈소스 스택 6종(Isaac Lab+PPO RL 학습 'tron2_rl_lab', WebSocket SDK·MuJoCo 양팔 컨트롤러 'tron2_manipulation_controller', ROS 2 자율주행 'tron2-navigation-ros2'·PCT 플래너, D405 비주얼 파지 'tron2_visual_grasp', TRON1 암 ONNX RL 배포 'tron1-rl-deploy-arm')을 한꺼번에 공개했어요. 기존 Luna·Oli 시뮬레이션 에셋에 이어 학습·제어·내비게이션·실로봇 배포까지 전 계층 오픈소스 툴체인을 빠르게 확장하고 있어요."
   },
   "booster": {
     "slug": "booster",

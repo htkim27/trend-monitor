@@ -1,0 +1,248 @@
+{
+  "run_id": "2026-11-27-pm",
+  "clusters": [
+    {
+      "cluster_id": "2026-11-27-pm-001",
+      "topic": "casbot",
+      "domain": "hardware_sdk",
+      "lab": null,
+      "event_type": "announcement",
+      "version": null,
+      "occurred_at": "2026-11-27T20:34:14+09:00",
+      "items": [
+        {
+          "item_id": "5d8c275e6318cde9",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "casbot",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "casbot",
+            "title": "CASBOT (中科慧灵)",
+            "domain": "hardware_sdk"
+          },
+          "event_type": "announcement",
+          "version": null,
+          "significance": 0.52,
+          "confidence": 0.88,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "AMD·中 카스봇, '라이젠 AI 임베디드 X100' 기반 휴머노이드 엣지 AI 검증 완료",
+          "detail_ko": "AMD와 중국 휴머노이드 로봇 기업 카스봇(CASBOT, 中科慧灵)이 휴머노이드 로봇 기기 내 엣지 AI 연산 협력 성과를 공개했다고 상하이정췐바오가 전했어요. 양사는 AMD의 '라이젠 AI 임베디드 X100' 시리즈 컴퓨팅 플랫폼을 기반으로 휴머노이드 '카스봇 02'에서 로컬 대규모 모델 운영, 멀티모달 상호작용, 지능형 작업 스케줄링 검증을 완료했어요. 클라우드 의존도를 낮추고 온디바이스에서 언어 이해부터 작업 스케줄링까지 처리하려는 휴머노이드 엣지 컴퓨트 스택 확장 흐름을 보여줘요.",
+          "headline_en": "AMD and China's CASBOT validate on-device edge AI on CASBOT 02 humanoid",
+          "detail_en": "AMD and Chinese humanoid maker CASBOT completed edge AI validation on the CASBOT 02 humanoid using AMD Ryzen AI Embedded X100 for local large model execution, multimodal interaction, and intelligent task scheduling.",
+          "keywords_hit": [],
+          "rationale": "중국 휴머노이드 플랫폼(CASBOT 02)과 AMD 엣지 AI 컴퓨트 플랫폼의 온디바이스 대형 모델·작업 스케줄링 검증 보도.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-27-pm-002",
+      "topic": "hexagon-aeon",
+      "domain": "hardware_sdk",
+      "lab": null,
+      "event_type": "announcement",
+      "version": null,
+      "occurred_at": "2026-11-27T15:43:42+09:00",
+      "items": [
+        {
+          "item_id": "1eb014f5ca98aec6",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "hexagon-aeon",
+          "variant": null,
+          "lab": null,
+          "new_entity": {
+            "key": "hexagon-aeon",
+            "title": "Hexagon Robotics (AEON)",
+            "domain": "hardware_sdk"
+          },
+          "event_type": "announcement",
+          "version": null,
+          "significance": 0.45,
+          "confidence": 0.85,
+          "is_minor": false,
+          "official": false,
+          "headline_ko": "볼보자동차, 벨기에 겐트 공장에 헥사곤 휴머노이드 '이온(AEON)' 첫 실증 배치",
+          "detail_ko": "스웨덴 볼보자동차가 헥사곤 로보틱스(Hexagon Robotics)의 휴머노이드 로봇 '이온(AEON)'을 벨기에 겐트 공장에 배치하며 자사 생산시설에 처음 휴머노이드를 도입했어요. 이번 실증은 로봇을 곧바로 조립라인에 투입하지 않고 공장 내 직원 및 기존 자동화 설비와 함께 훈련하며 작업 안정성을 검증하는 단계에 초점을 맞추고 있어요. 글로벌 완성차 제조 현장에서 휴머노이드 플랫폼의 실전 파일럿 도입 사례가 확대되고 있어요.",
+          "headline_en": "Volvo Cars pilots Hexagon Robotics' AEON humanoid at Ghent plant in Belgium",
+          "detail_en": "Volvo Cars deployed Hexagon Robotics' AEON humanoid at its Ghent, Belgium factory for its first humanoid pilot, focusing on stability validation alongside staff and existing automation.",
+          "keywords_hit": [],
+          "rationale": "완성차 생산시설에 휴머노이드 플랫폼(Hexagon AEON)을 첫 파일럿 배치한 하드웨어 현장 실증 보도.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": []
+    },
+    {
+      "cluster_id": "2026-11-27-pm-003",
+      "topic": "limx",
+      "domain": "hardware_sdk",
+      "lab": "limx",
+      "event_type": "release",
+      "version": null,
+      "occurred_at": "2026-11-27T12:21:51+09:00",
+      "items": [
+        {
+          "item_id": "4ef4528487d2f7d6",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.62,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, TRON1 암 ONNX RL 배포 저장소 'tron1-rl-deploy-arm' 공개 (★3)",
+          "detail_ko": "중국 LimX Dynamics 공식 GitHub에 TRON1 로봇 암의 강화학습 정책 배포용 C++ 저장소 `limxdynamics/tron1-rl-deploy-arm`(★3)이 업데이트됐어요. ONNX 추론 기반의 실로봇 매니퓰레이션 배포와 Gazebo 연동을 지원하는 공식 코드베이스예요. TRON1 플랫폼 위에서 학습된 저수준 매니퓰레이션 정책을 실기 배포 파이프라인으로 연결할 때 바로 참고할 수 있어요.",
+          "headline_en": "LimX Dynamics releases tron1-rl-deploy-arm for ONNX RL deployment on TRON1 arm",
+          "detail_en": "LimX Dynamics updated its official C++ repository tron1-rl-deploy-arm (★3) for RL deployment on the TRON1 arm using ONNX inference and real-robot manipulation with Gazebo support.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX Dynamics 공식 TRON1 암 ONNX RL 실로봇 배포 저장소 업데이트.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "614e9f9bc863a5e6",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.56,
+          "confidence": 0.92,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, TRON2 ROS 2 내비게이션용 PCT 글로벌 플래너 소스 'tron2-navigation-pct-gpl' 공개 (★3)",
+          "detail_ko": "LimX Dynamics 공식 GitHub에 TRON2 ROS 2 내비게이션(`tron2-navigation-ros2`)에서 사용하는 PCT 글로벌 플래너의 GPL-2.0-or-later 전체 대응 소스 `limxdynamics/tron2-navigation-pct-gpl`(★3)이 공개됐어요. ROS 2 Humble 및 aarch64 환경을 대상으로 Python 래퍼, pybind11 확장, GTSAM·OSQP 소스를 함께 포함해요. TRON2 자율주행 스택의 글로벌 경로 계획 계층을 직접 분석·빌드할 수 있는 공식 오픈소스 구성요소예요.",
+          "headline_en": "LimX Dynamics publishes GPL source for TRON2 PCT global planner (tron2-navigation-pct-gpl)",
+          "detail_en": "LimX Dynamics published tron2-navigation-pct-gpl (★3), providing GPL-2.0-or-later source for the PCT global planner used in TRON2 ROS 2 Humble/aarch64 navigation with Python wrappers, pybind11 extensions, and GTSAM/OSQP sources.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON2 ROS 2 내비게이션 스택의 PCT 글로벌 플래너 공식 오픈소스 공개.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "6d8d312d8559ef03",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.64,
+          "confidence": 0.94,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, 휠-레그 로봇 TRON2 ROS 2 자율주행 스택 'tron2-navigation-ros2' 공개 (★2)",
+          "detail_ko": "LimX Dynamics 공식 GitHub에 휠-레그 로봇 TRON2의 ROS 2 Humble 기반 자율주행 스택 `limxdynamics/tron2-navigation-ros2`(★2, C++)가 공개됐어요. RoboSense LiDAR와 FAST-LIO 위치 추정, 계단 인식 PCT 플래닝, SCAN 로컬 플래닝, 그리고 fail-closed 섀시 게이트웨이를 통합한 구조예요. 모바일 매니퓰레이션 하네스에서 이동 기반과 안전 정지 경계(fail-closed gateway)를 결합할 때 참고 가치가 높은 공식 스택이에요.",
+          "headline_en": "LimX Dynamics releases ROS 2 Humble autonomous navigation stack for TRON2 (tron2-navigation-ros2)",
+          "detail_en": "LimX Dynamics released tron2-navigation-ros2 (★2, C++), an autonomous navigation stack for the TRON2 wheeled-legged robot on ROS 2 Humble featuring RoboSense LiDAR, FAST-LIO, PCT stair-aware planning, SCAN local planning, and a fail-closed chassis gateway.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON2 휠-레그 로봇의 ROS 2 Humble 자율주행 및 fail-closed 게이트웨이 공식 스택 공개.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "85c83b756ed01c96",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.7,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, TRON2A 양팔 매니퓰레이션 컨트롤러 런타임 'tron2_manipulation_controller' 공개 (★4)",
+          "detail_ko": "LimX Dynamics 공식 GitHub에 양팔 휴머노이드 로봇 TRON2A(DACH_TRON2A)용 매니퓰레이션 컨트롤러 런타임 `limxdynamics/tron2_manipulation_controller`(★4, Python)가 공개됐어요. WebSocket SDK 위에서 QP 기반 모션 플래닝과 PD 제어를 수행하며, 로컬 MuJoCo 시뮬레이션 워크스페이스도 함께 제공해요. 상위 프론티어 모델 하네스가 WebSocket SDK와 MuJoCo 검증 환경을 거쳐 양팔 로봇을 제어하는 중간 제어 계층으로 바로 활용하기 좋은 공식 런타임이에요.",
+          "headline_en": "LimX Dynamics releases tron2_manipulation_controller for TRON2A dual-arm robot",
+          "detail_en": "LimX Dynamics released tron2_manipulation_controller (★4, Python) for the TRON2A dual-arm robot, featuring QP-based motion planning and PD control over WebSocket SDK with a local MuJoCo simulation workspace.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON2A 양팔 로봇의 WebSocket SDK 기반 QP 모션 플래닝·PD 제어 및 MuJoCo 워크스페이스 공식 공개.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "41cc2bf2115b7646",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.72,
+          "confidence": 0.95,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, Isaac Lab 기반 TRON2A 휴머노이드 RL 학습 파이프라인 'tron2_rl_lab' 공개 (★15)",
+          "detail_ko": "LimX Dynamics 공식 GitHub에 TRON2A 휴머노이드용 강화학습 파이프라인 `limxdynamics/tron2_rl_lab`(★15, Python)이 공개됐어요. NVIDIA Isaac Lab과 PPO(`rsl_rl`)를 기반으로 발바닥형(sole-foot), 휠-레그형(wheel-foot), 전신 양팔 DASF(whole-body dual-arm DASF) 변형을 모두 지원해요. 중국 주요 휴머노이드 플랫폼이 Isaac Lab 생태계 위에서 전신 양팔 RL 정책 학습 파이프라인을 공식 오픈소스로 제공한다는 점에서 의미가 커요.",
+          "headline_en": "LimX Dynamics releases tron2_rl_lab Isaac Lab RL training pipeline for TRON2A humanoid",
+          "detail_en": "LimX Dynamics released tron2_rl_lab (★15, Python), an Isaac Lab + PPO (rsl_rl) RL training pipeline for the TRON2A humanoid supporting sole-foot, wheel-foot, and whole-body dual-arm DASF variants.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON2A 휴머노이드의 Isaac Lab + PPO 기반 전신 양팔 RL 학습 파이프라인 공식 공개.",
+          "discard_reason": null
+        },
+        {
+          "item_id": "258c04f7f669f23b",
+          "relevant": true,
+          "domain": "hardware_sdk",
+          "entity_key": "limx",
+          "variant": null,
+          "lab": "limx",
+          "new_entity": null,
+          "event_type": "release",
+          "version": null,
+          "significance": 0.6,
+          "confidence": 0.93,
+          "is_minor": false,
+          "official": true,
+          "headline_ko": "LimX Dynamics, 손목 D405 기반 TRON2 모바일 비주얼 파지 데모 'tron2_visual_grasp' 공개 (★1)",
+          "detail_ko": "LimX Dynamics 공식 GitHub에 TRON2 로봇의 비주얼 파지 매니퓰레이션 데모 `limxdynamics/tron2_visual_grasp`(★1, Python)가 공개됐어요. 손목 장착 D405 카메라와 OpenCV 테니스공 탐지기를 활용해 탐지(detect), 접근(approach), 무릎 굽히기(kneel), 파지(grasp)까지 이어지는 모바일 매니퓰레이션 흐름을 구현했어요. TRON2에서 비전 인지 도구와 전신 이동·파지 시퀀스를 연결하는 공식 레퍼런스 예제로 참고할 수 있어요.",
+          "headline_en": "LimX Dynamics releases tron2_visual_grasp mobile manipulation demo for TRON2",
+          "detail_en": "LimX Dynamics released tron2_visual_grasp (★1, Python), a visual grasping mobile manipulation demo for TRON2 performing detect, approach, kneel, and grasp with a wrist D405 camera and OpenCV detector.",
+          "keywords_hit": [
+            "Fourier / AgiBot / Galaxea"
+          ],
+          "rationale": "LimX TRON2의 손목 D405 기반 탐지-접근-무릎굽힘-파지 모바일 매니퓰레이션 공식 데모 공개.",
+          "discard_reason": null
+        }
+      ],
+      "existing_candidates": [
+        {
+          "event_id": "dce6ed8066a5",
+          "occurred_at": "2026-11-26T11:39:06+09:00",
+          "headline_ko": "중국 LimX Dynamics, TRON2A 휴머노이드용 Python RL 배포 저장소 공개"
+        },
+        {
+          "event_id": "e3ca1e96084b",
+          "occurred_at": "2026-11-25T18:44:11+09:00",
+          "headline_ko": "LimX Dynamics, 휴머노이드 Python RL 배포 및 TRON2 16종 시뮬 에셋 공개"
+        }
+      ]
+    }
+  ]
+}

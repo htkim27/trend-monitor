@@ -318,5 +318,21 @@
     "days": [
       "2026-11-27"
     ]
+  },
+  "casbot": {
+    "key": "casbot",
+    "title": "CASBOT (中科慧灵)",
+    "domain": "hardware_sdk",
+    "days": [
+      "2026-11-27"
+    ]
+  },
+  "hexagon-aeon": {
+    "key": "hexagon-aeon",
+    "title": "Hexagon Robotics (AEON)",
+    "domain": "hardware_sdk",
+    "days": [
+      "2026-11-27"
+    ]
   }
 }

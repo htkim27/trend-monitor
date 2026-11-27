@@ -3,3 +3,4 @@
 {"run_id": "2026-11-26-am", "finished_at": "2026-11-26T07:07:00+09:00", "processed": 90, "relevant": 33, "discarded": 57, "remaining_pending": 173}
 {"run_id": "2026-11-26-pm", "finished_at": "2026-11-27T07:01:03+09:00", "processed": 150, "relevant": 81, "discarded": 69, "remaining_pending": 115}
 {"run_id": "2026-11-27-am", "finished_at": "2026-11-27T07:39:07+09:00", "processed": 128, "relevant": 16, "discarded": 112, "remaining_pending": 0}
+{"run_id": "2026-11-27-pm", "finished_at": "2026-11-27T21:48:57+09:00", "processed": 19, "relevant": 8, "discarded": 11, "remaining_pending": 0}
